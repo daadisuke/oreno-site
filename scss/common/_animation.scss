@@ -1,0 +1,92 @@
+
+
+/* --------------------------------------------------
+
+animate
+
+-------------------------------------------------- */
+
+.fx-in,.fx-in-i,.fx-left,.fx-right,.fx-up {
+    visibility: hidden;
+}
+
+.fadeIn {
+    visibility: visible !important;
+    animation: op 0.2s ease 0s normal,fadeIn 1.2s ease-in-out 0.2s normal;
+    transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1) ;
+}
+
+.fadeIn-i {
+  visibility: visible !important;
+  animation: fadeIn 0.5s ease-in-out 0s normal;
+}
+
+@keyframes fadeIn {
+  0% {
+  opacity: 0;
+  }
+  100% {
+  opacity: 1;
+  }
+}
+
+.fadeInUp {
+  visibility: visible !important;
+  animation: op 0.2s ease 0s normal,fadeInUp 1.2s ease-in-out 0.2s normal;
+  transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1) ;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+ }
+ 
+.fadeInLeft {
+  visibility: visible !important;
+  animation: op 0.2s ease 0s normal,fadeInLeft 1.2s ease-in-out 0.2s normal;
+  transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1) ;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(70px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+ }
+  
+.fadeInRight {
+  visibility: visible !important;
+  animation: op 0.2s ease 0s normal,fadeInRight 1.2s ease-in-out 0.2s normal;
+  transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1) ;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-70px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+ }
+
+
+@keyframes op {
+    0% {
+   opacity: 0;
+   }
+    100% {
+   opacity: 0;
+   }
+}

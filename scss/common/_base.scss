@@ -1,0 +1,131 @@
+
+/* --------------------------------------------------
+
+base
+
+-------------------------------------------------- */
+html {
+	font-size: 62.5%;
+	height: 100%;
+}
+body {
+	color: $color-base;
+	font-size: 1.6rem;
+	font-weight: 500;
+	width: 100%;
+    font-family: $font-primary;
+	line-height: 1.5;
+	min-width: $bq-in;
+	background: #FFF;
+	letter-spacing: 0.1em;
+}
+
+a {
+	transition: all 0.3s;
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+a:link, a:visited {
+	color:$color-base;
+}
+a:hover, a:active {
+	color: $color-second;
+	transition: all 0.3s;
+}
+.inner {
+	width: $bq-in;
+	margin: 0 auto;
+}
+.inner-m {
+	width: $bq-in-m;
+	margin: 0 auto;
+}
+// .inner-s {
+// 	width: 1050px;
+// 	margin: 0 auto;
+// }
+br.pc-br {
+	display: block;
+}
+br.sp-br {
+	display: none;
+}
+
+// 飾り
+.pct {
+	p {
+		position: absolute;
+	}
+}
+
+// svg
+svg {
+    width: 100%;
+    height: auto;
+}
+
+em,strong {
+	font-weight: bold;
+} 
+
+@media screen and (max-width: $bq-l) {
+	body {
+		min-width: 0;
+	}
+}
+
+@media screen and (max-width: $bq-in) {
+	.inner {
+		width: 92%;
+	}
+}
+
+@media screen and (max-width: $bq-in-m) {
+	.inner-m {
+		width: 92%;
+	}
+}
+
+// @media screen and (max-width: $bq) {
+// 	body {
+// 		font-size: 1.6rem;
+// 	}
+// 	.inner-s {
+// 		width: 94%;
+// 	}
+// }
+@media screen and (max-width: $bq) {
+
+	body {
+		font-size: 1.5rem;
+	}
+
+	.inner-m .inner-s {
+		width: auto;
+		margin: 0;
+	}
+	br.pc-br {
+		display: none;
+	}
+	br.sp-br {
+		display: block;
+	}
+}
+
+/* --------------------------------------------------
+
+extend
+
+-------------------------------------------------- */
+
+
+.img-c {
+	max-width: 100%;
+	max-height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}

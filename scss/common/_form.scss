@@ -1,0 +1,262 @@
+/* --------------------------------------------------
+
+form
+
+-------------------------------------------------- */
+
+button, fieldset, form, input, label, legend, select, textarea {
+	font-family: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+}
+fieldset {
+	border: none;
+	display: block;
+}
+
+fieldset span {
+	display: inline-block;
+}
+
+textarea {
+	width: 100%;
+	min-height: 7em;
+	font-size: 1.6rem;
+	padding: 0.5em 0.8em;
+	border: 1px solid #D1D1D1;
+	border-radius: 0.5em;
+	box-sizing: border-box;
+}
+button {
+	font-size: 1.6rem;
+	padding: 0.5em 0.8em;
+	border-radius: 1em;
+	cursor: pointer;
+	border: 1px solid #707070;
+}
+input[type="checkbox"], input[type="radio"] {
+	width: 1.2em;
+	height: 1.2em;
+ margin-right: .1em;
+}
+input[type="checkbox"] + label, input[type="radio"] + label {
+	display: inline-block;
+	margin-right: 0.6em;
+}
+input[type="text"],input[type="number"], input[type="tel"], input[type="email"], input[type="password"] {
+	font-size: 1.6rem;
+	width: 100%;
+	vertical-align: middle;
+	border: none;
+	padding: 0.2em 0.5em;
+	background: none;
+	box-sizing: border-box;
+    border-radius: 1em;
+	outline: none;
+	@media screen and (max-width: $bq) {
+		padding: 0.4em 0.8em;
+	}
+}
+// input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, input[type="checkbox"]:focus, input[type="password"]:focus,button:focus,select:focus,textarea:focus {
+// 	outline: 2px dotted #b0b0b0;
+// }
+
+// #header .btn-search input::placeholder {
+// 	color: rgba($color: #FFF, $alpha: 0.7);
+// }
+
+input[type="file"] {
+	padding: 5px 0;
+}
+
+.label-name {
+	margin: 0px 7px 0 0;
+	display: inline-block;
+}
+input.text-ss,
+select.text-ss {
+	width: 25%;
+}
+input.text-sss,
+select.text-sss {
+	width: 10%;
+}
+input.text-s,
+select.text-s {
+	width: 60%;
+}
+.text-m {
+	width: 58%;
+}
+.text-l {
+	width: 100%;
+	margin: 10px 0;
+}
+select {
+	width: 100%;
+	font-size: 1.6rem;
+	padding: 0.5em 0.8em;
+    border: none;
+    border: 1px solid #707070;
+	border-radius: 1em;
+	box-sizing: border-box;
+}
+
+select option[selected],
+select option[active] {
+	color: #FFF;
+	background: $color-base;
+}
+
+.term-select span {
+	margin: 0 0.5em;
+}
+
+.txt-required {
+	color: #F00;
+}
+
+.link-reminder{
+	margin: 1em 0 2em;
+	text-align: center;
+}
+
+.link-reminder::before {
+	color: #E0426C;
+	content: "\f054";
+	font-family: 'fontAwesome';
+	margin-right: 0.5em;
+}
+
+fieldset legend {
+	display: none;
+}
+
+// form-area
+.form-area h6 {
+	font-size: 2.8rem;
+	font-weight: 700;
+	margin-bottom: 1em;
+	border: none;
+	@media screen and (max-width: $bq) {
+		font-size: 2.0rem;
+		text-align: center;
+	}
+}
+
+.form-area table {
+	font-size: 1.7rem;
+}
+
+.form-area table tr th {
+	width: 15em;
+	padding: 1.5em;
+	text-align: left;
+	@media screen and (max-width: $bq) {
+		width: 100%;
+		padding: 0.5em;
+		display: block;
+		box-sizing: border-box;
+		border-bottom: none;
+	}
+}
+
+.form-area table tr td {
+	padding: 1.5em;
+	text-align: left;
+	@media screen and (max-width: $bq) {
+		width: 100%;
+		padding: 0.5em;
+		display: block;
+		box-sizing: border-box;
+		button {
+			font-size: 1.3rem;
+			padding: 0.5em 0.8em;
+		}
+	}
+}
+
+.form-area tr th strong {
+	color: $color-second;
+	font-weight: normal;
+	float: right;
+}
+
+.form-area td span {
+	margin: 0 0.3em;
+}
+
+.form-area td span.ttl-sec {
+	margin-left: 1em;
+	@media screen and (max-width: $bq) {
+		margin-left: 0.3em;
+		+ select {
+			margin-top: 0.5em;
+		}
+	}
+}
+
+.form-area td input {
+	border: 1px solid #707070;
+}
+
+.form-area td input:nth-child(2) {
+	margin-top: 1em;
+}
+
+
+.form-area td button {
+	margin-left: 0.5em;
+}
+
+p.txt-error {
+	color: $color-second;
+	font-weight: bold;
+	margin: 0;
+}
+
+.form-area table {
+	width: 100%;
+}
+
+.form-area table.fee tr th {
+	background: $color-second;
+}
+
+.form-area p + h6 {
+	margin-top: 3%;
+}
+
+.form-area table.fee tr td {
+	font-size: 2.8rem;
+	font-weight: bold;
+	background: #FFEBE8;
+	span {
+		font-size: 1.8rem;
+	}
+	@media screen and (max-width: $bq) {
+		font-size: 2.3rem;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: $bq) {
+	.form-area {
+
+		input.text-s,
+		select.text-s {
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		input.text-ss,
+		select.text-ss {
+			width: 60%;
+			box-sizing: border-box;
+		}
+
+	}
+}
