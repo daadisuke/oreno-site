@@ -33,10 +33,10 @@ header
 	position: relative;
 	z-index: 5;
 	background: #FFF;
-	@media screen and (max-width: $bq-in) {
+	@include bq-in {
 		padding: 1em 2% 2.1em;
 	}
-	@media screen and (max-width: $bq-in) {
+	@include bq-in {
 		padding: 1em;
 	}
     h1 {
@@ -49,10 +49,10 @@ header
 			&:hover {
 				opacity: 1;
 			}
-			@media screen and (max-width: $bq-in) {
+			@include bq-in {
 				width: 20%;
 			}
-			@media screen and (max-width: $bq-in) {
+			@include bq-in {
 				width: auto;
 				position: static;
 			}
@@ -126,7 +126,7 @@ header
 					position: relative;
 					letter-spacing: 0.1em;
 					transition: all 0.3s;
-					@media screen and (max-width: $bq-in) {
+					@include bq-in {
 						font-size: 1.5rem;
 					}
 					&:after {
@@ -148,7 +148,7 @@ header
 	}
 	.wrap-sp-navi {
 		display: block;
-		@media screen and (max-width: $bq-in) {
+		@include bq-in {
 			display: none;
 		}
 		.logo-sp {
@@ -164,7 +164,7 @@ header
 			justify-content: flex-end;
 			position: relative;
 			z-index: 2;
-			@media screen and (max-width: $bq-in) {
+			@include bq-in {
 				font-size: 1.3rem;
 			}
 			.fontSize {
@@ -237,7 +237,7 @@ header
 						&::placeholder {
 							color: #AAA;
 						}
-						@media screen and (max-width: $bq-in) {
+						@include bq-in {
 							&::placeholder {
 								color: rgba(255,255,255,0.5) !important;
 							}
@@ -387,7 +387,7 @@ header
 				position: absolute;
 				top: 0;
 				left: 0;
-				@media screen and (max-width: $bq-in) {
+				@include bq-in {
 					width: 17%;
 					padding: 3% 0;
 					box-sizing: border-box;
@@ -407,7 +407,7 @@ header
 		}
 		.wrap-sp-navi {
 			display: block;
-			@media screen and (max-width: $bq-in) {
+			@include bq-in {
 				display: none;
 			}
 			.r-function-block {
@@ -421,7 +421,7 @@ header
 }
 
 body.fixed {
-	@media screen and (max-width: $bq-in) {
+	@include bq-in {
 		position: fixed;
 		width: 100%;
 		height: 100%;
@@ -433,7 +433,7 @@ body.fixed {
 	
 .btn-menu {
 	display: none;
-	@media screen and (max-width: $bq-in) {
+	@include bq-in {
 		display: block;
 		cursor: pointer;
 		position: absolute;

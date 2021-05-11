@@ -30,7 +30,7 @@ ttl-feature01
 			span {
 				margin: 2.8em 0.2em 0 0;
 			}
-			@media screen and (max-width: $bq-in) {
+			@include bq-in {
 				font-size: 2rem;
 				margin: 0 0 0 auto;
 			}
@@ -60,7 +60,7 @@ main-area
 	width: calc(100% - 176px);
 	margin: -4em 0 0 auto;
 	position: relative;
-	@media screen and (max-width: $bq-in) {
+	@include bq-in {
 		width: 83%;
 		margin: 0 0 0 auto;
 	}
@@ -178,7 +178,7 @@ carousel-area
 	overflow-x: hidden;
 	$value-btn: 45px;
 	$value-btn-sp: 35px;
-	@media screen and (max-width: $bq-in) {
+	@include bq-in {
 		padding: 4em 0 2em;
 	}
 	.slick-slider {
@@ -1154,7 +1154,7 @@ ul.list-link {
 				right: auto;
 			}
 		}
-		@media screen and (max-width: $bq-in) {
+		@include bq-in {
 			height: auto;
 			padding: 2em;
 		}
@@ -1686,7 +1686,7 @@ Calendar
 
 	}
 
-	@media screen and (max-width: $bq-in) {
+	@include bq-in {
 
 		.col-do {
 

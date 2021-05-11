@@ -38,14 +38,6 @@ a:hover, a:active {
 	width: $bq-in;
 	margin: 0 auto;
 }
-.inner-m {
-	width: $bq-in;
-	margin: 0 auto;
-}
-// .inner-s {
-// 	width: 1050px;
-// 	margin: 0 auto;
-// }
 br.pc-br {
 	display: block;
 }
@@ -70,32 +62,12 @@ em,strong {
 	font-weight: bold;
 } 
 
-@media screen and (max-width: $bq-in) {
+@include bq-in {
 	body {
 		min-width: 0;
 	}
 }
 
-@media screen and (max-width: $bq-in) {
-	.inner {
-		width: 92%;
-	}
-}
-
-@media screen and (max-width: $bq-in) {
-	.inner-m {
-		width: 92%;
-	}
-}
-
-// @media screen and (max-width: $bq) {
-// 	body {
-// 		font-size: 1.6rem;
-// 	}
-// 	.inner-s {
-// 		width: 94%;
-// 	}
-// }
 @include bq {
 
 	body {
