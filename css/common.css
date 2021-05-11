@@ -161,6 +161,11 @@ a:hover, a:active {
   margin: 0 auto;
 }
 
+.inner-m {
+  width: 1100px;
+  margin: 0 auto;
+}
+
 br.pc-br {
   display: block;
 }
@@ -182,12 +187,22 @@ em, strong {
   font-weight: bold;
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   body {
     min-width: 0;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 1100px) {
+  .inner {
+    width: 92%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .inner-m {
+    width: 92%;
+  }
+}
+@media only screen and (max-width: 768px) {
   body {
     font-size: 1.5rem;
   }
@@ -1053,7 +1068,7 @@ input[type=text], input[type=number], input[type=tel], input[type=email], input[
   border-radius: 1em;
   outline: none;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   input[type=text], input[type=number], input[type=tel], input[type=email], input[type=password] {
     padding: 0.4em 0.8em;
   }
@@ -1138,7 +1153,7 @@ fieldset legend {
   margin-bottom: 1em;
   border: none;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .form-area h6 {
     font-size: 2rem;
     text-align: center;
@@ -1154,7 +1169,7 @@ fieldset legend {
   padding: 1.5em;
   text-align: left;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .form-area table tr th {
     width: 100%;
     padding: 0.5em;
@@ -1168,7 +1183,7 @@ fieldset legend {
   padding: 1.5em;
   text-align: left;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .form-area table tr td {
     width: 100%;
     padding: 0.5em;
@@ -1194,7 +1209,7 @@ fieldset legend {
 .form-area td span.ttl-sec {
   margin-left: 1em;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .form-area td span.ttl-sec {
     margin-left: 0.3em;
   }
@@ -1241,14 +1256,14 @@ p.txt-error {
 .form-area table.fee tr td span {
   font-size: 1.8rem;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .form-area table.fee tr td {
     font-size: 2.3rem;
     text-align: center;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .form-area input.text-s,
 .form-area select.text-s {
     width: 100%;
@@ -1292,12 +1307,12 @@ header
   z-index: 5;
   background: #FFF;
 }
-@media only screen and (min-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   #header {
     padding: 1em 2% 2.1em;
   }
 }
-@media only screen and (min-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   #header {
     padding: 1em;
   }
@@ -1312,12 +1327,12 @@ header
 #header h1 a:hover {
   opacity: 1;
 }
-@media only screen and (min-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   #header h1 a {
     width: 20%;
   }
 }
-@media only screen and (min-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   #header h1 a {
     width: auto;
     position: static;
@@ -1390,7 +1405,7 @@ header
   letter-spacing: 0.1em;
   transition: all 0.3s;
 }
-@media only screen and (min-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   #header #navi ul li a {
     font-size: 1.5rem;
   }
@@ -1411,7 +1426,7 @@ header
 #header .wrap-sp-navi {
   display: block;
 }
-@media only screen and (min-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   #header .wrap-sp-navi {
     display: none;
   }
@@ -1430,7 +1445,7 @@ header
   position: relative;
   z-index: 2;
 }
-@media only screen and (min-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   #header .wrap-sp-navi .r-function-block {
     font-size: 1.3rem;
   }
@@ -1503,7 +1518,7 @@ header
 #header .wrap-sp-navi .r-function-block .btn-search fieldset input::placeholder {
   color: #AAA;
 }
-@media only screen and (min-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   #header .wrap-sp-navi .r-function-block .btn-search fieldset input::placeholder {
     color: rgba(255, 255, 255, 0.5) !important;
   }
@@ -1658,7 +1673,7 @@ header
   top: 0;
   left: 0;
 }
-@media only screen and (min-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   #header.top-h h1 a {
     width: 17%;
     padding: 3% 0;
@@ -1681,7 +1696,7 @@ header
 #header.top-h .wrap-sp-navi {
   display: block;
 }
-@media only screen and (min-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   #header.top-h .wrap-sp-navi {
     display: none;
   }
@@ -1693,7 +1708,7 @@ header
   box-sizing: border-box;
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   body.fixed {
     position: fixed;
     width: 100%;
@@ -1706,7 +1721,7 @@ header
 .btn-menu {
   display: none;
 }
-@media only screen and (min-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   .btn-menu {
     display: block;
     cursor: pointer;
@@ -1792,7 +1807,7 @@ footer
   justify-content: space-around;
   flex-wrap: wrap;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   #footer .link-f {
     margin-bottom: 2em;
   }
@@ -1803,7 +1818,7 @@ footer
   display: block;
   text-decoration: underline;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   #footer .link-f li {
     margin-bottom: 0.5em;
   }
@@ -1814,7 +1829,7 @@ footer
   justify-content: space-between;
   text-align: center;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   #footer .info-f {
     margin-bottom: 1.5em;
     display: block;
@@ -1824,7 +1839,7 @@ footer
   margin-bottom: 2em;
   letter-spacing: 0.1em;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   #footer .info-f .sns-l .copy-sns {
     margin-bottom: 1em;
   }
@@ -1847,7 +1862,7 @@ footer
 #footer .info-f .info-r {
   text-align: left;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   #footer .info-f .info-r {
     margin-top: 2.5em;
   }
@@ -1898,7 +1913,7 @@ footer
   transform: rotateZ(45deg);
   vertical-align: middle;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   #footer .page-top a {
     font-size: 1.3rem;
   }
@@ -1934,7 +1949,7 @@ footer
 .ttl-large.center {
   text-align: center;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .ttl-large {
     margin: 1em 0 2em;
   }
@@ -1953,7 +1968,7 @@ footer
 .ttl-large.border:before {
   margin-right: 4em;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .ttl-large.border:before {
     margin-right: 1em;
   }
@@ -1961,12 +1976,12 @@ footer
 .ttl-large.border:after {
   margin-left: 4em;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .ttl-large.border:after {
     margin-left: 1em;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .ttl-large {
     font-size: 2.1rem;
     letter-spacing: 0.1em;
@@ -1983,7 +1998,7 @@ footer
 .ttl-small.center {
   text-align: center;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .ttl-small {
     margin: 1em 0 2em;
   }
@@ -2054,7 +2069,7 @@ footer
 .ttl-small.center {
   justify-content: center;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .ttl-small {
     margin: 1em 0 1.2em;
   }
@@ -2114,7 +2129,7 @@ footer
   text-align: center;
   letter-spacing: 0.15em;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .ttl-center {
     font-size: 2.5rem;
   }
@@ -2187,7 +2202,7 @@ footer
   margin-left: 1em;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .ttl-large .ttl-jp {
     font-size: 2.5rem;
   }
@@ -2363,7 +2378,7 @@ footer
   background: #AAA;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .btn-more a,
 .btn-back a {
     font-size: 1.6rem;
@@ -2400,7 +2415,7 @@ footer
   bottom: 0;
   left: 0;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .bg-gray::before {
     width: 15%;
   }
@@ -2413,7 +2428,7 @@ footer
   position: relative;
   overflow: hidden;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .bg-blue-l {
     padding: 1em 0 0;
   }
@@ -2588,7 +2603,7 @@ p.txt-sentence {
   font-size: 1.6rem;
   line-height: 2.3;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   p.txt-sentence {
     line-height: 1.7;
   }
@@ -2636,7 +2651,7 @@ ttl-feature01
 .ttl-feature .inner .ttl-vertical span {
   margin: 2.8em 0.2em 0 0;
 }
-@media only screen and (min-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   .ttl-feature .inner .ttl-vertical {
     font-size: 2rem;
     margin: 0 0 0 auto;
@@ -2668,7 +2683,7 @@ main-area
   margin: -4em 0 0 auto;
   position: relative;
 }
-@media only screen and (min-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   .main-area {
     width: 83%;
     margin: 0 0 0 auto;
@@ -2714,7 +2729,7 @@ main-area
   width: 100px !important;
   float: none;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .main-area .scroll-m span {
     display: none !important;
   }
@@ -2754,7 +2769,7 @@ carousel-area
   position: relative;
   overflow-x: hidden;
 }
-@media only screen and (min-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   .carousel-area {
     padding: 4em 0 2em;
   }
@@ -3692,7 +3707,7 @@ ul.list-link li:first-child {
     right: auto;
   }
 }
-@media only screen and (min-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   .link-block .link-part {
     height: auto;
     padding: 2em;
@@ -4181,12 +4196,12 @@ Calendar
 .list-do .col-do.right .ph-part {
   left: 0;
 }
-@media only screen and (min-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   .list-do .col-do .txt-block {
     width: 70%;
   }
 }
-@media only screen and (min-width: 1100px) and (max-width: 768px) {
+@media only screen and (max-width: 1100px) and (max-width: 768px) {
   .list-do .col-do .txt-block {
     width: 96%;
     margin: 0 2% 8%;
@@ -4196,7 +4211,7 @@ Calendar
     padding: 0 0 0 5%;
   }
 }
-@media only screen and (min-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   .list-do .col-do.right .txt-block {
     margin: 0 2% 0 auto;
   }
@@ -4204,7 +4219,7 @@ Calendar
     order: 2;
   }
 }
-@media only screen and (min-width: 1100px) and (max-width: 768px) {
+@media only screen and (max-width: 1100px) and (max-width: 768px) {
   .list-do .col-do.right .txt-block .txt-part {
     margin-top: 10%;
     margin-bottom: 8%;
@@ -4212,12 +4227,12 @@ Calendar
     order: 1;
   }
 }
-@media only screen and (min-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   .list-do .col-do.right .ph-part {
     left: 0;
   }
 }
-@media only screen and (min-width: 1100px) and (max-width: 768px) {
+@media only screen and (max-width: 1100px) and (max-width: 768px) {
   .list-do .col-do .ph-part {
     width: 100%;
     position: static;
@@ -4262,7 +4277,7 @@ Calendar
     font-size: 2.5rem;
   }
 }
-@media only screen and (max-width: 1100px) and (min-width: 768px) {
+@media only screen and (max-width: 1100px) and (max-width: 768px) {
   .list-useful ul li a p {
     font-size: 1.5rem;
     letter-spacing: 1px;
@@ -4272,7 +4287,7 @@ Calendar
   background-color: #000;
   background-position: -100% 100%;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .list-useful ul li {
     width: 100%;
     margin: 0 0 3%;
@@ -4308,7 +4323,7 @@ Calendar
 .list-insta ul li a img:hover {
   transform: translate(-50%, -50%) scale(1.1);
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .list-insta ul li {
     width: 48%;
     margin: 0 4% 3% 0;
@@ -4317,7 +4332,7 @@ Calendar
 .list-insta ul li:nth-child(4n) {
   margin-right: 0;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .list-insta ul li:nth-child(2n) {
     margin-right: 0;
   }
@@ -4331,7 +4346,7 @@ Calendar
 .list-bnr ul:last-child {
   margin-bottom: 0;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .list-bnr ul {
     display: block;
     width: auto;
@@ -4371,7 +4386,7 @@ Calendar
   position: absolute;
   top: 50%;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .accesss-list .col-a > div .time-required:before {
     width: 1px;
     height: 100%;
@@ -4398,7 +4413,7 @@ Calendar
 .accesss-list .col-a > div:before {
   left: 0;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .accesss-list .col-a > div:before {
     top: 0;
     left: 50%;
@@ -4408,7 +4423,7 @@ Calendar
 .accesss-list .col-a > div:after {
   right: 0;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .accesss-list .col-a > div:after {
     top: auto;
     right: auto;
@@ -4417,7 +4432,7 @@ Calendar
     transform: translateX(-50%);
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .accesss-list .col-a > div {
     margin: 0.5em 0;
     padding: 20% 0;
@@ -4431,7 +4446,7 @@ Calendar
 .accesss-list .col-a > p.start-p {
   margin-right: 0.5em;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .accesss-list .col-a > p.start-p {
     width: auto;
     margin-right: 0;
@@ -4442,14 +4457,14 @@ Calendar
   margin-left: 0.5em;
   text-align: right;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .accesss-list .col-a > p.goal-p {
     width: auto;
     margin-right: 0;
     text-align: center;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .accesss-list .col-a {
     width: 46%;
     margin: 1em 0;
@@ -4459,7 +4474,7 @@ Calendar
     display: block;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .accesss-list {
     display: flex;
     justify-content: space-between;
@@ -4518,7 +4533,7 @@ ul.list-modelcourse li a .ttl-m {
   position: relative;
   letter-spacing: 0.1em;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   ul.list-modelcourse li a .ttl-m {
     font-size: 2.3rem;
   }
@@ -4533,7 +4548,7 @@ ul.list-modelcourse li a .ttl-m:before {
   display: block;
   letter-spacing: 0.2em;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   ul.list-modelcourse li a .ttl-m:before {
     font-size: 1.9rem;
   }
@@ -4565,7 +4580,7 @@ ul.list-modelcourse li a .icon-m-block .list-category p {
 ul.list-modelcourse li a .icon-m-block .list-icon p {
   font-size: 1.6rem;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   ul.list-modelcourse li a .icon-m-block .list-icon p {
     font-size: 1.4rem;
     margin-bottom: 0.5em;
@@ -4583,18 +4598,18 @@ ul.list-modelcourse li:after {
   left: 0;
   z-index: 3;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   ul.list-modelcourse li:after {
     width: 2.5em;
     height: 2.5em;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   ul.list-modelcourse li {
     width: 100%;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   ul.list-modelcourse {
     display: block;
   }
@@ -4612,7 +4627,7 @@ spot-data
 .spot-data.fee dl dt {
   font-size: 2rem;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .spot-data.fee dl dt {
     font-size: 1.6rem;
   }
@@ -4620,22 +4635,22 @@ spot-data
 .spot-data.fee dl dd {
   font-size: 2.3rem;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .spot-data.fee dl dd {
     font-size: 1.8rem;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .spot-data.detail {
     margin-bottom: 1em;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .spot-data.detail dl dt {
     font-size: 1.5rem;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .spot-data.detail dl dd {
     font-size: 1.6rem;
   }
@@ -4688,7 +4703,7 @@ ul.list-search li a h4 {
   font-weight: 700;
   margin-bottom: 1em;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   ul.list-search li a h4 {
     font-size: 1.8rem;
   }
@@ -5586,7 +5601,7 @@ list-table
   justify-content: space-between;
   overflow: hidden;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .wrapper-layout {
     display: block;
   }
@@ -5594,7 +5609,7 @@ list-table
 .wrapper-layout > .side-menu {
   width: 23%;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .wrapper-layout > .side-menu {
     width: 100%;
   }
@@ -5602,7 +5617,7 @@ list-table
 .wrapper-layout > .main-contents {
   width: 70%;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .wrapper-layout > .main-contents {
     width: 100%;
   }

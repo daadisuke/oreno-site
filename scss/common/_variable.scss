@@ -31,13 +31,13 @@ breakpoint
 -------------------------------------------------- */
 
 @mixin bq {
-	@media only screen and (min-width: $bq ) {
+	@media only screen and (max-width: $bq ) {
 	  @content;
 	}
 }
 
 @mixin bq-in {
-	@media only screen and (min-width: $bq-in ) {
+	@media only screen and (max-width: $bq-in ) {
 	  @content;
 	}
 }
