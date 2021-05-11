@@ -6,6 +6,11 @@
 -------------------------------------------------- */
 /* --------------------------------------------------
 
+breakpoint
+
+-------------------------------------------------- */
+/* --------------------------------------------------
+
 reset
 
 -------------------------------------------------- */
@@ -197,7 +202,7 @@ em, strong {
     width: 92%;
   }
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   body {
     font-size: 1.5rem;
   }
@@ -1063,7 +1068,7 @@ input[type=text], input[type=number], input[type=tel], input[type=email], input[
   border-radius: 1em;
   outline: none;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   input[type=text], input[type=number], input[type=tel], input[type=email], input[type=password] {
     padding: 0.4em 0.8em;
   }
@@ -1148,7 +1153,7 @@ fieldset legend {
   margin-bottom: 1em;
   border: none;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .form-area h6 {
     font-size: 2rem;
     text-align: center;
@@ -1164,7 +1169,7 @@ fieldset legend {
   padding: 1.5em;
   text-align: left;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .form-area table tr th {
     width: 100%;
     padding: 0.5em;
@@ -1178,7 +1183,7 @@ fieldset legend {
   padding: 1.5em;
   text-align: left;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .form-area table tr td {
     width: 100%;
     padding: 0.5em;
@@ -1204,7 +1209,7 @@ fieldset legend {
 .form-area td span.ttl-sec {
   margin-left: 1em;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .form-area td span.ttl-sec {
     margin-left: 0.3em;
   }
@@ -1251,14 +1256,14 @@ p.txt-error {
 .form-area table.fee tr td span {
   font-size: 1.8rem;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .form-area table.fee tr td {
     font-size: 2.3rem;
     text-align: center;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .form-area input.text-s,
 .form-area select.text-s {
     width: 100%;
@@ -1802,7 +1807,7 @@ footer
   justify-content: space-around;
   flex-wrap: wrap;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   #footer .link-f {
     margin-bottom: 2em;
   }
@@ -1813,7 +1818,7 @@ footer
   display: block;
   text-decoration: underline;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   #footer .link-f li {
     margin-bottom: 0.5em;
   }
@@ -1824,7 +1829,7 @@ footer
   justify-content: space-between;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   #footer .info-f {
     margin-bottom: 1.5em;
     display: block;
@@ -1834,7 +1839,7 @@ footer
   margin-bottom: 2em;
   letter-spacing: 0.1em;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   #footer .info-f .sns-l .copy-sns {
     margin-bottom: 1em;
   }
@@ -1857,7 +1862,7 @@ footer
 #footer .info-f .info-r {
   text-align: left;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   #footer .info-f .info-r {
     margin-top: 2.5em;
   }
@@ -1908,7 +1913,7 @@ footer
   transform: rotateZ(45deg);
   vertical-align: middle;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   #footer .page-top a {
     font-size: 1.3rem;
   }
@@ -1944,7 +1949,7 @@ footer
 .ttl-large.center {
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .ttl-large {
     margin: 1em 0 2em;
   }
@@ -1963,7 +1968,7 @@ footer
 .ttl-large.border:before {
   margin-right: 4em;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .ttl-large.border:before {
     margin-right: 1em;
   }
@@ -1971,12 +1976,12 @@ footer
 .ttl-large.border:after {
   margin-left: 4em;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .ttl-large.border:after {
     margin-left: 1em;
   }
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .ttl-large {
     font-size: 2.1rem;
     letter-spacing: 0.1em;
@@ -1993,7 +1998,7 @@ footer
 .ttl-small.center {
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .ttl-small {
     margin: 1em 0 2em;
   }
@@ -2064,7 +2069,7 @@ footer
 .ttl-small.center {
   justify-content: center;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .ttl-small {
     margin: 1em 0 1.2em;
   }
@@ -2124,7 +2129,7 @@ footer
   text-align: center;
   letter-spacing: 0.15em;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .ttl-center {
     font-size: 2.5rem;
   }
@@ -2197,7 +2202,7 @@ footer
   margin-left: 1em;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .ttl-large .ttl-jp {
     font-size: 2.5rem;
   }
@@ -2373,7 +2378,7 @@ footer
   background: #AAA;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .btn-more a,
 .btn-back a {
     font-size: 1.6rem;
@@ -2410,7 +2415,7 @@ footer
   bottom: 0;
   left: 0;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .bg-gray::before {
     width: 15%;
   }
@@ -2423,7 +2428,7 @@ footer
   position: relative;
   overflow: hidden;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .bg-blue-l {
     padding: 1em 0 0;
   }
@@ -2598,7 +2603,7 @@ p.txt-sentence {
   font-size: 1.6rem;
   line-height: 2.3;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   p.txt-sentence {
     line-height: 1.7;
   }
@@ -2724,7 +2729,7 @@ main-area
   width: 100px !important;
   float: none;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .main-area .scroll-m span {
     display: none !important;
   }
@@ -4272,7 +4277,7 @@ Calendar
     font-size: 2.5rem;
   }
 }
-@media screen and (max-width: 1100px) and (max-width: 768px) {
+@media only screen and (max-width: 1100px) and (min-width: 768px) {
   .list-useful ul li a p {
     font-size: 1.5rem;
     letter-spacing: 1px;
@@ -4282,7 +4287,7 @@ Calendar
   background-color: #000;
   background-position: -100% 100%;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .list-useful ul li {
     width: 100%;
     margin: 0 0 3%;
@@ -4318,7 +4323,7 @@ Calendar
 .list-insta ul li a img:hover {
   transform: translate(-50%, -50%) scale(1.1);
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .list-insta ul li {
     width: 48%;
     margin: 0 4% 3% 0;
@@ -4327,7 +4332,7 @@ Calendar
 .list-insta ul li:nth-child(4n) {
   margin-right: 0;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .list-insta ul li:nth-child(2n) {
     margin-right: 0;
   }
@@ -4341,7 +4346,7 @@ Calendar
 .list-bnr ul:last-child {
   margin-bottom: 0;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .list-bnr ul {
     display: block;
     width: auto;
@@ -4381,7 +4386,7 @@ Calendar
   position: absolute;
   top: 50%;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .accesss-list .col-a > div .time-required:before {
     width: 1px;
     height: 100%;
@@ -4408,7 +4413,7 @@ Calendar
 .accesss-list .col-a > div:before {
   left: 0;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .accesss-list .col-a > div:before {
     top: 0;
     left: 50%;
@@ -4418,7 +4423,7 @@ Calendar
 .accesss-list .col-a > div:after {
   right: 0;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .accesss-list .col-a > div:after {
     top: auto;
     right: auto;
@@ -4427,7 +4432,7 @@ Calendar
     transform: translateX(-50%);
   }
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .accesss-list .col-a > div {
     margin: 0.5em 0;
     padding: 20% 0;
@@ -4441,7 +4446,7 @@ Calendar
 .accesss-list .col-a > p.start-p {
   margin-right: 0.5em;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .accesss-list .col-a > p.start-p {
     width: auto;
     margin-right: 0;
@@ -4452,14 +4457,14 @@ Calendar
   margin-left: 0.5em;
   text-align: right;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .accesss-list .col-a > p.goal-p {
     width: auto;
     margin-right: 0;
     text-align: center;
   }
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .accesss-list .col-a {
     width: 46%;
     margin: 1em 0;
@@ -4469,7 +4474,7 @@ Calendar
     display: block;
   }
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .accesss-list {
     display: flex;
     justify-content: space-between;
@@ -4528,7 +4533,7 @@ ul.list-modelcourse li a .ttl-m {
   position: relative;
   letter-spacing: 0.1em;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   ul.list-modelcourse li a .ttl-m {
     font-size: 2.3rem;
   }
@@ -4543,7 +4548,7 @@ ul.list-modelcourse li a .ttl-m:before {
   display: block;
   letter-spacing: 0.2em;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   ul.list-modelcourse li a .ttl-m:before {
     font-size: 1.9rem;
   }
@@ -4575,7 +4580,7 @@ ul.list-modelcourse li a .icon-m-block .list-category p {
 ul.list-modelcourse li a .icon-m-block .list-icon p {
   font-size: 1.6rem;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   ul.list-modelcourse li a .icon-m-block .list-icon p {
     font-size: 1.4rem;
     margin-bottom: 0.5em;
@@ -4593,18 +4598,18 @@ ul.list-modelcourse li:after {
   left: 0;
   z-index: 3;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   ul.list-modelcourse li:after {
     width: 2.5em;
     height: 2.5em;
   }
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   ul.list-modelcourse li {
     width: 100%;
   }
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   ul.list-modelcourse {
     display: block;
   }
@@ -4622,7 +4627,7 @@ spot-data
 .spot-data.fee dl dt {
   font-size: 2rem;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .spot-data.fee dl dt {
     font-size: 1.6rem;
   }
@@ -4630,22 +4635,22 @@ spot-data
 .spot-data.fee dl dd {
   font-size: 2.3rem;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .spot-data.fee dl dd {
     font-size: 1.8rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .spot-data.detail {
     margin-bottom: 1em;
   }
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .spot-data.detail dl dt {
     font-size: 1.5rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .spot-data.detail dl dd {
     font-size: 1.6rem;
   }
@@ -4698,7 +4703,7 @@ ul.list-search li a h4 {
   font-weight: 700;
   margin-bottom: 1em;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   ul.list-search li a h4 {
     font-size: 1.8rem;
   }
@@ -5596,7 +5601,7 @@ list-table
   justify-content: space-between;
   overflow: hidden;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .wrapper-layout {
     display: block;
   }
@@ -5604,7 +5609,7 @@ list-table
 .wrapper-layout > .side-menu {
   width: 23%;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .wrapper-layout > .side-menu {
     width: 100%;
   }
@@ -5612,7 +5617,7 @@ list-table
 .wrapper-layout > .main-contents {
   width: 70%;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .wrapper-layout > .main-contents {
     width: 100%;
   }

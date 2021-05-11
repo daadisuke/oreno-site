@@ -25,7 +25,7 @@
 	&.center {
 		text-align: center;
 	}
-	@media screen and (max-width: $bq) {
+	@include bq {
 		margin: 1em 0 2em;
 	}
 	&.border {
@@ -40,18 +40,18 @@
 		}
 		&:before {
 			margin-right: 4em;
-			@media screen and (max-width: $bq) {
+			@include bq {
 				margin-right: 1em;
 			}
 		}
 		&:after {
 			margin-left: 4em;
-			@media screen and (max-width: $bq) {
+			@include bq {
 				margin-left: 1em;
 			}
 		}
 	}
-	@media screen and (max-width: $bq) {
+	@include bq {
 		font-size: 2.1rem;
 		letter-spacing: 0.1em;
 	}
@@ -66,7 +66,7 @@
 	&.center {
 		text-align: center;
 	}
-	@media screen and (max-width: $bq) {
+	@include bq {
 		margin: 1em 0 2em;
 	}
 	&.border {
@@ -135,7 +135,7 @@
 	&.center {
 		justify-content: center;
 	}
-	@media screen and (max-width: $bq) {
+	@include bq {
 		margin: 1em 0 1.2em;
 	}
 }
@@ -188,7 +188,7 @@
 	font-size: 4rem;
 	text-align: center;
 	letter-spacing: 0.15em;
-	@media screen and (max-width: $bq) {
+	@include bq {
 		font-size: 2.5rem;
 	}
 }
@@ -202,7 +202,7 @@
 	letter-spacing: 0.15em;
 	background: $color-base-l01;
 	position: relative;
-	// @media screen and (max-width: $bq) {
+	// @include bq {
 	// 	font-size: 2.5rem;
 	// }
 	&:after {
@@ -267,7 +267,7 @@
 
 
 
-@media screen and (max-width: $bq) {
+@include bq {
 
 	.ttl-large .ttl-jp {
 		font-size: 2.5rem;
@@ -456,7 +456,7 @@
 	}
 }
 
-@media screen and (max-width: $bq) {
+@include bq {
 
 	.btn-more a,
 	.btn-back a {
@@ -496,7 +496,7 @@
         bottom: 0;
 		left: 0;
 
-		@media screen and (max-width: $bq) {
+		@include bq {
 			width: 15%;
 		}
 
@@ -509,7 +509,7 @@
 	background: $color-light;
 	position: relative;
 	overflow: hidden;
-	@media screen and (max-width: $bq) {
+	@include bq {
 		padding: 1em 0 0;
 	}
 	&.wave {
@@ -717,7 +717,7 @@
 p.txt-sentence {
 	font-size: 1.6rem;
 	line-height: 2.3;
-	@media screen and (max-width: $bq) {
+	@include bq {
 		line-height: 1.7;
 	}
 }

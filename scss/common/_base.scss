@@ -96,7 +96,7 @@ em,strong {
 // 		width: 94%;
 // 	}
 // }
-@media screen and (max-width: $bq) {
+@include bq {
 
 	body {
 		font-size: 1.5rem;

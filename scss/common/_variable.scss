@@ -23,3 +23,28 @@ $bq-in: 1100px;
 
 $bq: 768px;
 $bq-s: 420px;
+
+/* --------------------------------------------------
+
+breakpoint
+
+-------------------------------------------------- */
+
+@mixin bq {
+	@media only screen and (min-width: $bq ) {
+	  @content;
+	}
+}
+
+@mixin bq-in {
+	@media only screen and (min-width: $bq-in ) {
+	  @content;
+	}
+}
+
+
+@mixin bq-s {
+	@media only screen and (max-width: $bq-s) {
+		@content;
+	}
+}

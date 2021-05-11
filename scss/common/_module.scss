@@ -109,7 +109,7 @@ main-area
 	}
 	.scroll-m span {
 
-		@media screen and (max-width:$bq) {
+		@include bq {
 				display: none !important;
 		}
 
@@ -1775,7 +1775,7 @@ Calendar
 
 				@media screen and (max-width:$bq-in) {
 					font-size: 2.5rem;
-					@media screen and (max-width:$bq) {
+					@include bq {
 						font-size: 1.5rem;
 						letter-spacing: 1px;
 					}
@@ -1786,7 +1786,7 @@ Calendar
 				background-position: -100% 100%;
 			}
 		}
-		@media screen and (max-width:$bq) {
+		@include bq {
 			width: 100%;
 			margin: 0 0 3%;
 		}
@@ -1831,7 +1831,7 @@ Calendar
 
 // 				@media screen and (max-width:$bq-in) {
 // 					font-size: 2.5rem;
-// 					@media screen and (max-width:$bq) {
+// 					@include bq {
 // 						font-size: 1.5rem;
 // 						letter-spacing: 1px;
 // 					}
@@ -1842,7 +1842,7 @@ Calendar
 // 				background-position: -100% 100%;
 // 			}
 // 		}
-// 		@media screen and (max-width:$bq) {
+// 		@include bq {
 // 			width: 100%;
 // 			margin: 0 0 3%;
 // 		}
@@ -1882,7 +1882,7 @@ Calendar
 				}
 			}
 		}
-		@media screen and (max-width:$bq) {
+		@include bq {
 			width: 48%;
 			margin: 0 (100% - 48%*2) 3% 0;
 		}
@@ -1891,7 +1891,7 @@ Calendar
 	li:nth-child(4n) {
 		margin-right: 0;
 	}
-	@media screen and (max-width:$bq) {
+	@include bq {
 		li:nth-child(2n) {
 			margin-right: 0;
 		}
@@ -1910,7 +1910,7 @@ Calendar
 		margin-bottom: 0;
 	}
 
-	@media screen and (max-width:$bq) {
+	@include bq {
 		display: block;
 		width: auto;
 		margin: 0 auto;
@@ -1950,7 +1950,7 @@ Calendar
 					border-bottom: 1px dotted #FFF;
 					position: absolute;
 					top: 50%;
-					@media screen and (max-width:$bq) {
+					@include bq {
 						width: 1px;
 						height: 100%;
 						border-bottom: none;
@@ -1977,7 +1977,7 @@ Calendar
 			}
 			&:before {
 				left: 0;
-				@media screen and (max-width:$bq) {
+				@include bq {
 					top: 0;
 					left: 50%;
 					transform: translateX(-50%);
@@ -1985,7 +1985,7 @@ Calendar
 			}
 			&:after {
 				right: 0;
-				@media screen and (max-width:$bq) {
+				@include bq {
 					top: auto;
 					right: auto;
 					left: 50%;
@@ -1993,7 +1993,7 @@ Calendar
 					transform: translateX(-50%);
 				}
 			}
-			@media screen and (max-width:$bq) {
+			@include bq {
 				margin: 0.5em 0;
 				padding: 20% 0;
 			}
@@ -2004,7 +2004,7 @@ Calendar
 			letter-spacing: 0.1em;
 			&.start-p {
 				margin-right: 0.5em;
-				@media screen and (max-width:$bq) {
+				@include bq {
 					width: auto;
 					margin-right: 0;
 					text-align: center;
@@ -2013,14 +2013,14 @@ Calendar
 			&.goal-p {
 				margin-left: 0.5em;
 				text-align: right;
-				@media screen and (max-width:$bq) {
+				@include bq {
 					width: auto;
 					margin-right: 0;
 					text-align: center;
 				}
 			}
 		}
-		@media screen and (max-width:$bq) {
+		@include bq {
 			width: 46%;
 			margin: 1em 0;
 			display: block;
@@ -2031,7 +2031,7 @@ Calendar
 			}
 		}
 	}
-	@media screen and (max-width:$bq) {
+	@include bq {
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
@@ -2087,7 +2087,7 @@ ul.list-modelcourse {
 				text-align: center;
 				position: relative;
 				letter-spacing: 0.1em;
-				@media screen and (max-width:$bq) {
+				@include bq {
 					font-size: 2.3rem;
 				}
 				&:before {
@@ -2099,7 +2099,7 @@ ul.list-modelcourse {
 					margin-bottom: 0.7em;
 					display: block;
 					letter-spacing: 0.2em;
-					@media screen and (max-width:$bq) {
+					@include bq {
 						font-size: 1.9rem;
 					}
 				}
@@ -2130,7 +2130,7 @@ ul.list-modelcourse {
 				.list-icon {
 					p {
 						font-size: 1.6rem;
-						@media screen and (max-width:$bq) {
+						@include bq {
 							font-size: 1.4rem;
 							margin-bottom: 0.5em;
 						}
@@ -2149,16 +2149,16 @@ ul.list-modelcourse {
 			bottom: 0;
 			left: 0;
 			z-index: 3;
-			@media screen and (max-width:$bq) {
+			@include bq {
 				width: 2.5em;
 				height: 2.5em;
 			}
 		}
-		@media screen and (max-width:$bq) {
+		@include bq {
 			width: 100%;
 		}
 	}
-	@media screen and (max-width:$bq) {
+	@include bq {
 		display: block;
 	}
 
@@ -2176,30 +2176,30 @@ spot-data
 		dl {
 			dt {
 				font-size: 2rem;
-				@media screen and (max-width:$bq) {
+				@include bq {
 					font-size: 1.6rem;
 				}
 			}
 			dd {
 				font-size: 2.3rem;
-				@media screen and (max-width:$bq) {
+				@include bq {
 					font-size: 1.8rem;
 				}
 			}
 		}
 	}
 	&.detail {
-		@media screen and (max-width:$bq) {
+		@include bq {
 			margin-bottom: 1em;
 		}
 		dl {
 			dt {
-				@media screen and (max-width:$bq) {
+				@include bq {
 					font-size: 1.5rem;
 				}
 			}
 			dd {
-				@media screen and (max-width:$bq) {
+				@include bq {
 					font-size: 1.6rem;
 				}
 			}
@@ -2251,7 +2251,7 @@ ul.list-search {
 				font-size: 2.1rem;
 				font-weight: 700;
 				margin-bottom: 1em;
-				@media screen and (max-width:$bq) {
+				@include bq {
 					font-size: 1.8rem;
 				}
 			}
@@ -3217,18 +3217,18 @@ list-table
 	display: flex;
 	justify-content: space-between;
 	overflow: hidden;
-	@media screen and (max-width:$bq) {
+	@include bq {
 		display: block;
 	}
 	> .side-menu {
 		width: 23%;
-		@media screen and (max-width:$bq) {
+		@include bq {
 			width: 100%;
 		}
 	}
 	> .main-contents {
 		width: 70%;
-		@media screen and (max-width:$bq) {
+		@include bq {
 			width: 100%;
 		}
 	}
