@@ -2450,7 +2450,7 @@ list-sitemap
 					position: relative;
 					background: $color-light;
 					img {
-						@extend .img-c;
+						@extend %img-c;
 					}
 					@media screen and (max-width: $bq) {
 						width: auto;
