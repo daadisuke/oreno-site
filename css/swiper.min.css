@@ -2,7 +2,7 @@
 .swiper-container {
 	height: auto;
 	margin:0 auto;
-	padding: 0 0 2%;
+	padding: 0;
 	position:relative;
 	/* overflow:hidden; */
 	list-style:none;
@@ -22,10 +22,7 @@
 	height:100%;
 	z-index:1;
 	display:flex;
-	transition-property:-webkit-transform;
 	transition-property:transform;
-	transition-property:transform, -webkit-transform;
-	box-sizing:content-box
 }
 .swiper-container-multirow>.swiper-wrapper {
 	flex-wrap:wrap
@@ -170,36 +167,11 @@
 }
 
 @media screen and (max-width: 768px) {
-
-	.swiper-container {
-		overflow: hidden;
-	}
-
-	.swiper-button-next, .swiper-button-prev {
-		width: 40px;
-		height: 40px;
-	}
-	
+		
 	.swiper-button-next:before,
 	.swiper-button-prev:before {
-		content: "";
-		width: 7px;
-		height: 7px;
-		display: block;
-	}
-	
-	.swiper-button-next:before {
-		margin: 6px 0 0 4px;
-		border-bottom: 3px solid #FF6A4E;
-		border-right: 3px solid #FF6A4E;
-		transform: rotate(-45deg) translateY(-50%);
-	}
-	
-	.swiper-button-prev:before {
-		margin: 6px 4px 0 0;
-		border-bottom: 3px solid #FF6A4E;
-		border-left: 3px solid #FF6A4E;
-		transform: rotate(45deg) translateY(-50%);	
+		width: 12px;
+		height: 20px;
 	}
 
 }

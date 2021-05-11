@@ -2916,134 +2916,10 @@ list-sitemap
 	width: 100%;
 	overflow: hidden;
 	position: relative;
-	img {
-		width: 100%;
-	}
-}
-
-// slider-wide
-
-.slider-wide {
-	padding: 70px 0 0;
-	position: relative;
-	img {
-		width: 100%;
-	}
-
-	.arrow-part {
-		display: flex;
-		position: absolute;
-		top: 0;
-		right: 3%;
-		z-index: 1;
-	}
-
-	.swiper-button-next, .swiper-button-prev {
-		position: static;
-	}
-
-	.swiper-button-prev {
-		margin-right: 2rem;
-	}
-
-	.swiper-container {
-
-		.swiper-slide {
-			max-height: 1100px;
-			overflow: hidden;
-			> p {
-				width: 97%;
-				position: relative;
-				left: 0;
-				top: 0;
-				@media screen and (max-width:$bq) {
-					width: 100%;
-				}
-			}
-			> dl {
-				width: 40%;
-				padding: 3em;
-				background: #202B36;
-				position: absolute;
-				top: 50%;
-				right: 0;
-				transform: translateY(-50%);
-				z-index: 5;
-				@media screen and (max-width:$bq) {
-					width: auto;
-					padding: 1em 0;
-					position: static;
-					transform: none;
-					text-align: center;
-				}
-				dt {
-					color: #FFF;
-					font-size: 5.2rem;
-					margin-bottom: 0.5em;
-					letter-spacing: 0.1em;
-					span {
-						font-size: 3.6rem;
-						display: block;
-						@media screen and (max-width:$bq) {
-							font-size: 1.6rem;
-						}
-					}
-					@media screen and (max-width:$bq) {
-						font-size: 2rem;
-						margin: 0 0.5em 0.5em;
-					}
-				}
-				dd {
-					.icon-m-block {
-						display: flex;
-						flex-wrap: wrap;
-						position: relative;
-						@media screen and (max-width:$bq) {
-							justify-content: center;
-						}
-						.list-category {
-							margin-left: 0.5em;
-							p {
-								font-size: 1.6rem;
-								background: #FFF;
-							}
-						}
-						.list-icon {
-							margin-bottom: 0.5em;
-							p {
-								font-size: 1.6rem;
-								@media screen and (max-width:$bq) {
-									font-size: 1.4rem;
-								}
-							}
-						}
-					}
-					.btn-more {
-						margin-top: 3em;
-						@media screen and (max-width:$bq) {
-							margin: 1.4em 0;
-						}
-						a {
-							font-size: 1.6rem;
-							@media screen and (max-width:$bq) {
-								font-size: 1.5rem;
-							}
-						}
-					}
-
-				}
-			}
-		}
-
-	}
-	
-
 }
 
 // slider-thumb
-
 .slider-thumb {
-	overflow: hidden;
 	.gallery-top {
 		.swiper-slide {
 			position: relative;
@@ -3057,17 +2933,6 @@ list-sitemap
 				max-width: none;
 				max-height: 100%;
 				max-width: 100%;
-			}
-			&:after {
-				content: "";
-				width: 10%;
-				height: 100px;
-				background: url(../img/common/deco_seams.svg) no-repeat bottom left;
-				background-size: contain;
-				display: block;
-				position: absolute;
-				bottom: -1px;
-				left: 0;
 			}
 		}
 	}
@@ -3084,15 +2949,11 @@ list-sitemap
 				max-height: 100%;
 				max-width: 100%;
 			}
-			&:after {
-				display: none;
-			}
 		}
 	}
 }
 
 // slider-thumb-vertical
-
 .slider-thumb-vertical {
 	// width: 100%;
 	height: 700px;
@@ -3116,7 +2977,6 @@ list-sitemap
 			}
 		}
 	}
-
 	.gallery-thumbs {
 		width: 30%;
 		margin: 0;
@@ -3132,6 +2992,11 @@ list-sitemap
 			}
 		}
 	}
+}
+
+// slider-carousel
+.slider-carousel {
+
 }
 
 /* --------------------------------------------------

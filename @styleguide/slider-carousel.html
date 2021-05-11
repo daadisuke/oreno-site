@@ -36,8 +36,6 @@
 <!-- css -->
 <link rel="stylesheet" href="../css/common.css">
 
-<!-- 個別css -->
-
 <!-- js--> 
 <script src="../js/jquery-3.5.1.min.js"></script>
 
@@ -54,34 +52,54 @@
 		
 		<!--contents-->
 		<article id="contents">
-
-			<div class="inner" style="position: relative;">
 			
-				<!-- slider-thumb -->
-				<div class="slider-thumb-vertical">
-					<div class="swiper-container gallery-top">
+				<!-- slider-block -->
+				<div class="slider-carousel slider-block">
+
+					<!-- swiper-container -->
+					<div class="swiper-container">
+
+						<!-- swiper-wrapper -->
 						<div class="swiper-wrapper">
+
+							<!-- swiper-slide -->
 							<div class="swiper-slide"><img src="https://placehold.jp/1600x900.png" alt=""></div>
+							<!-- swiper-slide -->
+
+							<!-- swiper-slide -->
 							<div class="swiper-slide"><img src="https://placehold.jp/1600x900.png" alt=""></div>
+							<!-- swiper-slide -->
+
+							<!-- swiper-slide -->
 							<div class="swiper-slide"><img src="https://placehold.jp/1600x900.png" alt=""></div>
+							<!-- swiper-slide -->
+
+							<!-- swiper-slide -->
 							<div class="swiper-slide"><img src="https://placehold.jp/1600x900.png" alt=""></div>
+							<!-- swiper-slide -->
+
+							<!-- swiper-slide -->
+							<div class="swiper-slide"><img src="https://placehold.jp/1600x900.png" alt=""></div>
+							<!-- swiper-slide -->
+
 						</div>
-						
+						<!-- swiper-wrapper -->
+
+						<!-- Add Arrows -->
 						<div class="swiper-button-next swiper-button-white"></div>
 						<div class="swiper-button-prev swiper-button-white"></div>
-					</div>
-					<div class="swiper-container gallery-thumbs">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide"><img src="https://placehold.jp/1600x900.png" alt=""></div>
-							<div class="swiper-slide"><img src="https://placehold.jp/1600x900.png" alt=""></div>
-							<div class="swiper-slide"><img src="https://placehold.jp/1600x900.png" alt=""></div>
-							<div class="swiper-slide"><img src="https://placehold.jp/1600x900.png" alt=""></div>
-						</div>
-					</div>
-				</div>
-				<!-- slider-thumb -->
 
-			</div>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+
+						<!-- 停止ボタン追加 -->
+						<p class="stopbtn stop">停止</p>
+
+					</div>
+					<!-- swiper-container -->
+
+				</div>
+				<!-- slider-block -->
 		
 		</article>
 		<!--contents-->
@@ -94,28 +112,46 @@
 
 <!-- swiper設定 -->
 <script>
-	var galleryThumbs = new Swiper('.gallery-thumbs', {
-		spaceBetween: 0,
-		direction: 'vertical',
-		slidesPerView: 4,
+	var swiper = new Swiper('.swiper-container', {
 		loop: true,
-		freeMode: true,
-		loopedSlides: 5, //looped slides should be the same
-		watchSlidesVisibility: true,
-		watchSlidesProgress: true,
+			slidesPerView: 3,
+			breakpoints: {
+				// 768px以上の場合
+				768: {
+				slidesPerView: 5,
+				},
+			},
+			spaceBetween: 10,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
 	});
-	var galleryTop = new Swiper('.gallery-top', {
-		spaceBetween: 0,
-		loop:true,
-		loopedSlides: 5, //looped slides should be the same
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
-		thumbs: {
-			swiper: galleryThumbs,
-		},
-	});
+
+	/* 再生、停止ボタン */
+	$(window).on('load', function(){
+			$(".stopbtn").on("click", function () {
+				var _class = $(this).attr("class");
+				if (_class == "stopbtn stop") {
+					$(this).addClass("start").removeClass("stop");
+					swiper.autoplay.stop();
+					$(this).text('再生');
+				}
+				else {
+					$(this).addClass("stop").removeClass("start");
+					swiper.autoplay.start();
+					$(this).text('停止');
+				}
+			});
+		});
 </script>
 
 </body>
