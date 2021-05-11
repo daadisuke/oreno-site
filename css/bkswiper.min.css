@@ -106,25 +106,23 @@
 /*　再生、停止ボタン　*/
 
 .swiper-container .stopbtn {
-　font-size: 1.3rem;	
+　font-size: 1.4rem;	
   color: #FFF;/*　再生、停止ボタン色設定　*/
-  padding: 0.2em 0.8em;
   cursor: pointer;
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: 100;
-  border-radius: 1em;
+  border-radius: 5px;
   text-align: center;
-  background: #333;
 　z-index: 3;
 }
 .swiper-container .stopbtn:hover {
   opacity: 1;
 }
 .swiper-container .stopbtn:before {
+	color: #0972D0;
 	font-weight: 900;
-	margin-right: 0.2em;
 	font-family:'Font Awesome 5 Free';
 	display: inline-block;
 }
@@ -142,31 +140,33 @@
 	cursor:pointer
 }
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-	margin:0 10px
+	margin:0 5px
 }
 .swiper-pagination {
 	position:absolute;
 	text-align: left;
-	transition:.3s opacity;
+-webkit-transition:.3s opacity;
+-o-transition:.3s opacity;
+transition:.3s opacity;
+	-webkit-transform:translate3d(0, 0, 0);
 	transform:translate3d(0, 0, 0);
 	z-index:3
 }
 .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
-	bottom:4px;
-	left:6em;
+	bottom:0;
+	left:20px;
 	width:100%
 }
 .swiper-pagination-bullet {
 	width:10px;
 	height:10px;
 	display:inline-block;
+	border: 1px solid #0972D0;
 	border-radius: 50%;
-	background: #000;
-	opacity: 0.4;
 }
 
 .swiper-pagination-bullet-active {
-	opacity: 1 !important/*　ページネーションアクティブ時色設定　*/
+	background:#0972D0 !important/*　ページネーションアクティブ時色設定　*/
 }
 
 @media screen and (max-width: 768px) {

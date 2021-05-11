@@ -122,7 +122,7 @@ html {
 }
 
 body {
-  color: #145E70;
+  color: #000;
   font-size: 1.6rem;
   font-weight: 500;
   width: 100%;
@@ -143,7 +143,7 @@ img {
 }
 
 a:link, a:visited {
-  color: #145E70;
+  color: #000;
 }
 
 a:hover, a:active {
@@ -301,7 +301,7 @@ post-content　ウィジウィグ
   padding-left: 1.5em;
   margin-left: 1.5em;
   white-space: nowrap;
-  border-left: 1px solid #145E70;
+  border-left: 1px solid #000;
 }
 .post-sttl-large + .ttl-large {
   margin-top: 2em;
@@ -314,13 +314,13 @@ post-content　ウィジウィグ
 }
 /* post-sttl-small */
 .post-sttl-small {
-  color: #145E70;
+  color: #000;
   font-size: 2rem;
   font-weight: 700;
   padding: 0.5em;
   margin: 1.5em 0;
   background: #DAE8EC;
-  border-left: 6px solid #145E70;
+  border-left: 6px solid #000;
 }
 
 @media screen and (max-width: 768px) {
@@ -472,13 +472,13 @@ post-content　ウィジウィグ
 
 /* h2 */
 .wysiwyg h2 {
-  color: #145E70;
+  color: #000;
   font-size: 2rem;
   font-weight: 700;
   padding: 0.5em;
   margin: 1.5em 0;
   background: #DAE8EC;
-  border-left: 6px solid #145E70;
+  border-left: 6px solid #000;
 }
 
 @media screen and (max-width: 768px) {
@@ -492,7 +492,7 @@ post-content　ウィジウィグ
   font-weight: 700;
   margin: 1.5em 0;
   padding: 0.5em 0;
-  border-bottom: 1px solid #145E70;
+  border-bottom: 1px solid #000;
 }
 
 @media screen and (max-width: 768px) {
@@ -502,7 +502,7 @@ post-content　ウィジウィグ
 }
 /* h4 */
 .wysiwyg h4 {
-  color: #145E70;
+  color: #000;
   font-size: 1.8rem;
   font-weight: 600;
   margin: 1.5em 0;
@@ -523,7 +523,7 @@ post-content　ウィジウィグ
 /* h5 */
 .wysiwyg h5 {
   font-size: 1.8rem;
-  color: #145E70;
+  color: #000;
   font-weight: 700;
   margin-bottom: 2em;
 }
@@ -535,7 +535,7 @@ post-content　ウィジウィグ
 }
 /* h6 */
 .wysiwyg h6 {
-  color: #145E70;
+  color: #000;
   font-weight: 700;
   margin-bottom: 2em;
 }
@@ -710,7 +710,7 @@ post-content　ウィジウィグ
 }
 
 .wysiwyg table tr th {
-  color: #145E70;
+  color: #000;
   font-weight: bold;
   background: #DAE8EC;
   padding: 0.5em;
@@ -904,7 +904,7 @@ post-content　ウィジウィグ
   color: #FFF;
   padding: 0.7em 1.3em;
   display: inline-block;
-  background: #145E70;
+  background: #000;
 }
 .related-file a:before {
   content: "";
@@ -967,7 +967,7 @@ post-content　ウィジウィグ
   text-align: left;
   position: relative;
   box-sizing: border-box;
-  background-color: #145E70;
+  background-color: #000;
   letter-spacing: 0.1em;
 }
 .post-content .btn-back a:hover {
@@ -1115,7 +1115,7 @@ select {
 select option[selected],
 select option[active] {
   color: #FFF;
-  background: #145E70;
+  background: #000;
 }
 
 .term-select span {
@@ -1362,7 +1362,7 @@ header
   vertical-align: top;
 }
 #header .btn-skip a:hover {
-  background: #145E70;
+  background: #000;
 }
 #header .btn-skip a:focus {
   opacity: 1;
@@ -1388,7 +1388,7 @@ header
   border-left: 1px solid #BFBFBF;
 }
 #header #navi ul li a {
-  color: #145E70;
+  color: #000;
   font-size: 1.7rem;
   width: 100%;
   padding: 0;
@@ -1409,8 +1409,8 @@ header
   content: "";
   width: 0.7em;
   height: 0.7em;
-  border-bottom: 1px solid #145E70;
-  border-right: 1px solid #145E70;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
   display: inline-block;
   vertical-align: middle;
   position: absolute;
@@ -1493,7 +1493,7 @@ header
 }
 #header .wrap-sp-navi .r-function-block .btn-search fieldset {
   display: flex;
-  border: 1px solid #145E70;
+  border: 1px solid #000;
 }
 #header .wrap-sp-navi .r-function-block .btn-search fieldset a {
   color: #FFF;
@@ -1501,7 +1501,7 @@ header
   display: block;
   align-items: center;
   word-break: keep-all;
-  background: #145E70;
+  background: #000;
 }
 #header .wrap-sp-navi .r-function-block .btn-search fieldset legend {
   display: none;
@@ -1597,7 +1597,7 @@ header
   border: 1px solid #FFF;
 }
 #header .wrap-sp-navi.active-sp .r-function-block .btn-search fieldset a {
-  color: #145E70;
+  color: #000;
   padding: 0.6em 1em;
   background: #FFF;
 }
@@ -1747,7 +1747,7 @@ header
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #145E70;
+  background-color: #000;
   border-radius: 15px;
 }
 .btn-menu a div span:nth-of-type(1) {
@@ -1766,7 +1766,7 @@ header
   content: "";
   width: 100%;
   height: 3px;
-  background-color: #145E70;
+  background-color: #000;
   transition: all 0.4s;
 }
 .btn-menu a.open span {
@@ -1792,7 +1792,7 @@ footer
 
 -------------------------------------------------- */
 #footer {
-  color: #145E70;
+  color: #000;
   padding: 2em 0 0;
   background: #FFF;
 }
@@ -1927,7 +1927,7 @@ footer
 -------------------------------------------------- */
 /* ttl-large */
 .ttl-large {
-  color: #145E70;
+  color: #000;
   font-size: 2.5rem;
   letter-spacing: 0.3em;
   margin-bottom: 1.5em;
@@ -1958,7 +1958,7 @@ footer
   content: "";
   display: block;
   flex: 1;
-  border-top: 1px solid #145E70;
+  border-top: 1px solid #000;
 }
 .ttl-large.border:before {
   margin-right: 4em;
@@ -1985,7 +1985,7 @@ footer
 
 /* ttl-small */
 .ttl-small {
-  color: #145E70;
+  color: #000;
   font-size: 2.2rem;
   letter-spacing: 0.3em;
   margin-bottom: 1.5em;
@@ -2007,7 +2007,7 @@ footer
   content: "";
   display: block;
   flex: 1;
-  border-top: 1px solid #145E70;
+  border-top: 1px solid #000;
 }
 .ttl-small.border:before {
   margin-right: 2em;
@@ -2051,7 +2051,7 @@ footer
 
 /* ttl-small */
 .ttl-small {
-  color: #145E70;
+  color: #000;
   font-size: 1.9rem;
   letter-spacing: 0.1em;
   margin-bottom: 1.5em;
@@ -2080,7 +2080,7 @@ footer
   position: relative;
 }
 .ttl-vertical.green {
-  color: #145E70;
+  color: #000;
 }
 
 @media all and (-ms-high-contrast: none) {
@@ -2188,7 +2188,7 @@ footer
   content: "";
   display: block;
   flex: 0.05;
-  border-top: 1px solid #145E70;
+  border-top: 1px solid #000;
 }
 .ttl-column .ttl-col:before {
   margin-right: 1em;
@@ -2258,7 +2258,7 @@ footer
   text-align: left;
   position: relative;
   box-sizing: border-box;
-  background-color: #145E70;
+  background-color: #000;
   letter-spacing: 0.1em;
 }
 .btn-more a:hover {
@@ -2349,7 +2349,7 @@ footer
   text-align: left;
   position: relative;
   box-sizing: border-box;
-  background-color: #145E70;
+  background-color: #000;
   letter-spacing: 0.1em;
 }
 
@@ -2452,7 +2452,7 @@ footer
   background: #FFF;
 }
 .bg-white.border {
-  border: 1px solid #145E70;
+  border: 1px solid #000;
 }
 
 /* --------------------------------------------------
@@ -2898,8 +2898,8 @@ ttl-ulayer
   font-size: 3rem;
   padding: 1.2em 0;
   text-align: left;
-  background: #145E70 url(../img/common/bg_uh_green.jpg) no-repeat center center;
-  background-color: #145E70;
+  background: #000 url(../img/common/bg_uh_green.jpg) no-repeat center center;
+  background-color: #000;
   background-size: cover;
   text-align: center;
   letter-spacing: 0.2em;
@@ -2958,7 +2958,7 @@ ttl-ulayer
   }
 }
 .ttl-ulayer.heritage.visit h2 {
-  background: #145E70;
+  background: #000;
 }
 .ttl-ulayer.heritage.visit:before {
   background: rgba(0, 51, 62, 0.6);
@@ -2974,7 +2974,7 @@ ttl-ulayer
   }
 }
 .ttl-ulayer.heritage.save h2 {
-  background: #145E70;
+  background: #000;
 }
 .ttl-ulayer.heritage.save:before {
   background: rgba(0, 51, 62, 0.6);
@@ -3366,7 +3366,7 @@ sentence
 .tab-list li.active a,
 .tab-list li a:hover {
   color: #FFF;
-  background: #145E70;
+  background: #000;
 }
 @media screen and (max-width: 768px) {
   .tab-list.exp-tab {
@@ -3432,14 +3432,14 @@ sentence
   margin-bottom: 0.7em;
 }
 .back-number .list-year li a {
-  color: #145E70;
+  color: #000;
   padding: 0.8em 0;
   display: block;
   border: 1px solid #DAE8EC;
 }
 .back-number .list-year li a:hover {
   color: #FFF;
-  background: #145E70;
+  background: #000;
 }
 @media screen and (max-width: 768px) {
   .back-number .list-year li {
@@ -3556,7 +3556,7 @@ sentence
 
 .guide-line {
   padding: 2em;
-  border: 1px solid #145E70;
+  border: 1px solid #000;
 }
 .guide-line .block-lr.col2 {
   justify-content: space-between;
@@ -3607,7 +3607,7 @@ ul.list-link li:first-child {
   width: 1px;
   height: 100%;
   display: block;
-  background: #145E70;
+  background: #000;
   position: absolute;
   left: 50%;
   z-index: -1;
@@ -3674,7 +3674,7 @@ ul.list-link li:first-child {
   height: 380px;
   padding: 4em 3em;
   flex: 1;
-  background: #145E70;
+  background: #000;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
@@ -4264,7 +4264,7 @@ Calendar
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   background-size: 200% 100%;
-  background-image: linear-gradient(to right, transparent 50%, #145E70 50%);
+  background-image: linear-gradient(to right, transparent 50%, #000 50%);
   transition: background-position 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.1s, color 0.5s ease 0s, background-color 0.5s ease;
 }
 @media screen and (max-width: 1100px) {
@@ -4279,7 +4279,7 @@ Calendar
   }
 }
 .list-useful ul li a:hover p {
-  background-color: #145E70;
+  background-color: #000;
   background-position: -100% 100%;
 }
 @media screen and (max-width: 768px) {
@@ -4714,7 +4714,7 @@ list-article
 }
 
 .list-article li a {
-  color: #145E70;
+  color: #000;
   font-weight: 600;
   width: 100%;
   padding: 1.5em 1em;
@@ -4732,8 +4732,8 @@ list-article
   width: 5px;
   height: 5px;
   margin: 0 0.5em 0.2em auto;
-  border-top: 2px solid #145E70;
-  border-right: 2px solid #145E70;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
   display: inline-block;
   transform: rotateZ(45deg);
   vertical-align: middle;
@@ -4800,8 +4800,8 @@ ul.list-sitemap > li > a:after {
   width: 0.6em;
   height: 0.6em;
   margin: 0 0.5em 0.2em auto;
-  border-top: 1px solid #145E70;
-  border-right: 1px solid #145E70;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
   display: inline-block;
   position: absolute;
   top: 50%;
@@ -4822,8 +4822,8 @@ ul.list-sitemap > li > a + .u-layer li a:before {
   width: 0.6em;
   height: 0.6em;
   margin: 0 0.8em 0 0;
-  border-top: 1px solid #145E70;
-  border-right: 1px solid #145E70;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
   display: inline-block;
   vertical-align: middle;
   transform: rotateZ(45deg);
@@ -4906,7 +4906,7 @@ list-sitemap
   padding: 0.7em 1.3em;
   display: flex;
   justify-content: center;
-  background: #145E70;
+  background: #000;
 }
 .list-download > div .download-link > a > .txt-part .related-file:before {
   content: "";
@@ -4943,7 +4943,7 @@ list-sitemap
   color: #FFF;
   padding: 0.7em 1.3em;
   display: flex;
-  background: #145E70;
+  background: #000;
 }
 .list-event-reco > div > a .txt-part p {
   margin: 0;
@@ -4959,7 +4959,7 @@ list-sitemap
   color: #FFF;
   padding: 0.7em 1.3em;
   display: flex;
-  background: #145E70;
+  background: #000;
 }
 .list-event-reco > div > a .txt-part p.related-file:before {
   content: "";
@@ -4976,7 +4976,7 @@ list-sitemap
   margin-bottom: 1em;
 }
 .list-movie > div .txt-caption {
-  color: #145E70;
+  color: #000;
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 1.5;
@@ -5117,7 +5117,7 @@ list-sitemap
   color: #FFF;
   padding: 0 4em;
   border: none;
-  background: #145E70;
+  background: #000;
   letter-spacing: 0.1em;
   transition: all 0.3s;
   display: flex;
@@ -5165,16 +5165,16 @@ list-sitemap
   }
 }
 .paging-sort ul li a {
-  color: #145E70;
+  color: #000;
   padding: 0.1em 1.5em;
-  border: 1px solid #145E70;
+  border: 1px solid #000;
   background: none;
   border-radius: 1.5em;
   display: block;
 }
 .paging-sort ul li a.active {
   color: #FFF;
-  background: #145E70;
+  background: #000;
 }
 .paging-sort ul li a:before {
   font-weight: 900;
@@ -5544,14 +5544,14 @@ Q&A
 
 -------------------------------------------------- */
 .list-qa .col-qa {
-  border: 1px solid #145E70;
+  border: 1px solid #000;
 }
 .list-qa .col-qa h4 {
   color: #FFF;
   font-size: 2rem;
   margin: 0;
   padding: 1em;
-  background: #145E70;
+  background: #000;
   position: relative;
 }
 .list-qa .col-qa h4:before {
@@ -5572,7 +5572,7 @@ Q&A
   content: "";
   width: 1em;
   height: 2px;
-  background: #145E70;
+  background: #000;
   display: block;
   position: absolute;
   top: 50%;
@@ -5583,7 +5583,7 @@ Q&A
   content: "";
   width: 2px;
   height: 1em;
-  background: #145E70;
+  background: #000;
   display: block;
   position: absolute;
   top: 50%;
@@ -5608,12 +5608,12 @@ step
   justify-content: space-between;
 }
 .list-step dl {
-  border: 1px solid #145E70;
+  border: 1px solid #000;
 }
 .list-step dl dt {
   color: #FFF;
   padding: 0.8em 0;
-  background: #145E70;
+  background: #000;
   display: block;
   text-align: center;
 }
@@ -5650,7 +5650,7 @@ list-process
 .list-process > div .txt-p-part p {
   margin: 1em 0;
   padding: 1em;
-  border: 1px solid #145E70;
+  border: 1px solid #000;
 }
 .list-process > div .txt-p-part::after {
   content: "";
