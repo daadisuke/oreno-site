@@ -39,7 +39,7 @@ a:hover, a:active {
 	margin: 0 auto;
 }
 .inner-m {
-	width: $bq-in-m;
+	width: $bq-in;
 	margin: 0 auto;
 }
 // .inner-s {
@@ -70,7 +70,7 @@ em,strong {
 	font-weight: bold;
 } 
 
-@media screen and (max-width: $bq-l) {
+@media screen and (max-width: $bq-in) {
 	body {
 		min-width: 0;
 	}
@@ -82,7 +82,7 @@ em,strong {
 	}
 }
 
-@media screen and (max-width: $bq-in-m) {
+@media screen and (max-width: $bq-in) {
 	.inner-m {
 		width: 92%;
 	}

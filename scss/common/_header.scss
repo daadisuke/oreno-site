@@ -33,7 +33,7 @@ header
 	position: relative;
 	z-index: 5;
 	background: #FFF;
-	@media screen and (max-width: $bq-l) {
+	@media screen and (max-width: $bq-in) {
 		padding: 1em 2% 2.1em;
 	}
 	@media screen and (max-width: $bq-in) {
@@ -49,7 +49,7 @@ header
 			&:hover {
 				opacity: 1;
 			}
-			@media screen and (max-width: $bq-l) {
+			@media screen and (max-width: $bq-in) {
 				width: 20%;
 			}
 			@media screen and (max-width: $bq-in) {
@@ -126,7 +126,7 @@ header
 					position: relative;
 					letter-spacing: 0.1em;
 					transition: all 0.3s;
-					@media screen and (max-width: $bq-l) {
+					@media screen and (max-width: $bq-in) {
 						font-size: 1.5rem;
 					}
 					&:after {
@@ -164,7 +164,7 @@ header
 			justify-content: flex-end;
 			position: relative;
 			z-index: 2;
-			@media screen and (max-width: $bq-l) {
+			@media screen and (max-width: $bq-in) {
 				font-size: 1.3rem;
 			}
 			.fontSize {

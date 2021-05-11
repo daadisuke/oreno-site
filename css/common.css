@@ -157,7 +157,7 @@ a:hover, a:active {
 }
 
 .inner-m {
-  width: 870px;
+  width: 1100px;
   margin: 0 auto;
 }
 
@@ -182,7 +182,7 @@ em, strong {
   font-weight: bold;
 }
 
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 1100px) {
   body {
     min-width: 0;
   }
@@ -192,7 +192,7 @@ em, strong {
     width: 92%;
   }
 }
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 1100px) {
   .inner-m {
     width: 92%;
   }
@@ -1302,7 +1302,7 @@ header
   z-index: 5;
   background: #FFF;
 }
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 1100px) {
   #header {
     padding: 1em 2% 2.1em;
   }
@@ -1322,7 +1322,7 @@ header
 #header h1 a:hover {
   opacity: 1;
 }
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 1100px) {
   #header h1 a {
     width: 20%;
   }
@@ -1400,7 +1400,7 @@ header
   letter-spacing: 0.1em;
   transition: all 0.3s;
 }
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 1100px) {
   #header #navi ul li a {
     font-size: 1.5rem;
   }
@@ -1440,7 +1440,7 @@ header
   position: relative;
   z-index: 2;
 }
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 1100px) {
   #header .wrap-sp-navi .r-function-block {
     font-size: 1.3rem;
   }
@@ -2764,7 +2764,7 @@ carousel-area
   position: relative;
   overflow-x: hidden;
 }
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 1100px) {
   .carousel-area {
     padding: 4em 0 2em;
   }
@@ -2958,7 +2958,7 @@ ttl-ulayer
   }
 }
 .ttl-ulayer.heritage.visit h2 {
-  background: #6E7047;
+  background: #145E70;
 }
 .ttl-ulayer.heritage.visit:before {
   background: rgba(0, 51, 62, 0.6);
@@ -2974,7 +2974,7 @@ ttl-ulayer
   }
 }
 .ttl-ulayer.heritage.save h2 {
-  background: #964A45;
+  background: #145E70;
 }
 .ttl-ulayer.heritage.save:before {
   background: rgba(0, 51, 62, 0.6);
@@ -3674,7 +3674,7 @@ ul.list-link li:first-child {
   height: 380px;
   padding: 4em 3em;
   flex: 1;
-  background: #136374;
+  background: #145E70;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
@@ -3918,7 +3918,7 @@ ul.list-ph li a .txt-part .date {
   right: 1.5em;
   bottom: 1.5em;
 }
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 1100px) {
   .list-ph-long li a .txt-part .download-file {
     margin-top: 1em;
     position: static;
@@ -4191,12 +4191,12 @@ Calendar
 .list-do .col-do.right .ph-part {
   left: 0;
 }
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 1100px) {
   .list-do .col-do .txt-block {
     width: 70%;
   }
 }
-@media screen and (max-width: 870px) and (max-width: 768px) {
+@media screen and (max-width: 1100px) and (max-width: 768px) {
   .list-do .col-do .txt-block {
     width: 96%;
     margin: 0 2% 8%;
@@ -4206,7 +4206,7 @@ Calendar
     padding: 0 0 0 5%;
   }
 }
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 1100px) {
   .list-do .col-do.right .txt-block {
     margin: 0 2% 0 auto;
   }
@@ -4214,7 +4214,7 @@ Calendar
     order: 2;
   }
 }
-@media screen and (max-width: 870px) and (max-width: 768px) {
+@media screen and (max-width: 1100px) and (max-width: 768px) {
   .list-do .col-do.right .txt-block .txt-part {
     margin-top: 10%;
     margin-bottom: 8%;
@@ -4222,12 +4222,12 @@ Calendar
     order: 1;
   }
 }
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 1100px) {
   .list-do .col-do.right .ph-part {
     left: 0;
   }
 }
-@media screen and (max-width: 870px) and (max-width: 768px) {
+@media screen and (max-width: 1100px) and (max-width: 768px) {
   .list-do .col-do .ph-part {
     width: 100%;
     position: static;
@@ -4267,12 +4267,12 @@ Calendar
   background-image: linear-gradient(to right, transparent 50%, #145E70 50%);
   transition: background-position 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.1s, color 0.5s ease 0s, background-color 0.5s ease;
 }
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 1100px) {
   .list-useful ul li a p {
     font-size: 2.5rem;
   }
 }
-@media screen and (max-width: 870px) and (max-width: 768px) {
+@media screen and (max-width: 1100px) and (max-width: 768px) {
   .list-useful ul li a p {
     font-size: 1.5rem;
     letter-spacing: 1px;
@@ -5326,6 +5326,15 @@ list-sitemap
 スライダー
 
 -------------------------------------------------- */
+.slider-block {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.slider-block img {
+  width: 100%;
+}
+
 .slider-wide {
   padding: 70px 0 0;
   position: relative;

@@ -178,7 +178,7 @@ carousel-area
 	overflow-x: hidden;
 	$value-btn: 45px;
 	$value-btn-sp: 35px;
-	@media screen and (max-width: $bq-in-m) {
+	@media screen and (max-width: $bq-in) {
 		padding: 4em 0 2em;
 	}
 	.slick-slider {
@@ -355,7 +355,7 @@ ttl-ulayer
 				background-size: contain;
 			}
 			h2 {
-				background: $color-visit;
+				background: $color-base;
 			}
 			&:before {
 				background: rgb(0 51 62 / 60%);
@@ -369,7 +369,7 @@ ttl-ulayer
 				background-size: contain;
 			}
 			h2 {
-				background: $color-save;
+				background: $color-base;
 			}
 			&:before {
 				background: rgb(0 51 62 / 60%);
@@ -1129,7 +1129,7 @@ ul.list-link {
 		height: 380px;
 		padding: 4em 3em;
 		flex: 1;
-		background: $color-know;
+		background: $color-base;
 		display: flex;
 		justify-content: space-between;
 		box-sizing: border-box;
@@ -1384,7 +1384,7 @@ ul.list-ph {
 					position: absolute;
 					right: 1.5em;
 					bottom: 1.5em;
-					@media screen and (max-width: $bq-in-m){
+					@media screen and (max-width: $bq-in){
 						margin-top: 1em;
 						position: static;
 					}
@@ -1686,7 +1686,7 @@ Calendar
 
 	}
 
-	@media screen and (max-width: $bq-in-m) {
+	@media screen and (max-width: $bq-in) {
 
 		.col-do {
 
@@ -1773,7 +1773,7 @@ Calendar
 				background-image: linear-gradient(to right, transparent 50%, $color-base 50%);
 				transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
 
-				@media screen and (max-width:$bq-in-m) {
+				@media screen and (max-width:$bq-in) {
 					font-size: 2.5rem;
 					@media screen and (max-width:$bq) {
 						font-size: 1.5rem;
@@ -1829,7 +1829,7 @@ Calendar
 // 				background-image: linear-gradient(to right, transparent 50%, $color-base 50%);
 // 				transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
 
-// 				@media screen and (max-width:$bq-in-m) {
+// 				@media screen and (max-width:$bq-in) {
 // 					font-size: 2.5rem;
 // 					@media screen and (max-width:$bq) {
 // 						font-size: 1.5rem;
@@ -2912,6 +2912,14 @@ list-sitemap
 スライダー
 
 -------------------------------------------------- */
+.slider-block {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	img {
+		width: 100%;
+	}
+}
 
 // slider-wide
 
