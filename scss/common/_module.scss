@@ -478,12 +478,14 @@ sns-share
 
 .breadCrumbs li{
 	font-size: 1.6rem;
+	vertical-align: middle;
 	margin-right: 0.8em;
 	display:inline-block;
 	letter-spacing: 1px;
 }
 
 .breadCrumbs li a {
+	vertical-align: middle;
 	text-decoration: underline;
 	margin-right: 0.8em;
 }
@@ -1253,84 +1255,85 @@ ul.list-ph {
 		border: 1px solid #BFBFBF;
 	}
 
-	li a {
-		width: 100%;
-		// display: flex;
-		// flex-wrap: wrap;
-		// justify-content: flex-start;
-		background: #FFF;
-		border-radius: 1em;
-		position: relative;
+	// この部分を_element.scssへ移動させました
+	// li a {
+	// 	width: 100%;
+	// 	// display: flex;
+	// 	// flex-wrap: wrap;
+	// 	// justify-content: flex-start;
+	// 	background: #FFF;
+	// 	border-radius: 1em;
+	// 	position: relative;
 
-		.ph-list {
-			padding-top: 70%;
-			background: #e2e5ec;
-			border-radius: 1em 1em 0 0;
-		}
+	// 	.ph-list {
+	// 		padding-top: 70%;
+	// 		background: #e2e5ec;
+	// 		border-radius: 1em 1em 0 0;
+	// 	}
 
-		.ph-list img {
-			max-width: 120%;
-			max-height: 120%;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%) scale(1.0);
-			transition: all 0.7s;
-		}
+	// 	.ph-list img {
+	// 		max-width: 120%;
+	// 		max-height: 120%;
+	// 		position: absolute;
+	// 		top: 50%;
+	// 		left: 50%;
+	// 		transform: translate(-50%, -50%) scale(1.0);
+	// 		transition: all 0.7s;
+	// 	}
 
-		&:hover .ph-list img {
-			transform: translate(-50%, -50%) scale(1.1);
-		}
+	// 	&:hover .ph-list img {
+	// 		transform: translate(-50%, -50%) scale(1.1);
+	// 	}
 
-		.ph-list,
-		.txt-part {
-			width: 100%;
-			text-align: left;
-			position: relative;
-			overflow: hidden;
-			box-sizing: border-box;
-		}
+	// 	.ph-list,
+	// 	.txt-part {
+	// 		width: 100%;
+	// 		text-align: left;
+	// 		position: relative;
+	// 		overflow: hidden;
+	// 		box-sizing: border-box;
+	// 	}
 
-		.txt-part {
-			padding: 0.5em 0.5em 0.8em;
-			border-radius: 0 0 1em 1em;
-			.txt-u {
-				font-size: 2.0rem;
-				margin: 0 0 0.5em;
-				text-decoration: underline;
-				letter-spacing: 0.1em;
-			}
-			.txt-e {
-				font-size: 1.5rem;
-				line-height: 1.5;
-				font-family: $font-secondary;
-			}
-		}
+	// 	.txt-part {
+	// 		padding: 0.5em 0.5em 0.8em;
+	// 		border-radius: 0 0 1em 1em;
+	// 		.txt-u {
+	// 			font-size: 2.0rem;
+	// 			margin: 0 0 0.5em;
+	// 			text-decoration: underline;
+	// 			letter-spacing: 0.1em;
+	// 		}
+	// 		.txt-e {
+	// 			font-size: 1.5rem;
+	// 			line-height: 1.5;
+	// 			font-family: $font-secondary;
+	// 		}
+	// 	}
 
-		.list-icon {
-			margin-bottom: 0.5em;
-			p {
-				font-size: 1.4rem;
-			}
-		}
+	// 	.list-icon {
+	// 		margin-bottom: 0.5em;
+	// 		p {
+	// 			font-size: 1.4rem;
+	// 		}
+	// 	}
 
-		.list-category {
-			text-align: right;
-			margin-bottom: 0.8em;
+	// 	.list-category {
+	// 		text-align: right;
+	// 		margin-bottom: 0.8em;
 
-			p {
-				font-size: 1.4rem;
-			}
+	// 		p {
+	// 			font-size: 1.4rem;
+	// 		}
 
-		}
+	// 	}
 
-		.txt-part .date {
-			color: #8F8F8F;
-			font-size: 1.6rem;
-			text-align: right;
-		}
+	// 	.txt-part .date {
+	// 		color: #8F8F8F;
+	// 		font-size: 1.6rem;
+	// 		text-align: right;
+	// 	}
 
-	}
+	// }
 
 	@media screen and (max-width: $bq) {
 			display: block;
