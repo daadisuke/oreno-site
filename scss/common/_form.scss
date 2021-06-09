@@ -56,7 +56,7 @@ input[type="text"],input[type="number"], input[type="tel"], input[type="email"],
 	box-sizing: border-box;
     border-radius: 1em;
 	outline: none;
-	@include bq {
+	@include bp {
 		padding: 0.4em 0.8em;
 	}
 }
@@ -141,7 +141,7 @@ fieldset legend {
 	font-weight: 700;
 	margin-bottom: 1em;
 	border: none;
-	@include bq {
+	@include bp {
 		font-size: 2.0rem;
 		text-align: center;
 	}
@@ -155,7 +155,7 @@ fieldset legend {
 	width: 15em;
 	padding: 1.5em;
 	text-align: left;
-	@include bq {
+	@include bp {
 		width: 100%;
 		padding: 0.5em;
 		display: block;
@@ -167,7 +167,7 @@ fieldset legend {
 .form-area table tr td {
 	padding: 1.5em;
 	text-align: left;
-	@include bq {
+	@include bp {
 		width: 100%;
 		padding: 0.5em;
 		display: block;
@@ -191,7 +191,7 @@ fieldset legend {
 
 .form-area td span.ttl-sec {
 	margin-left: 1em;
-	@include bq {
+	@include bp {
 		margin-left: 0.3em;
 		+ select {
 			margin-top: 0.5em;
@@ -237,13 +237,13 @@ p.txt-error {
 	span {
 		font-size: 1.8rem;
 	}
-	@include bq {
+	@include bp {
 		font-size: 2.3rem;
 		text-align: center;
 	}
 }
 
-@include bq {
+@include bp {
 	.form-area {
 
 		input.text-s,

@@ -15,7 +15,7 @@ body {
 	width: 100%;
     font-family: $font-primary;
 	line-height: 1.5;
-	min-width: $bq-in;
+	min-width: $bp-in;
 	background: #FFF;
 	letter-spacing: 0.1em;
 	box-sizing: border-box;
@@ -36,11 +36,11 @@ a:hover, a:active {
 	transition: all 0.3s;
 }
 .inner {
-	width: $bq-in;
+	width: $bp-in;
 	margin: 0 auto;
 }
 .inner-m {
-	width: $bq-in;
+	width: $bp-in;
 	margin: 0 auto;
 }
 // .inner-s {
@@ -71,25 +71,25 @@ em,strong {
 	font-weight: bold;
 } 
 
-@include bq-in {
+@include bp-in {
 	body {
 		min-width: 0;
 	}
 }
 
-@include bq-in {
+@include bp-in {
 	.inner {
 		width: 92%;
 	}
 }
 
-@include bq-in {
+@include bp-in {
 	.inner-m {
 		width: 92%;
 	}
 }
 
-@include bq {
+@include bp {
 
 	body {
 		font-size: 1.5rem;

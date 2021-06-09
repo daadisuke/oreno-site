@@ -12,17 +12,30 @@ $font-eng: 'Playfair Display', serif;
 
 // color
 $color-base: #333;
-$color-second:#707070;
 $color-base-d01: #000;
 $color-base-l01: #F0F0F0;
+$color-second:#707070;
 
-$color-light: #DAE8EC;
+
+$color-light: #F0F0F0;
 
 // break point
-$bq-in: 1100px;
+$bp-in: 1200px;
 
-$bq: 768px;
-$bq-s: 420px;
+$bp: 768px;
+$bp-s: 420px;
+
+/* --------------------------------------------------
+
+hover
+
+-------------------------------------------------- */
+
+@mixin hover {
+	&:hover {
+		opacity: 0.7;
+	}
+}
 
 /* --------------------------------------------------
 
@@ -30,21 +43,21 @@ breakpoint
 
 -------------------------------------------------- */
 
-@mixin bq {
-	@media only screen and (max-width: $bq ) {
+@mixin bp {
+	@media only screen and (max-width: $bp ) {
 	  @content;
 	}
 }
 
-@mixin bq-in {
-	@media only screen and (max-width: $bq-in ) {
+@mixin bp-in {
+	@media only screen and (max-width: $bp-in ) {
 	  @content;
 	}
 }
 
 
-@mixin bq-s {
-	@media only screen and (max-width: $bq-s) {
+@mixin bp-s {
+	@media only screen and (max-width: $bp-s) {
 		@content;
 	}
 }

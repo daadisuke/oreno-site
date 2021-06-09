@@ -20,7 +20,7 @@
 		letter-spacing: .1em;
 		display: block;
 	}
-	@media screen and (max-width: $bq) {
+	@include bp{
 		font-size: 3rem;
 	}
 }
@@ -47,7 +47,7 @@
 		left: 0;
 		bottom: -5px;
 	}
-	@media screen and (max-width: $bq) {
+	@include bp{
 		font-size: 2.4rem;
 	}
 }
@@ -58,7 +58,7 @@
 	border-left: 7px solid $color-second;
 	padding-left: 1em;
 	margin-bottom: 1em;
-	@media screen and (max-width: $bq) {
+	@include bp{
 		font-size: 2rem;
 	}
 }
@@ -90,24 +90,33 @@
 		background: $color-base-l01;
 		padding: 1em 2em 1em 3em;
 		&:before {
-			content: "\f053";
-			font-family: Fontawesome;
-			transform: translateY(-50%);
+			content: "";
+			width: 0.5em;
+			height: 0.5em;
+			border-bottom: 2px solid $color-base;
+			border-left: 2px solid $color-base;
+			display: inline-block;
+			vertical-align:middle;
 			position: absolute;
 			top: 50%;
 			left: 1.5em;
+			transform: translateY(-50%) rotateZ(45deg);
 		}
 	}
 	&.arrow a{
 		padding: 1em 3em 1em 2em;
 		&:after {
-			content: "\f054";
-			font-family: Fontawesome;
+			content: "";
+			width: 0.5em;
+			height: 0.5em;
+			border-top: 2px solid #FFF;
+			border-right: 2px solid #FFF;
 			display: inline-block;
-			transform: translateY(-50%);
+			vertical-align:middle;
 			position: absolute;
 			top: 50%;
 			right: 1.5em;
+			transform: translateY(-50%) rotateZ(45deg);
 		}
 	}
 	&.search {

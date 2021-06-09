@@ -14,7 +14,7 @@ footer
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        @include bq {
+        @include bp {
             margin-bottom: 2em;
         }
         li {
@@ -24,7 +24,7 @@ footer
                 display: block;
                 text-decoration: underline;
             }
-            @include bq {
+            @include bp {
                 margin-bottom: 0.5em;
             }
         }
@@ -35,7 +35,7 @@ footer
         display: flex;
         justify-content: space-between;
         text-align: center;
-        @include bq {
+        @include bp {
             margin-bottom: 1.5em;
             display: block;
 		}
@@ -43,7 +43,7 @@ footer
             .copy-sns {
                 margin-bottom: 2em;
                 letter-spacing: 0.1em;
-                @include bq {
+                @include bp {
                     margin-bottom: 1em;
                 }
             }
@@ -67,7 +67,7 @@ footer
         }
         .info-r {
             text-align: left;
-            @include bq {
+            @include bp {
                 margin-top: 2.5em;
             }
             .name-f {
@@ -89,7 +89,7 @@ footer
         padding: 1em 0;
         text-align: center;
         letter-spacing: 0.1em;
-        @include bq {
+        @include bp {
 
 		}
     }
@@ -126,7 +126,7 @@ footer
             transform: rotateZ(45deg);
             vertical-align:middle;
         }
-        @include bq {
+        @include bp {
            font-size: 1.3rem;
         }
     }

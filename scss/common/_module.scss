@@ -145,7 +145,7 @@
 // 	font-family: $font-primary;
 // 	span {
 // 		font-size: 4rem;
-// 		@media screen and (max-width: $bq) {
+// 		@include bp{
 // 			font-size: 3rem;
 // 		}
 // 	}
@@ -238,7 +238,7 @@
 	background:$color-base;
 }
 
-@media screen and (max-width: $bq) {
+@include bp{
 
 	.conditions dd a,
 	.conditions dd span{
@@ -317,7 +317,7 @@
 	}
 	&.list-movie {
 		margin: 3em 0 4em;
-		@media screen and (max-width: $bq) {
+		@include bp{
 			margin: 1em 0 2em;
 		}
 	}
@@ -388,7 +388,7 @@
 			margin-right: 0;
 		}
 	}
-	@media screen and (max-width: $bq) {
+	@include bp{
 		&.sp-col01 > div {
 			width: 100% !important;
 			margin-right: 0;
@@ -466,7 +466,7 @@
 			margin-right: 0;
 		}
 	}
-	@media screen and (max-width: $bq) {
+	@include bp{
 		&.sp-col01 > li {
 			width: 100% !important;
 			margin-right: 0;
@@ -859,18 +859,18 @@ list-table
 	display: flex;
 	justify-content: space-between;
 	overflow: hidden;
-	@include bq {
+	@include bp {
 		display: block;
 	}
 	> .side-menu {
 		width: 23%;
-		@include bq {
+		@include bp {
 			width: 100%;
 		}
 	}
 	> .main-contents {
 		width: 70%;
-		@include bq {
+		@include bp {
 			width: 100%;
 		}
 	}
