@@ -14,37 +14,14 @@ $(function ($) {
 
 });
 
-$(function ($) {
-	//アコーディオンjs
-	$('.col-qa p').hide();
-	$('.col-qa h4 .btn-q').click(function (e) {
-		$(this).parent().next("p").slideToggle();
-		$(this).toggleClass("active");
-	});
-});
+// $(window).on('load resize', function () {
 
-//backnumber
-$(window).on('load', function () {
-
-	if ($(window).innerWidth() < 1050) {
-
-		$(".back-number h3").click(function(){
-			$(this).next(".list-year-wrapper").slideToggle();
-			$(this).toggleClass("open");
-		});
-
-	}
-	
-});
-
-$(window).on('load resize', function () {
-
-    if ($(window).width() > 1100) { 
-        $(".wrap-sp-navi").removeAttr("style");
-    } else if ($(window).width() < 1100) { 
-    } 
+//     if ($(window).width() > 1100) { 
+//         $(".wrap-sp-navi").removeAttr("style");
+//     } else if ($(window).width() < 1100) { 
+//     } 
     
-});
+// });
 
 $(function ($) {
 
