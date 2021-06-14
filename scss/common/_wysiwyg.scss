@@ -53,7 +53,7 @@ post-content　ウィジウィグ
 /* post-sttl-large */
 .post-sttl-large {
 	color: $color-base;
-	border-bottom: 5px solid $color-base-l01;
+	border-bottom: 5px solid $color-light;
 	font-size: 3rem;
 	font-weight: 600;
 	line-height: 1.4;
@@ -217,7 +217,7 @@ post-content　ウィジウィグ
 /* h1 */
 .wysiwyg h1  {
 	color: $color-base;
-	border-bottom: 5px solid $color-base-l01;
+	border-bottom: 5px solid $color-light;
 	font-size: 3.4rem;
 	font-weight: 600;
 	line-height: 1.4;
@@ -790,7 +790,7 @@ post-content　ウィジウィグ
 .post-content .btn-back {
 	a {
 		color: $color-base;
-		background: $color-base-l01;
+		background: $color-light;
 		display: inline-block;
 		font-size: 1.8rem;
 		text-align: left;

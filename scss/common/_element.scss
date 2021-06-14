@@ -29,7 +29,7 @@
 /* ttl-large */
 .ttl-large {
 	color: $color-base;
-	border-bottom: 5px solid $color-base-l01;
+	border-bottom: 5px solid $color-light;
 	font-size: 3rem;
 	font-weight: 600;
 	line-height: 1.4;
@@ -86,7 +86,7 @@
 	}
 	&.back a {
 		color: $color-base;
-		background: $color-base-l01;
+		background: $color-light;
 		padding: 1em 2em 1em 3em;
 		&:before {
 			content: "";
