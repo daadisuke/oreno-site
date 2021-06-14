@@ -10,7 +10,7 @@ html {
 }
 body {
 	color: $color-base;
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 	font-weight: 500;
 	width: 100%;
     font-family: $font-primary;
@@ -92,7 +92,7 @@ em,strong {
 @include bp {
 
 	body {
-		font-size: 1.5rem;
+		font-size: 1.6rem;
 	}
 
 	.inner-m .inner-s {

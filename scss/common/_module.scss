@@ -64,19 +64,30 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	@include bp {
+		display: block;
+	}
 }
 .conditions .btn-delete{
 	margin-left: auto;
-}
-.conditions .btn-delete a {
-	color: #FFF;
-	font-size: 1.5rem;
-	margin: 0;
-	padding: 0.5em 2em;
-	background: $color-base;
-	display: block;
-	border-radius: 2em;
-	white-space: nowrap;
+	@include bp {
+		text-align: center;
+	}
+	a {
+		color: #FFF;
+		font-size: 1.5rem;
+		margin: 0;
+		padding: 0.5em 2em;
+		background: $color-base;
+		display: block;
+		border-radius: 2em;
+		white-space: nowrap;
+		@include bp {
+			font-size: 1.4rem;
+			margin-top: 1em;
+			display: inline-block;
+		}
+	}
 }
 
 .conditions .paging-result{
@@ -88,33 +99,45 @@
 	display: flex;
 	align-items: center;
 	letter-spacing: 1px;
+	@include bp {
+		width: 100%;
+		display: block;
+	}
 }
-// .conditions dt:before {
-// 	content: "";
-// 	width: 1em;
-// 	height: 3px;
-// 	margin-right: 0.3em;
-// 	display: inline-block;
-// 	vertical-align: middle;
-// 	background: #3CA4E2;
-// }
+
 .conditions dt{
 	margin-right: 1em;
 	white-space: nowrap;
+	@include bp {
+		margin: 0 0 1em 0;
+		text-align: center;
+	}
+}
+
+.conditions dd{
+	@include bp {
+		// text-align: center;
+	}
 }
 
 .conditions dd a,
 .conditions dd span{
 	font-size: 1.5rem;
 	padding: 0.1em 1em;
-	margin: 0 0.5em 0.5em;
+	margin: 0.2em 0.5em;
 	display:inline-block;
 	border:1px solid #CCC;
 	background:#EAECF1;
 	border-radius:0.5em;
 	vertical-align:middle;
 	cursor:pointer;
+	@include bp {
+		font-size: 1.4rem;
+		padding: 0.1em 0.5em;
+		margin: 0 0.2em 0.2em;
+	}
 }
+
 .conditions dd a:before{
 	content:'\f00d';
 	font-family:'Font Awesome 5 Pro';
@@ -238,14 +261,6 @@
 	background:$color-base;
 }
 
-@include bp{
-
-	.conditions dd a,
-	.conditions dd span{
-		font-size: 1.4rem;
-	}
-
-}
 
 /* --------------------------------------------------
 
@@ -272,6 +287,10 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			@include bp {
+				font-size: 1.3rem;
+				padding: 0.5em;
+			}
 			&:hover {
 				opacity: 0.7;
 			}
@@ -288,11 +307,34 @@
 .btn-block {
 	margin: 2em 0;
 	display: flex;
+	@include bp {
+		margin: 1em 0;
+	}
 	p {
 		margin: 0 1em;
+		@include bp {
+			margin: 0.5em 1em;
+		}
 	}
 	&.center {
 		justify-content: center;
+		@include bp {
+			display: flex;
+			flex-wrap: wrap;
+			a {
+				display: block;
+			}
+		}
+	}
+	&.to-back {
+		@include bp {
+			p {
+				order: 1;
+				&.back {
+					order: 2;
+				}
+			}
+		}
 	}
 }
 
