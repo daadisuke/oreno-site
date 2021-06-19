@@ -7,9 +7,6 @@ $(function ($) {
         $(".wrap-sp-navi").toggle();
         $(".wrap-sp-navi").toggleClass("active-sp");
         $("#header").toggleClass("active-h");
-        // $(".wrap-sp-navi").append('<h2 class="logo-sp"><img src="/img/common/logo_sp.svg" width="300" alt=""></h2>');
-        // $(".wrap-sp-navi").prepend('<h2 class="logo-sp"><img src="/img/common/logo_sp.svg" width="300" alt=""></h2>');
-        // $(".r-function-block").insertAfter("#navi");
     });
 
 });
@@ -22,54 +19,6 @@ $(function ($) {
 //     } 
     
 // });
-
-$(function ($) {
-
-    //idとaria-controls,accordion-panelに番号を割り振る
-    $('.sp-p').attr({
-        id: 'menu-tab1',
-        'aria-controls': 'menu-panel1'
-    });
-    $('.sp-c').attr({
-        'aria-labelledby': 'menu-tab1',
-        id: 'menu-panel1'
-    });
-    // $('.sp-c').addClass("active-menu");
-
-    //それぞれにrole属性、aria-selected、aria-expanded、aria-hiddenを付ける
-    $('.sp-p').attr({
-        'aria-selected': 'true',
-        'aria-expanded': 'true',
-    });
-    $('.sp-c').attr('aria-hidden', 'false');
-
-    //クリックした際のrole属性、aria-selected、aria-expanded、aria-hiddenを変更する
-    $(".sp-p").click(function (e) {
-        $('.sp-c').toggleClass("active-menu");
-        if ($(".sp-c").hasClass('active-menu')) {
-            $(this).attr({
-                'aria-selected': 'true',
-                'aria-expanded': 'true'
-            });
-            $(".sp-c").attr({
-                'aria-hidden': 'false'
-            });
-        } else {
-            $(this).attr({
-                'aria-selected': 'false',
-                'aria-expanded': 'false'
-            });
-            $(".sp-c").attr({
-                'aria-hidden': 'true'
-            });
-        }
-
-        //aタグ無効化
-        e.preventDefault();
-
-    });
-
-});
 
 //page-top
 $(function() {

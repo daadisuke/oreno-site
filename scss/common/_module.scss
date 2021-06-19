@@ -261,6 +261,30 @@
 	background:$color-base;
 }
 
+/* --------------------------------------------------
+
+snsボタン
+
+-------------------------------------------------- */
+
+.list-sns {
+	display: flex;
+	justify-content: center;
+	li {
+		font-size: 1.4rem;
+		margin-right: 2em;
+		&:last-child{
+			margin-right: 0;
+		}
+		a {
+			img {
+				width: 25px;
+				margin-right: 0.5em;
+			}
+		}
+	}
+}
+
 
 /* --------------------------------------------------
 
