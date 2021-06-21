@@ -3,22 +3,22 @@ $(function ($) {
 
     $(".btn-menu a").click(function () {
         $(this).toggleClass("open");
-        // $("body").toggleClass("fixed");
+        $("body").toggleClass("fixed-body");
         $(".wrap-sp-navi").toggle();
         $(".wrap-sp-navi").toggleClass("active-sp");
-        $("#header").toggleClass("active-h");
+        // $("#header").toggleClass("active-h");
     });
 
 });
 
-// $(window).on('load resize', function () {
+$(window).on('load resize', function () {
 
-//     if ($(window).width() > 1100) { 
-//         $(".wrap-sp-navi").removeAttr("style");
-//     } else if ($(window).width() < 1100) { 
-//     } 
+    if ($(window).width() >= 768) { 
+        $(".wrap-sp-navi").removeAttr("style");
+    } else if ($(window).width() < 768) { 
+    } 
     
-// });
+});
 
 //page-top
 $(function() {

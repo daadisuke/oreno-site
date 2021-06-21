@@ -29,14 +29,16 @@ header
 	transition: all 0.3s;
 }
 #header {
+	width: 100%;
 	padding: 1em 1em 2.1em;
 	position: relative;
 	background: #FFF;
-	@include bp {
-		padding: 1em 2% 2.1em;
-	}
+	z-index: 25;
 	@include bp {
 		padding: 1em;
+		&.active-h {
+			position: fixed;
+		}
 	}
     h1 {
         a {
@@ -57,6 +59,9 @@ header
 			}
 			@include bp{
 				width: 70%;
+				img {
+					width: 100px;
+				}
 			}
         }
     }
@@ -100,7 +105,7 @@ header
 		}
 	}
 	#navi {
-		width: 60%;
+		width: 50%;
 		margin: 1em 0 0 auto;
 		position: relative;
 		ul {
@@ -202,14 +207,6 @@ header
 				fieldset {
 					display: flex;
 					border: 1px solid $color-base;
-					a {
-						color: #FFF;
-						padding: 0.5em 1em;
-						display: block;
-						align-items: center;
-						word-break: keep-all;
-						background: $color-base;
-					}
 					legend {
 						display: none;
 					}
@@ -223,6 +220,22 @@ header
 							&::placeholder {
 								color: rgba(255,255,255,0.5) !important;
 							}
+						}
+					}
+					button {
+						color: #FFF;
+						border-radius: 0;
+						border: none;
+						background: $color-base;
+						letter-spacing: 0.1em;
+						@include hover;
+						&:before {
+							color: #FFF;
+							content:'\f002';
+							font-weight: 900;
+							margin-right: 0.5em;
+							display: inline-block;
+							font-family:'Font Awesome 5 Free';
 						}
 					}
 				}				
@@ -240,7 +253,7 @@ header
 			width: 100%;
 			height: 100%;
 			padding: 5% 10% 3%;
-			background: rgba(20,67,77,0.9);
+			background: rgba($color: #000000, $alpha: 0.8);
 			box-sizing: border-box;
 			display: none;
 			position: fixed;
@@ -251,7 +264,7 @@ header
 			box-sizing: border-box;
 			z-index: 20;
 			@include bp{
-				padding: 7% 4% 3%;
+				padding: 4.5em 4%;
 			}
 			.logo-sp {
 				margin-bottom: 1.5em;
@@ -318,7 +331,9 @@ header
 				width: auto;
 				margin-bottom: 5%;
 				@include bp{
-					margin-top: 2em;
+					width: 100%;
+					margin: 0;
+					order: 1;
 				}
 				ul {
 					display: block;
@@ -352,6 +367,18 @@ header
 				}
 			}
 		}
+
+		@include bp {
+			.wrap-sp-navi-in {
+				display: flex;
+				flex-wrap: wrap;
+				.r-function-block {
+					width: 100%;
+					order: 2;
+				}
+			}
+		}
+
 	}
 	&.top-h {
 		padding: 0;
@@ -425,14 +452,13 @@ body.fixed {
 		transform: translateY(-50%);
 	}
 	a {
+		padding: 10px;
 		display: block;
-		/* padding: 10px;
-		background: #0A7ABE;
-		border-radius: 10px; */
+		background: #000;
 		div {
 			position: relative;
-			width: 34px;
-			height: 29px;
+			width: 28px;
+			height: 25px;
 			display: inline-block;
 			vertical-align: middle;
 			span {
@@ -441,14 +467,14 @@ body.fixed {
 				position: absolute;
 				left: 0;
 				width: 100%;
-				height: 3px;
-				background-color: $color-base;
+				height: 2px;
+				background-color: #FFF;
 				border-radius: 15px;
 				&:nth-of-type(1) {
 					top: 0;
 				}
 				&:nth-of-type(2) {
-					top: 13px;
+					top: 11px;
 				}
 				&:nth-of-type(3) {
 					bottom: 0;
@@ -459,8 +485,8 @@ body.fixed {
 					left: 0;
 					content: '';
 					width: 100%;
-					height: 3px;
-					background-color: $color-base;
+					height: 2px;
+					background-color: #FFF;
 					transition: all .4s;
 				}
 			}
