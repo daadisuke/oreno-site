@@ -149,6 +149,10 @@
 }
 /* paging　*/
 .paging{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: space-between;
 	font-size: 1.4rem;
 	margin-bottom: 2.8em;
 	position:relative;
@@ -703,12 +707,15 @@ ul.list-search {
 		border-bottom: 1px solid $color-base-l01;
 		a {
 			padding: 2em 0;
-			text-decoration: underline;
 			display: block;
-			h4 {
-				font-size: 1.8rem;
+			font-size: 1.6rem;
+			.list-search-ttl {
+				font-size: 2rem;
 				font-weight: 700;
-				margin-bottom: 1em;
+				margin-bottom: .8em;
+			}
+			&:hover{
+				text-decoration: underline;
 			}
 		}
 		&:first-child {
