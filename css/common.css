@@ -1053,7 +1053,6 @@ button, fieldset, form, input, label, legend, select, textarea {
   font-weight: inherit;
   margin: 0;
   padding: 0;
-  vertical-align: middle;
 }
 
 fieldset {
@@ -1074,6 +1073,9 @@ textarea {
   border-radius: 0.5em;
   box-sizing: border-box;
 }
+textarea::placeholder {
+  color: #AAA;
+}
 
 button {
   font-size: 1.6rem;
@@ -1081,6 +1083,7 @@ button {
   border-radius: 1em;
   cursor: pointer;
   border: 1px solid #707070;
+  vertical-align: middle;
 }
 
 input[type=checkbox], input[type=radio] {
@@ -1099,16 +1102,41 @@ input[type=text], input[type=number], input[type=tel], input[type=email], input[
   width: 100%;
   vertical-align: middle;
   border: none;
-  padding: 0.2em 0.5em;
+  padding: 0.7em 1em;
   background: none;
   box-sizing: border-box;
-  border-radius: 1em;
+  border-radius: 0.5em;
   outline: none;
+  border: 1px solid #CCC;
+}
+input[type=text]::placeholder, input[type=number]::placeholder, input[type=tel]::placeholder, input[type=email]::placeholder, input[type=password]::placeholder {
+  color: #AAA;
 }
 @media only screen and (max-width: 768px) {
   input[type=text], input[type=number], input[type=tel], input[type=email], input[type=password] {
     padding: 0.4em 0.8em;
   }
+}
+
+select {
+  font-size: 1.6rem;
+  width: 100%;
+  padding: 0.7em 1em;
+  border: none;
+  border: 1px solid #CCC;
+  border-radius: 0.5em;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 768px) {
+  select {
+    padding: 0.4em 0.8em;
+  }
+}
+
+select option[selected],
+select option[active] {
+  color: #FFF;
+  background: #333;
 }
 
 input[type=file] {
@@ -1135,31 +1163,6 @@ select.text-s {
   width: 60%;
 }
 
-.text-m {
-  width: 58%;
-}
-
-.text-l {
-  width: 100%;
-  margin: 10px 0;
-}
-
-select {
-  width: 100%;
-  font-size: 1.6rem;
-  padding: 0.5em 0.8em;
-  border: none;
-  border: 1px solid #707070;
-  border-radius: 1em;
-  box-sizing: border-box;
-}
-
-select option[selected],
-select option[active] {
-  color: #FFF;
-  background: #333;
-}
-
 .term-select span {
   margin: 0 0.5em;
 }
@@ -1182,23 +1185,6 @@ select option[active] {
 
 fieldset legend {
   display: none;
-}
-
-.form-area h6 {
-  font-size: 2.8rem;
-  font-weight: 700;
-  margin-bottom: 1em;
-  border: none;
-}
-@media only screen and (max-width: 768px) {
-  .form-area h6 {
-    font-size: 2rem;
-    text-align: center;
-  }
-}
-
-.form-area table {
-  font-size: 1.7rem;
 }
 
 .form-area table tr th {
@@ -1233,16 +1219,6 @@ fieldset legend {
   }
 }
 
-.form-area tr th strong {
-  color: #707070;
-  font-weight: normal;
-  float: right;
-}
-
-.form-area td span {
-  margin: 0 0.3em;
-}
-
 .form-area td span.ttl-sec {
   margin-left: 1em;
 }
@@ -1257,14 +1233,6 @@ fieldset legend {
 
 .form-area td input {
   border: 1px solid #707070;
-}
-
-.form-area td input:nth-child(2) {
-  margin-top: 1em;
-}
-
-.form-area td button {
-  margin-left: 0.5em;
 }
 
 p.txt-error {
@@ -1298,6 +1266,291 @@ p.txt-error {
     font-size: 2.3rem;
     text-align: center;
   }
+}
+
+@media only screen and (max-width: 768px) {
+  .form-area input.text-s,
+.form-area select.text-s {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .form-area input.text-ss,
+.form-area select.text-ss {
+    width: 60%;
+    box-sizing: border-box;
+  }
+}
+.flow-area .flow-part p:after {
+  width: 0;
+  height: 0;
+  content: "";
+  border-left: 25px solid #AAA;
+  border-top: 39px solid transparent;
+  border-bottom: 39px solid transparent;
+  display: block;
+  margin: auto 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -25px;
+}
+@media only screen and (max-width: 768px) {
+  .flow-area .flow-part p:after {
+    display: none;
+  }
+}
+
+.flow-area .flow-part .active p:after {
+  border-left: 25px solid #333;
+}
+
+.flow-area .flow-part p span {
+  font-size: 1.6rem;
+  display: block;
+}
+
+.flow-area {
+  margin-bottom: 3em;
+}
+@media only screen and (max-width: 768px) {
+  .flow-area {
+    margin-bottom: 1.5em;
+  }
+}
+.flow-area .flow-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flow-area .flow-part > div {
+  width: 30%;
+}
+@media only screen and (max-width: 768px) {
+  .flow-area .flow-part > div {
+    width: auto;
+  }
+}
+.flow-area .flow-part > div p {
+  color: #FFF;
+  margin: 0 1.5em 0 0;
+  padding: 0.8em 1.3em;
+  background-color: #AAA;
+  position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .flow-area .flow-part > div p {
+    margin: 0;
+    text-align: center;
+  }
+}
+.flow-area .flow-part > div.active p {
+  font-weight: bold;
+  color: #FFF;
+  background-color: #333;
+}
+@media only screen and (max-width: 768px) {
+  .flow-area .flow-part {
+    display: block;
+  }
+  .flow-area .flow-part p {
+    width: auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 0.2em 0;
+    position: relative;
+  }
+  .flow-area .flow-part p:after {
+    display: none;
+  }
+  .flow-area .flow-part p span {
+    margin-right: 0.5em;
+    display: inline-block;
+  }
+  .flow-area .flow-part div:after {
+    width: 0;
+    height: 0;
+    content: "";
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 10px solid #AAA;
+    display: block;
+    margin: 3px auto;
+  }
+  .flow-area .flow-part div:last-child:after {
+    display: none;
+  }
+}
+
+fieldset legend {
+  display: none;
+}
+
+.form-area h6 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1em;
+  border: none;
+}
+@media only screen and (max-width: 768px) {
+  .form-area h6 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+.form-area table tr th {
+  width: 30%;
+  padding: 1.5em;
+  text-align: left;
+  background: #F0F0F0;
+  border: 1px solid #AAA;
+}
+@media only screen and (max-width: 768px) {
+  .form-area table tr th {
+    width: 100%;
+    padding: 0.5em;
+    display: block;
+    box-sizing: border-box;
+    border-bottom: none;
+  }
+}
+
+.form-area table tr td {
+  padding: 1.5em;
+  text-align: left;
+  border: 1px solid #AAA;
+}
+.form-area table tr td .txt-upload {
+  margin: 0.3em 0 0 0.3em;
+}
+@media only screen and (max-width: 768px) {
+  .form-area table tr td {
+    width: 100%;
+    padding: 0.5em;
+    display: block;
+    border-bottom: none;
+    box-sizing: border-box;
+  }
+  .form-area table tr td button {
+    font-size: 1.3rem;
+    padding: 0.5em 0.8em;
+  }
+}
+.form-area table tr:last-child {
+  border-bottom: 1px solid #AAA;
+}
+
+.form-area td span {
+  margin: 0 0.3em 0.3em;
+}
+
+.form-area td span.ttl-sec {
+  margin-left: 1em;
+}
+@media only screen and (max-width: 768px) {
+  .form-area td span.ttl-sec {
+    margin-left: 0.3em;
+  }
+  .form-area td span.ttl-sec + select {
+    margin-top: 0.5em;
+  }
+}
+
+.form-area td input {
+  border: 1px solid #CCC;
+}
+
+.form-area td button {
+  margin-left: 0.5em;
+}
+
+p.txt-error {
+  color: #d50000;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.form-area table {
+  width: 100%;
+}
+
+.form-area table td .address-multi p {
+  margin-bottom: 0.6em;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .form-area table td .address-multi p {
+    flex-wrap: wrap;
+  }
+}
+.form-area table td .address-multi p:last-child {
+  margin: 0;
+}
+.form-area table td .address-multi p label {
+  width: 6em;
+  min-width: 6em;
+  margin-bottom: 0.5em;
+  display: inline-block;
+}
+@media only screen and (max-width: 768px) {
+  .form-area table td .address-multi p label {
+    width: 100%;
+    text-align: center;
+  }
+}
+.form-area table td .address-multi p select + input {
+  margin-left: 0.5em;
+}
+@media only screen and (max-width: 768px) {
+  .form-area table td .address-multi p select + input {
+    margin: 0.7em 0 0;
+  }
+}
+
+.form-area strong.txt-required {
+  color: #FFF;
+  padding: 0 0.3em 0.1em;
+  font-weight: normal;
+  font-size: 1.6rem;
+  float: right;
+  background: #d50000;
+  display: inline-block;
+}
+@media only screen and (max-width: 768px) {
+  .form-area strong.txt-required {
+    font-size: 1.5rem;
+  }
+}
+.form-area .agree-part {
+  margin: 3em 0 2em;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .form-area .agree-part {
+    text-align: left;
+  }
+  .form-area .agree-part .txt-error {
+    margin-top: 0.7em;
+  }
+}
+.form-area .agree-part strong.txt-required {
+  float: none;
+}
+.form-area .btn-block {
+  margin: 3em 0 4em;
+}
+@media only screen and (max-width: 768px) {
+  .form-area .btn-block {
+    margin: 2em 0;
+  }
+}
+.form-area .btn-block a {
+  width: 15em;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1881,6 +2134,11 @@ footer
 #footer .info-footer .name-f {
   margin-right: 3em;
 }
+@media only screen and (max-width: 768px) {
+  #footer .info-footer .name-f {
+    margin: 1em;
+  }
+}
 #footer .info-footer .info-tfm {
   text-align: left;
 }
@@ -2009,7 +2267,8 @@ footer
   color: #FFF;
   background-color: #707070;
   display: inline-block;
-  text-align: left;
+  min-width: 360px;
+  text-align: center;
   letter-spacing: 0.1em;
   border-radius: 35px;
   box-sizing: border-box;
@@ -2018,6 +2277,11 @@ footer
 }
 .btn-base a:hover {
   opacity: 0.7;
+}
+@media only screen and (max-width: 768px) {
+  .btn-base a {
+    min-width: 280px;
+  }
 }
 .btn-base.back a {
   color: #333;
@@ -2286,6 +2550,10 @@ footer
 
 /* paging　*/
 .paging {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
   font-size: 1.4rem;
   margin-bottom: 2.8em;
   position: relative;
@@ -2748,7 +3016,7 @@ list-article
   color: #333;
   font-weight: 600;
   width: 100%;
-  padding: 1.5em 2em 1.5em 1em;
+  padding: 1.5em 3em 1.5em 1em;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #CCC;
@@ -2785,6 +3053,11 @@ list-article
   right: 1.5em;
   transform: translateY(-50%) rotateZ(45deg);
 }
+@media only screen and (max-width: 768px) {
+  .list-article li a:after {
+    right: 0;
+  }
+}
 .list-article li:first-child a {
   border-top: 1px solid #CCC;
 }
@@ -2802,13 +3075,16 @@ ul.list-search li {
 }
 ul.list-search li a {
   padding: 2em 0;
-  text-decoration: underline;
   display: block;
+  font-size: 1.6rem;
 }
-ul.list-search li a h4 {
-  font-size: 1.8rem;
+ul.list-search li a .list-search-ttl {
+  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 1em;
+  margin-bottom: 0.8em;
+}
+ul.list-search li a:hover {
+  text-decoration: underline;
 }
 ul.list-search li:first-child {
   border-top: 1px solid #CCC;
@@ -3115,6 +3391,34 @@ list-table
 }
 .wrapper-layout.event > .main-contents {
   width: 55%;
+}
+
+/* --------------------------------------------------
+
+404
+
+-------------------------------------------------- */
+.notfound-wrap {
+  text-align: center;
+}
+.notfound-wrap .notfound-ttl {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .notfound-wrap .notfound-ttl {
+    font-size: 2.6rem;
+  }
+}
+.notfound-wrap .notfound-txt {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .notfound-wrap .notfound-txt {
+    font-size: 1.6rem;
+  }
 }
 
 /* --------------------------------------------------

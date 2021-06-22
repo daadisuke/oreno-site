@@ -41,6 +41,9 @@ footer
         border-top: 1px solid $color-gray;
         .name-f {
             margin-right: 3em;
+            @include bp {
+                margin: 1em;
+            }
         }
         .info-tfm {
             text-align: left;

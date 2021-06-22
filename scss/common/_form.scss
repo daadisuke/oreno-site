@@ -10,7 +10,7 @@ button, fieldset, form, input, label, legend, select, textarea {
 	font-weight: inherit;
 	margin: 0;
 	padding: 0;
-	vertical-align: middle;
+	// vertical-align: middle;
 }
 fieldset {
 	border: none;
@@ -29,6 +29,9 @@ textarea {
 	border: 1px solid #D1D1D1;
 	border-radius: 0.5em;
 	box-sizing: border-box;
+	&::placeholder {
+		color: $color-placeholder;
+	}
 }
 button {
 	font-size: 1.6rem;
@@ -36,6 +39,7 @@ button {
 	border-radius: 1em;
 	cursor: pointer;
 	border: 1px solid #707070;
+	vertical-align: middle;
 }
 input[type="checkbox"], input[type="radio"] {
 	width: 1.2em;
@@ -51,22 +55,37 @@ input[type="text"],input[type="number"], input[type="tel"], input[type="email"],
 	width: 100%;
 	vertical-align: middle;
 	border: none;
-	padding: 0.2em 0.5em;
+	padding: 0.7em 1em;
 	background: none;
 	box-sizing: border-box;
-    border-radius: 1em;
+    border-radius: 0.5em;
 	outline: none;
+	border: 1px solid $color-base-l01;
+	&::placeholder {
+		color: $color-placeholder;
+	}
 	@include bp {
 		padding: 0.4em 0.8em;
 	}
 }
-// input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, input[type="checkbox"]:focus, input[type="password"]:focus,button:focus,select:focus,textarea:focus {
-// 	outline: 2px dotted #b0b0b0;
-// }
+select {
+	font-size: 1.6rem;
+	width: 100%;
+	padding: 0.7em 1em;
+    border: none;
+    border: 1px solid $color-base-l01;
+	border-radius: 0.5em;
+	box-sizing: border-box;
+	@include bp {
+		padding: 0.4em 0.8em;
+	}
+}
 
-// #header .btn-search input::placeholder {
-// 	color: rgba($color: #FFF, $alpha: 0.7);
-// }
+select option[selected],
+select option[active] {
+	color: #FFF;
+	background: $color-base;
+}
 
 input[type="file"] {
 	padding: 5px 0;
@@ -87,28 +106,6 @@ select.text-sss {
 input.text-s,
 select.text-s {
 	width: 60%;
-}
-.text-m {
-	width: 58%;
-}
-.text-l {
-	width: 100%;
-	margin: 10px 0;
-}
-select {
-	width: 100%;
-	font-size: 1.6rem;
-	padding: 0.5em 0.8em;
-    border: none;
-    border: 1px solid #707070;
-	border-radius: 1em;
-	box-sizing: border-box;
-}
-
-select option[selected],
-select option[active] {
-	color: #FFF;
-	background: $color-base;
 }
 
 .term-select span {
@@ -136,20 +133,6 @@ fieldset legend {
 }
 
 // form-area
-.form-area h6 {
-	font-size: 2.8rem;
-	font-weight: 700;
-	margin-bottom: 1em;
-	border: none;
-	@include bp {
-		font-size: 2.0rem;
-		text-align: center;
-	}
-}
-
-.form-area table {
-	font-size: 1.7rem;
-}
 
 .form-area table tr th {
 	width: 15em;
@@ -179,16 +162,6 @@ fieldset legend {
 	}
 }
 
-.form-area tr th strong {
-	color: $color-second;
-	font-weight: normal;
-	float: right;
-}
-
-.form-area td span {
-	margin: 0 0.3em;
-}
-
 .form-area td span.ttl-sec {
 	margin-left: 1em;
 	@include bp {
@@ -201,15 +174,6 @@ fieldset legend {
 
 .form-area td input {
 	border: 1px solid #707070;
-}
-
-.form-area td input:nth-child(2) {
-	margin-top: 1em;
-}
-
-
-.form-area td button {
-	margin-left: 0.5em;
 }
 
 p.txt-error {
@@ -240,6 +204,276 @@ p.txt-error {
 	@include bp {
 		font-size: 2.3rem;
 		text-align: center;
+	}
+}
+
+@include bp {
+	.form-area {
+
+		input.text-s,
+		select.text-s {
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		input.text-ss,
+		select.text-ss {
+			width: 60%;
+			box-sizing: border-box;
+		}
+
+	}
+}
+
+.flow-area .flow-part p:after {
+	width: 0;
+	height: 0;
+	content:"";
+	border-left: 25px solid $color-gray;
+	border-top: 39px solid transparent;
+  border-bottom: 39px solid transparent;
+	display: block;
+	margin: auto 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: -25px;
+	@include bp {
+		display: none;
+	}
+}
+
+.flow-area .flow-part .active p:after {
+	border-left: 25px solid $color-base;
+}
+
+.flow-area .flow-part p span {
+	font-size: 1.6rem;
+	display: block;	
+}
+
+.flow-area {
+	margin-bottom: 3em;
+	@include bp {
+		margin-bottom: 1.5em;
+	}
+	.flow-part {
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		> div {
+			width: 30%;
+			@include bp {
+				width: auto;
+			}
+			p {
+				color: #FFF;
+				margin: 0 1.5em 0 0;
+				padding: 0.8em 1.3em;
+				background-color: $color-gray;
+				position: relative;
+				@include bp {
+					margin: 0;
+					text-align: center;
+				}
+			}
+			&.active {
+				p {
+					font-weight: bold;
+					color: #FFF;
+					background-color: $color-base;
+				}
+			}
+		}
+		@include bp {
+			display:block;
+			p {
+				width: auto;		
+				font-size: 1.5rem;
+				font-weight: bold;
+				line-height: 1.4em;
+				margin: 0;
+				padding: 0.2em 0;
+				position: relative;
+				&:after {
+					display: none;
+				}
+				span {
+					margin-right: 0.5em;
+					display: inline-block;	
+				}
+			}
+			div:after {
+				width: 0;
+				height: 0;
+				content:"";
+				border-left: 15px solid transparent;
+				border-right: 15px solid transparent;
+				border-top: 10px solid $color-gray;
+				display: block;
+				margin: 3px auto;
+			}
+			div:last-child:after {
+				display: none;
+			}
+		}
+	}
+}
+
+fieldset legend {
+	display: none;
+}
+
+// form-area
+.form-area h6 {
+	font-size: 2.8rem;
+	font-weight: 700;
+	margin-bottom: 1em;
+	border: none;
+	@include bp {
+		font-size: 2.0rem;
+		text-align: center;
+	}
+}
+
+.form-area table tr th {
+	width: 30%;
+	padding: 1.5em;
+	text-align: left;
+	background: $color-light;
+	border: 1px solid $color-gray;
+	@include bp {
+		width: 100%;
+		padding: 0.5em;
+		display: block;
+		box-sizing: border-box;
+		border-bottom: none;
+	}
+}
+
+.form-area table tr {
+	td {
+		padding: 1.5em;
+		text-align: left;
+		border: 1px solid $color-gray;
+		.txt-upload {
+			margin: 0.3em 0 0 0.3em;
+		}
+		@include bp {
+			width: 100%;
+			padding: 0.5em;
+			display: block;
+			border-bottom: none;
+			box-sizing: border-box;
+			button {
+				font-size: 1.3rem;
+				padding: 0.5em 0.8em;
+			}
+		}
+	}
+	&:last-child {
+		border-bottom: 1px solid $color-gray;
+	}
+}
+
+.form-area td span {
+	margin: 0 0.3em 0.3em;
+}
+
+.form-area td span.ttl-sec {
+	margin-left: 1em;
+	@include bp {
+		margin-left: 0.3em;
+		+ select {
+			margin-top: 0.5em;
+		}
+	}
+}
+
+.form-area td input {
+	border: 1px solid $color-base-l01;
+}
+
+.form-area td button {
+	margin-left: 0.5em;
+}
+
+p.txt-error {
+	color: $color-red;
+	font-size: 1.6rem;
+	font-weight: bold;
+	margin: 0;
+}
+
+.form-area table {
+	width: 100%;
+}
+
+.form-area table td .address-multi {
+	p {
+		@include bp {
+			flex-wrap: wrap;
+		}
+		margin-bottom: 0.6em;
+		display: flex;
+		align-items: center;
+		&:last-child {
+			margin: 0;
+		}
+		label {
+			width: 6em;
+			min-width: 6em;
+			margin-bottom: 0.5em;
+			display: inline-block;
+			@include bp {
+				width: 100%;
+				text-align: center;
+			}
+		}
+		select + input {
+			margin-left: 0.5em;
+			@include bp {
+				margin: 0.7em 0 0;
+			}
+		}
+	}
+}
+.form-area {
+	
+	strong.txt-required {
+		color: #FFF;
+		padding: 0 0.3em 0.1em;
+		font-weight: normal;
+		font-size: 1.6rem;
+		float: right;
+		background: $color-red;
+		display: inline-block;
+		@include bp {
+			font-size: 1.5rem;
+		}
+	}
+	.agree-part {
+		margin: 3em 0 2em;
+		text-align: center;
+		@include bp {
+			text-align: left;
+			.txt-error {
+				margin-top: 0.7em;
+			}
+		}
+		strong.txt-required {
+			float: none;
+		}
+	}
+	.btn-block {
+		margin: 3em 0 4em;
+		@include bp {
+			margin: 2em 0;
+		}
+		a {
+			width: 15em;
+			text-align: center;
+		}
 	}
 }
 

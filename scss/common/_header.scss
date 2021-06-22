@@ -214,7 +214,7 @@ header
 						border-radius: 0;
 						flex: 1;
 						&::placeholder {
-							color: #AAA;
+							color: $color-placeholder;
 						}
 						@include bp {
 							&::placeholder {
