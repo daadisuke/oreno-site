@@ -1062,3 +1062,28 @@ list-table
 		}
 	}
 }
+
+
+/* --------------------------------------------------
+
+404
+
+-------------------------------------------------- */
+.notfound-wrap{
+	text-align: center;
+	.notfound-ttl{
+		font-size: 4rem;
+		font-weight: bold;
+		margin-bottom: 2rem;
+		@include bp{
+			font-size: 2.6rem;
+		}
+	}
+	.notfound-txt{
+		font-size: 2rem;
+		margin-bottom: 4rem;
+		@include bp{
+			font-size: 1.6rem;
+		}
+	}
+}
