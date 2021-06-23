@@ -2198,7 +2198,7 @@ footer
   line-height: 1.4;
   letter-spacing: 0.2em;
   padding: 0.5em 0;
-  margin-bottom: 1em;
+  margin: 1em 0;
   position: relative;
 }
 .ttl-large::after {
@@ -2222,7 +2222,7 @@ footer
   font-size: 2.4rem;
   border-left: 7px solid #707070;
   padding-left: 1em;
-  margin-bottom: 1em;
+  margin: 1em 0;
 }
 @media only screen and (max-width: 768px) {
   .ttl-small {
