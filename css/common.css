@@ -142,6 +142,7 @@ body {
   background: #FFF;
   letter-spacing: 0.1em;
   box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
 }
 body.fixed-body {
   overflow: hidden;
@@ -1163,6 +1164,19 @@ select.text-s {
   width: 60%;
 }
 
+@media only screen and (max-width: 768px) {
+  input.text-s,
+select.text-s {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  input.text-ss,
+select.text-ss {
+    width: 60%;
+    box-sizing: border-box;
+  }
+}
 .term-select span {
   margin: 0 0.5em;
 }
@@ -1187,128 +1201,6 @@ fieldset legend {
   display: none;
 }
 
-.form-area table tr th {
-  width: 15em;
-  padding: 1.5em;
-  text-align: left;
-}
-@media only screen and (max-width: 768px) {
-  .form-area table tr th {
-    width: 100%;
-    padding: 0.5em;
-    display: block;
-    box-sizing: border-box;
-    border-bottom: none;
-  }
-}
-
-.form-area table tr td {
-  padding: 1.5em;
-  text-align: left;
-}
-@media only screen and (max-width: 768px) {
-  .form-area table tr td {
-    width: 100%;
-    padding: 0.5em;
-    display: block;
-    box-sizing: border-box;
-  }
-  .form-area table tr td button {
-    font-size: 1.3rem;
-    padding: 0.5em 0.8em;
-  }
-}
-
-.form-area td span.ttl-sec {
-  margin-left: 1em;
-}
-@media only screen and (max-width: 768px) {
-  .form-area td span.ttl-sec {
-    margin-left: 0.3em;
-  }
-  .form-area td span.ttl-sec + select {
-    margin-top: 0.5em;
-  }
-}
-
-.form-area td input {
-  border: 1px solid #707070;
-}
-
-p.txt-error {
-  color: #707070;
-  font-weight: bold;
-  margin: 0;
-}
-
-.form-area table {
-  width: 100%;
-}
-
-.form-area table.fee tr th {
-  background: #707070;
-}
-
-.form-area p + h6 {
-  margin-top: 3%;
-}
-
-.form-area table.fee tr td {
-  font-size: 2.8rem;
-  font-weight: bold;
-  background: #FFEBE8;
-}
-.form-area table.fee tr td span {
-  font-size: 1.8rem;
-}
-@media only screen and (max-width: 768px) {
-  .form-area table.fee tr td {
-    font-size: 2.3rem;
-    text-align: center;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .form-area input.text-s,
-.form-area select.text-s {
-    width: 100%;
-    box-sizing: border-box;
-  }
-  .form-area input.text-ss,
-.form-area select.text-ss {
-    width: 60%;
-    box-sizing: border-box;
-  }
-}
-.flow-area .flow-part p:after {
-  width: 0;
-  height: 0;
-  content: "";
-  border-left: 25px solid #AAA;
-  border-top: 39px solid transparent;
-  border-bottom: 39px solid transparent;
-  display: block;
-  margin: auto 0;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: -25px;
-}
-@media only screen and (max-width: 768px) {
-  .flow-area .flow-part p:after {
-    display: none;
-  }
-}
-
-.flow-area .flow-part .active p:after {
-  border-left: 25px solid #333;
-}
-
-.flow-area .flow-part p span {
-  font-size: 1.6rem;
-  display: block;
-}
-
 .flow-area {
   margin-bottom: 3em;
 }
@@ -1322,8 +1214,14 @@ p.txt-error {
   align-items: center;
   justify-content: center;
 }
+@media only screen and (max-width: 768px) {
+  .flow-area .flow-part {
+    display: block;
+  }
+}
 .flow-area .flow-part > div {
   width: 30%;
+  overflow: hidden;
 }
 @media only screen and (max-width: 768px) {
   .flow-area .flow-part > div {
@@ -1339,20 +1237,6 @@ p.txt-error {
 }
 @media only screen and (max-width: 768px) {
   .flow-area .flow-part > div p {
-    margin: 0;
-    text-align: center;
-  }
-}
-.flow-area .flow-part > div.active p {
-  font-weight: bold;
-  color: #FFF;
-  background-color: #333;
-}
-@media only screen and (max-width: 768px) {
-  .flow-area .flow-part {
-    display: block;
-  }
-  .flow-area .flow-part p {
     width: auto;
     font-size: 1.5rem;
     font-weight: bold;
@@ -1361,14 +1245,55 @@ p.txt-error {
     padding: 0.2em 0;
     position: relative;
   }
-  .flow-area .flow-part p:after {
+  .flow-area .flow-part > div p:after {
     display: none;
   }
-  .flow-area .flow-part p span {
+}
+.flow-area .flow-part > div p span {
+  font-size: 1.6rem;
+  display: block;
+}
+@media only screen and (max-width: 768px) {
+  .flow-area .flow-part > div p span span {
     margin-right: 0.5em;
     display: inline-block;
   }
-  .flow-area .flow-part div:after {
+}
+@media only screen and (max-width: 768px) {
+  .flow-area .flow-part > div p {
+    margin: 0;
+    text-align: center;
+  }
+}
+.flow-area .flow-part > div p:after {
+  width: 0;
+  height: 0;
+  content: "";
+  border-left: 1.7em solid #AAA;
+  border-top: 2.7em solid transparent;
+  border-bottom: 2.7em solid transparent;
+  display: block;
+  margin: auto 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -25px;
+}
+@media only screen and (max-width: 768px) {
+  .flow-area .flow-part > div p:after {
+    display: none;
+  }
+}
+.flow-area .flow-part > div.active p {
+  font-weight: bold;
+  color: #FFF;
+  background-color: #333;
+}
+.flow-area .flow-part > div.active p:after {
+  border-left: 1.6em solid #333;
+}
+@media only screen and (max-width: 768px) {
+  .flow-area .flow-part > div:after {
     width: 0;
     height: 0;
     content: "";
@@ -1378,8 +1303,73 @@ p.txt-error {
     display: block;
     margin: 3px auto;
   }
-  .flow-area .flow-part div:last-child:after {
+  .flow-area .flow-part > div:last-child:after {
     display: none;
+  }
+}
+.flow-area .step-bar ul {
+  display: flex;
+  width: 80%;
+  position: relative;
+  margin: 2em auto 2.5em;
+  text-align: center;
+}
+.flow-area .step-bar li {
+  font-size: 2.2rem;
+  font-weight: bold;
+  list-style: none;
+  position: relative;
+  width: 33.333%;
+  letter-spacing: 0.1rem;
+  text-indent: 0.1rem;
+}
+.flow-area .step-bar li:after {
+  background: #A5A9AC;
+  content: "";
+  width: calc(100% - 3.5em);
+  height: 1px;
+  position: absolute;
+  left: calc(-50% + 1.8em);
+  right: auto;
+  top: 1.4em;
+  z-index: -1;
+}
+.flow-area .step-bar li:first-child:after {
+  display: none;
+}
+.flow-area .step-bar li span {
+  background: #A5A9AC;
+  color: #fff;
+  padding: 0.3em 0.7em;
+  display: inline-block;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  font-size: 3rem;
+}
+.flow-area .step-bar .visited:after {
+  background: #1FA6D6;
+}
+.flow-area .step-bar .visited span {
+  background: #333;
+  color: #FFF;
+  z-index: 10;
+}
+.flow-area .step-bar li:nth-child(2).visited span {
+  background-color: #1B7FB3;
+}
+.flow-area .step-bar li:last-child.visited span {
+  background-color: #014192;
+}
+@media only screen and (max-width: 768px) {
+  .flow-area .step-bar ul {
+    width: 100%;
+  }
+  .flow-area .step-bar ul li {
+    font-size: 1.5rem;
+    padding: 0 0.5em;
+  }
+  .flow-area .step-bar ul li span {
+    font-size: 1.8rem;
   }
 }
 
@@ -1387,19 +1377,9 @@ fieldset legend {
   display: none;
 }
 
-.form-area h6 {
-  font-size: 2.8rem;
-  font-weight: 700;
-  margin-bottom: 1em;
-  border: none;
+.form-area table {
+  width: 100%;
 }
-@media only screen and (max-width: 768px) {
-  .form-area h6 {
-    font-size: 2rem;
-    text-align: center;
-  }
-}
-
 .form-area table tr th {
   width: 30%;
   padding: 1.5em;
@@ -1416,7 +1396,6 @@ fieldset legend {
     border-bottom: none;
   }
 }
-
 .form-area table tr td {
   padding: 1.5em;
   text-align: left;
@@ -1424,6 +1403,15 @@ fieldset legend {
 }
 .form-area table tr td .txt-upload {
   margin: 0.3em 0 0 0.3em;
+}
+.form-area table tr td span {
+  margin: 0 0.3em 0.3em;
+}
+.form-area table tr td input {
+  border: 1px solid #CCC;
+}
+.form-area table tr td button {
+  margin-left: 0.5em;
 }
 @media only screen and (max-width: 768px) {
   .form-area table tr td {
@@ -1438,79 +1426,48 @@ fieldset legend {
     padding: 0.5em 0.8em;
   }
 }
-.form-area table tr:last-child {
-  border-bottom: 1px solid #AAA;
-}
-
-.form-area td span {
-  margin: 0 0.3em 0.3em;
-}
-
-.form-area td span.ttl-sec {
-  margin-left: 1em;
-}
-@media only screen and (max-width: 768px) {
-  .form-area td span.ttl-sec {
-    margin-left: 0.3em;
-  }
-  .form-area td span.ttl-sec + select {
-    margin-top: 0.5em;
-  }
-}
-
-.form-area td input {
-  border: 1px solid #CCC;
-}
-
-.form-area td button {
-  margin-left: 0.5em;
-}
-
-p.txt-error {
-  color: #d50000;
-  font-size: 1.6rem;
-  font-weight: bold;
-  margin: 0;
-}
-
-.form-area table {
-  width: 100%;
-}
-
-.form-area table td .address-multi p {
+.form-area table tr td .address-multi p {
   margin-bottom: 0.6em;
   display: flex;
   align-items: center;
 }
 @media only screen and (max-width: 768px) {
-  .form-area table td .address-multi p {
+  .form-area table tr td .address-multi p {
     flex-wrap: wrap;
   }
 }
-.form-area table td .address-multi p:last-child {
+.form-area table tr td .address-multi p:last-child {
   margin: 0;
 }
-.form-area table td .address-multi p label {
+.form-area table tr td .address-multi p label {
   width: 6em;
   min-width: 6em;
   margin-bottom: 0.5em;
   display: inline-block;
 }
 @media only screen and (max-width: 768px) {
-  .form-area table td .address-multi p label {
+  .form-area table tr td .address-multi p label {
     width: 100%;
     text-align: center;
   }
 }
-.form-area table td .address-multi p select + input {
+.form-area table tr td .address-multi p select + input {
   margin-left: 0.5em;
 }
 @media only screen and (max-width: 768px) {
-  .form-area table td .address-multi p select + input {
+  .form-area table tr td .address-multi p select + input {
     margin: 0.7em 0 0;
   }
 }
-
+.form-area table tr:last-child {
+  border-bottom: 1px solid #AAA;
+}
+.form-area p.txt-error {
+  color: #d50000;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 0;
+}
 .form-area strong.txt-required {
   color: #FFF;
   padding: 0 0.3em 0.1em;
@@ -1553,18 +1510,6 @@ p.txt-error {
   text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
-  .form-area input.text-s,
-.form-area select.text-s {
-    width: 100%;
-    box-sizing: border-box;
-  }
-  .form-area input.text-ss,
-.form-area select.text-ss {
-    width: 60%;
-    box-sizing: border-box;
-  }
-}
 /* --------------------------------------------------
 
 navi

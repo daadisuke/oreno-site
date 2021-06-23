@@ -19,6 +19,7 @@ body {
 	background: #FFF;
 	letter-spacing: 0.1em;
 	box-sizing: border-box;
+	-webkit-text-size-adjust: 100%;
 	&.fixed-body {
 		overflow: hidden;
 		position: fixed;
