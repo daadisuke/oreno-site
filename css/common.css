@@ -2366,6 +2366,15 @@ footer
 
 /* --------------------------------------------------
 
+バッジ
+
+-------------------------------------------------- */
+p.sentence {
+  margin: 1em 0;
+}
+
+/* --------------------------------------------------
+
 ぱんくず
 
 -------------------------------------------------- */
@@ -2952,22 +2961,6 @@ snsボタン
 .list-thumb li a .list-icon p {
   font-size: 1.4rem;
 }
-.list-thumb li a .ph-list.movie {
-  position: relative;
-}
-.list-thumb li a .ph-list.movie::before {
-  content: "";
-  display: inline-block;
-  width: 4em;
-  height: 4em;
-  background: url(../img/common/ico_movie.svg) no-repeat;
-  background-size: contain;
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 /* --------------------------------------------------
 
@@ -3054,6 +3047,46 @@ ul.list-search li a:hover {
 }
 ul.list-search li:first-child {
   border-top: 1px solid #CCC;
+}
+
+/* --------------------------------------------------
+
+spot-data
+
+-------------------------------------------------- */
+.spot-data dl {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #CCC;
+}
+@media only screen and (max-width: 768px) {
+  .spot-data dl {
+    display: block;
+  }
+}
+.spot-data dl:first-child {
+  border-top: 1px solid #CCC;
+}
+.spot-data dl dt {
+  width: 10em;
+  padding: 1em;
+  min-width: 10em;
+  background: #F0F0F0;
+}
+@media only screen and (max-width: 768px) {
+  .spot-data dl dt {
+    width: 100%;
+    text-align: center;
+  }
+}
+.spot-data dl dd {
+  padding: 1em;
+  flex: 1;
+}
+@media only screen and (max-width: 768px) {
+  .spot-data dl dd {
+    width: 100%;
+  }
 }
 
 /* --------------------------------------------------

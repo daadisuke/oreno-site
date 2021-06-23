@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+@import '../common/variable.scss';
+
+.event-info-wrap {
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: space-between;
+    .ph-event-block {
+        width: 48%;
+        @include bp {
+            width: 100%;
+            margin-bottom: 2em;
+        }
+    }
+    .spot-data {
+        width: 48%;
+        @include bp {
+            width: 100%;
+        }
+    }
+    @include bp {
+        display: block;
+    }
+}
+
+/* access-area */
+.access-area {
+	position: relative;
+	width: 100%;
+	padding-top: 56%;
+	margin: 0 0 5%;
+	@include bp{
+		padding-top: 60%;
+	}
+}
+
+.access-area iframe {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100% !important;
+	height: 100% !important;
+}

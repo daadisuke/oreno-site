@@ -149,14 +149,8 @@
 }
 /* paging　*/
 .paging{
-	// display: flex;
-	// flex-wrap: wrap;
-	// align-items: baseline;
-	// justify-content: space-between;
 	font-size: 1.4rem;
 	margin-bottom: 2.8em;
-	// position:relative;
-	// overflow: hidden;
 	.pagingIn {
 		text-align: right;
 		span {
@@ -164,19 +158,6 @@
 		}
 	}
 }
-
-// .paging .search-word {
-// 	margin: 2em 0 1.5em;
-// 	font-weight: 700;
-// 	text-align: left;
-// 	font-family: $font-primary;
-// 	span {
-// 		font-size: 4rem;
-// 		@include bp{
-// 			font-size: 3rem;
-// 		}
-// 	}
-// }
 
 .paging .count {
 	margin: 0 0 2em;
@@ -618,21 +599,6 @@ snsボタン
 				font-size: 1.4rem;
 			}
 		}
-		.ph-list.movie {
-			position: relative;
-			&::before{
-				content: "";
-				display: inline-block;
-				width: 4em;
-				height: 4em;
-				background: url(../img/common/ico_movie.svg) no-repeat;
-				background-size: contain;
-				position: absolute;
-				z-index: 1;
-				top: 50%;
-				left: 50%;				transform: translate(-50%, -50%);
-			}
-		}
 	}
 }
 
@@ -727,6 +693,42 @@ ul.list-search {
 	}
 }
 
+/* --------------------------------------------------
+
+spot-data
+
+-------------------------------------------------- */
+
+.spot-data {
+	dl {
+		width: 100%;
+		display: flex;
+		border-bottom: 1px solid $color-base-l01;
+		@include bp {
+			display: block;
+		}
+		&:first-child {
+			border-top: 1px solid $color-base-l01;
+		}
+		dt {
+			width: 10em;
+			padding: 1em;
+			min-width: 10em;
+			background: $color-light;
+			@include bp {
+				width: 100%;
+				text-align: center;
+			}
+		}
+		dd {
+			padding: 1em;
+			flex: 1;
+			@include bp {
+				width: 100%;
+			}
+		}
+	}
+}
 
 /* --------------------------------------------------
 

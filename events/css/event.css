@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* CSS Document */
+/* --------------------------------------------------
+
+初期設定
+
+-------------------------------------------------- */
+/* --------------------------------------------------
+
+hover
+
+-------------------------------------------------- */
+/* --------------------------------------------------
+
+breakpoint
+
+-------------------------------------------------- */
+.event-info-wrap {
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+.event-info-wrap .ph-event-block {
+  width: 48%;
+}
+@media only screen and (max-width: 768px) {
+  .event-info-wrap .ph-event-block {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}
+.event-info-wrap .spot-data {
+  width: 48%;
+}
+@media only screen and (max-width: 768px) {
+  .event-info-wrap .spot-data {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .event-info-wrap {
+    display: block;
+  }
+}
+
+/* access-area */
+.access-area {
+  position: relative;
+  width: 100%;
+  padding-top: 56%;
+  margin: 0 0 5%;
+}
+@media only screen and (max-width: 768px) {
+  .access-area {
+    padding-top: 60%;
+  }
+}
+
+.access-area iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+/*# sourceMappingURL=event.css.map */
