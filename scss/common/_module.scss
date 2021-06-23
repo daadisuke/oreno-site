@@ -149,14 +149,14 @@
 }
 /* paging　*/
 .paging{
-	display: flex;
-	flex-wrap: wrap;
-	align-items: baseline;
-	justify-content: space-between;
+	// display: flex;
+	// flex-wrap: wrap;
+	// align-items: baseline;
+	// justify-content: space-between;
 	font-size: 1.4rem;
 	margin-bottom: 2.8em;
-	position:relative;
-	overflow: hidden;
+	// position:relative;
+	// overflow: hidden;
 	.pagingIn {
 		text-align: right;
 		span {
