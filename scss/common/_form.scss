@@ -292,7 +292,7 @@ fieldset legend {
 	}
 
 	.step-bar .visited:after {
-		background: #1FA6D6;
+		background: $color-base;
 	}
 
 	.step-bar .visited span {
@@ -302,10 +302,10 @@ fieldset legend {
 	}
 
 	.step-bar li:nth-child(2).visited span {
-		background-color: #1B7FB3;
+		background: $color-base;
 	}
 	.step-bar li:last-child.visited span {
-		background-color: #014192;
+		background: $color-base;
 	}
 
 	@include bp {
@@ -447,6 +447,29 @@ fieldset legend {
 		a {
 			width: 15em;
 			text-align: center;
+		}
+	}
+
+	.complete-part {
+		margin: 5em 0 6em;
+		text-align: center;
+		@include bp {
+			margin: 2em 0 3em;
+		}
+		p {
+			line-height: 2em;
+			@include bp {
+				text-align: left;
+			}
+			&.txt-complete {
+				font-size: 2.5rem;
+				font-weight: bold;
+				margin-bottom: 1em;
+				@include bp {
+					font-size: 2rem;
+					text-align: center;
+				}
+			}
 		}
 	}
 
