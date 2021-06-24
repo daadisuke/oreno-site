@@ -798,6 +798,21 @@ Q&A
 
 /* --------------------------------------------------
 
+バナーエリア
+
+-------------------------------------------------- */
+
+.list-bnr {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	li {
+		margin: 0 2%;
+	}
+}
+
+/* --------------------------------------------------
+
 スライダー
 
 -------------------------------------------------- */
@@ -805,6 +820,26 @@ Q&A
 	width: 100%;
 	overflow: hidden;
 	position: relative;
+	.swiper-container {
+		padding-bottom: 45px;
+		.stopbtn {
+			left: 1em;
+		}
+		.swiper-slide {
+			img {
+				width: 100%;
+			}
+		}
+	}
+	.swiper-button-next, .swiper-button-prev {
+		top: 45%;
+		@include bp {
+			top: 42%;
+		}
+	}
+	.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+		left: 7em;
+	}
 }
 
 // slider-thumb

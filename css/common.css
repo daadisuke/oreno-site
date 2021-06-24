@@ -2222,7 +2222,7 @@ footer
   font-size: 2.4rem;
   border-left: 7px solid #707070;
   padding-left: 1em;
-  margin: 1em 0;
+  margin: 1em 0 1.5em;
 }
 @media only screen and (max-width: 768px) {
   .ttl-small {
@@ -2239,7 +2239,6 @@ footer
   color: #FFF;
   background-color: #707070;
   display: inline-block;
-  min-width: 360px;
   text-align: center;
   letter-spacing: 0.1em;
   border-radius: 35px;
@@ -2249,11 +2248,6 @@ footer
 }
 .btn-base a:hover {
   opacity: 0.7;
-}
-@media only screen and (max-width: 768px) {
-  .btn-base a {
-    min-width: 280px;
-  }
 }
 .btn-base.back a {
   color: #333;
@@ -2289,11 +2283,38 @@ footer
   right: 1.5em;
   transform: translateY(-50%) rotateZ(45deg);
 }
+.btn-base.arrow.border a {
+  color: #333;
+  background: #FFF;
+  border: 1px solid #333;
+}
+.btn-base.arrow.border a:after {
+  border-top: 2px solid #333;
+  border-right: 2px solid #333;
+}
 .btn-base.search a:before {
   content: "";
   font-family: Fontawesome;
   display: inline-block;
   padding: 0 0.5em;
+}
+
+.ttl-top {
+  font-size: 5rem;
+  margin: 1em 0;
+  text-align: center;
+}
+.ttl-top span {
+  font-size: 1.8rem;
+  display: block;
+}
+@media only screen and (max-width: 768px) {
+  .ttl-top {
+    font-size: 3rem;
+  }
+  .ttl-top span {
+    font-size: 1.6rem;
+  }
 }
 
 /* --------------------------------------------------
@@ -3160,6 +3181,20 @@ Q&A
 
 /* --------------------------------------------------
 
+バナーエリア
+
+-------------------------------------------------- */
+.list-bnr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list-bnr li {
+  margin: 0 2%;
+}
+
+/* --------------------------------------------------
+
 スライダー
 
 -------------------------------------------------- */
@@ -3167,6 +3202,26 @@ Q&A
   width: 100%;
   overflow: hidden;
   position: relative;
+}
+.slider-block .swiper-container {
+  padding-bottom: 45px;
+}
+.slider-block .swiper-container .stopbtn {
+  left: 1em;
+}
+.slider-block .swiper-container .swiper-slide img {
+  width: 100%;
+}
+.slider-block .swiper-button-next, .slider-block .swiper-button-prev {
+  top: 45%;
+}
+@media only screen and (max-width: 768px) {
+  .slider-block .swiper-button-next, .slider-block .swiper-button-prev {
+    top: 42%;
+  }
+}
+.slider-block .swiper-container-horizontal > .swiper-pagination-bullets, .slider-block .swiper-pagination-custom, .slider-block .swiper-pagination-fraction {
+  left: 7em;
 }
 
 .slider-thumb .gallery-top .swiper-slide {
