@@ -6,7 +6,7 @@
 -------------------------------------------------- */
 
 .breadCrumbs{
-	margin: 1% 1% 3%;
+	margin: 1% 1% 3% 0;
 }
 
 .breadCrumbs li{
@@ -40,7 +40,7 @@
 
 	.breadCrumbs{
 		width: auto;
-		padding: 0.3em 1em 0.7em;
+		padding: 0.3em 1em 0.7em 0;
 		position: relative;
 	}
 
@@ -811,6 +811,106 @@ Q&A
 	}
 }
 
+
+/* --------------------------------------------------
+
+list-sitemap
+
+-------------------------------------------------- */
+
+ul.list-sitemap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    >li {
+        width: 49%;
+		margin-bottom: 0.5em;
+        &:last-child,
+        &:nth-last-child(2) {
+            // border-bottom: 1px solid #A4A4A4;
+        }
+        >a {
+            padding: 1em;
+            position: relative;
+            display: block;
+			background: $color-light;
+            @include bp {
+                padding: 0.5em 1.3em 0.5em 0.4em;
+            }
+            &:after {
+                content: "";
+                width: 0.5em;
+                height: 0.5em;
+                margin: 0 0.5em 0.2em auto;
+                border-top: 2px solid $color-base-d01;
+                border-right: 2px solid $color-base-d01;
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                right: 1em;
+                transform: translateY(-50%) rotateZ(45deg);
+                @include bp {
+                    width: 0.4em;
+                    height: 0.4em;
+					right: 0.2em;
+                }
+            }
+            +.u-layer {
+                padding: 0 0 0.5em 1em;
+                li {
+                    margin: 0.7em 0;
+                    a {
+                        font-size: 1.6rem;
+                        @include bp {
+                            font-size: 1.4rem;
+                        }
+                        &:before {
+                            content: "";
+                            width: 0.5em;
+                            height: 0.5em;
+                            margin: 0 0.8em 0 0;
+                            border-top: 1px solid $color-base-d01;
+                            border-right: 1px solid $color-base-d01;
+                            display: inline-block;
+                            // vertical-align: middle;
+                            transform: rotateZ(45deg);
+                            @include bp {
+                                width: 0.4em;
+                                height: 0.4em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* --------------------------------------------------
+
+404
+
+-------------------------------------------------- */
+.notfound-wrap{
+	text-align: center;
+	.notfound-ttl{
+		font-size: 4rem;
+		font-weight: bold;
+		margin-bottom: 2rem;
+		@include bp{
+			font-size: 2.6rem;
+		}
+	}
+	.notfound-txt{
+		font-size: 2rem;
+		margin-bottom: 4rem;
+		@include bp{
+			font-size: 1.6rem;
+		}
+	}
+}
+
 /* --------------------------------------------------
 
 スライダー
@@ -921,210 +1021,4 @@ Q&A
 // slider-carousel
 .slider-carousel {
 
-}
-
-
-/* --------------------------------------------------
-
-step
-
--------------------------------------------------- */
-
-.list-step {
-	display: flex;
-	justify-content: space-between;
-	dl {
-		dt {
-			color: #FFF;
-			padding: 0.8em 0;
-			background: $color-base;
-			display: block;
-			text-align: center;
-		}
-		dd {
-			margin: 0;
-			padding: 1em;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-wrap: wrap;
-			p {
-				width: 100%;
-				margin: 0;
-				text-align: center;
-			}
-		}
-		border: 1px solid $color-base;
-	}
-}
-
-/* --------------------------------------------------
-
-list-process
-
--------------------------------------------------- */
-
-.list-process {
-	> div {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		.date-p {
-			width: 25%;
-		}
-		.txt-p-part {
-			width: 75%;
-			p {
-				margin: 1em 0;
-				padding: 1em;
-				border: 1px solid $color-base;
-			}
-			&::after {
-				content: "";
-				width: 20px;
-				height: 20px;
-				margin: 0 auto;
-				background: url(../img/common/arrow_under_green.svg) no-repeat center center;
-				background-size: contain;
-				display: block;
-			}
-		}
-		&:last-child {
-			.txt-p-part {
-				&::after {
-					display: none;
-				}
-			}
-		}
-	}
-}
-
-/* --------------------------------------------------
-
-list-table
-
--------------------------------------------------- */
-.wysiwyg {
-	.list-table {
-		table {
-			width: 100%;
-			font-family: $font-primary;
-			th {
-				font-size: 2rem;
-				border-left: none;
-				text-align: left;
-			}
-			td {
-				padding: 1em;
-				border-right: none;
-				dl {
-					margin: 0;
-					line-height: 1.6;
-					dt {
-						font-size: 2rem;
-						font-weight: normal;
-						padding: 0;
-						background: none;
-					}
-					dd {
-						margin: 0;
-					}
-				}
-			}
-		}
-	}
-}
-
-/* --------------------------------------------------
-
-list-table
-
--------------------------------------------------- */
-
-.access-block {
-	> div {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		p {
-			background: #F0F0F0;
-		}
-		div {
-			&.bus:before {
-				content:'\f207';
-			}
-			&.ship:before {
-				content:'\f21a';
-			}
-			&.walk:before {
-				content:'\f554';
-			}
-			&:before {
-				margin: 0 1em 0 0;
-				font-family:'Font Awesome 5 Pro';
-				font-weight: 900;
-				display: inline-block;
-			}
-		}
-	}
-}
-
-/* --------------------------------------------------
-
-レイアウト
-
--------------------------------------------------- */
-
-.wrapper-layout {
-	display: flex;
-	justify-content: space-between;
-	overflow: hidden;
-	@include bp {
-		display: block;
-	}
-	> .side-menu {
-		width: 23%;
-		@include bp {
-			width: 100%;
-		}
-	}
-	> .main-contents {
-		width: 70%;
-		@include bp {
-			width: 100%;
-		}
-	}
-	&.event {
-		> .slider-area {
-			width: 40%;
-		}
-		> .main-contents {
-			width: 55%;
-		}
-	}
-}
-
-
-/* --------------------------------------------------
-
-404
-
--------------------------------------------------- */
-.notfound-wrap{
-	text-align: center;
-	.notfound-ttl{
-		font-size: 4rem;
-		font-weight: bold;
-		margin-bottom: 2rem;
-		@include bp{
-			font-size: 2.6rem;
-		}
-	}
-	.notfound-txt{
-		font-size: 2rem;
-		margin-bottom: 4rem;
-		@include bp{
-			font-size: 1.6rem;
-		}
-	}
 }
