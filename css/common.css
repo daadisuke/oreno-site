@@ -3091,6 +3091,75 @@ spot-data
 
 /* --------------------------------------------------
 
+Q&A
+
+-------------------------------------------------- */
+.list-qa .col-qa {
+  border-bottom: 1px solid #FFF;
+}
+.list-qa .col-qa > h4 {
+  font-weight: bold;
+  padding: 1em 2em 1em 1em;
+  background: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  background: #F0F0F0;
+}
+.list-qa .col-qa > h4 span {
+  width: 7em;
+  min-width: 7em;
+  margin-right: 0.5em;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .list-qa .col-qa > h4 span {
+    width: 4em;
+    min-width: 4em;
+  }
+}
+.list-qa .col-qa > h4:after {
+  content: "";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+}
+.list-qa .col-qa > h4.active:after {
+  content: "";
+}
+.list-qa .col-qa > div {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+}
+.list-qa .col-qa > div span {
+  width: 7em;
+  min-width: 7em;
+  margin-right: 0.5em;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .list-qa .col-qa > div span {
+    width: 4em;
+    min-width: 4em;
+  }
+}
+.list-qa .col-qa > div > div {
+  width: calc(100% - 7.5em);
+}
+@media only screen and (max-width: 768px) {
+  .list-qa .col-qa > div > div {
+    width: calc(100% - 4.5em);
+  }
+}
+
+/* --------------------------------------------------
+
 スライダー
 
 -------------------------------------------------- */
@@ -3164,66 +3233,6 @@ spot-data
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-}
-
-/* --------------------------------------------------
-
-Q&A
-
--------------------------------------------------- */
-.list-qa .col-qa {
-  border: 1px solid #333;
-}
-.list-qa .col-qa h4 {
-  color: #FFF;
-  font-size: 2rem;
-  margin: 0;
-  padding: 1em;
-  background: #333;
-  position: relative;
-}
-.list-qa .col-qa h4:before {
-  display: none;
-}
-.list-qa .col-qa h4 .btn-q {
-  width: 2em;
-  height: 2em;
-  display: block;
-  background: #FFF;
-  position: absolute;
-  top: 50%;
-  right: 1em;
-  transform: translateY(-50%);
-  cursor: pointer;
-}
-.list-qa .col-qa h4 .btn-q::before {
-  content: "";
-  width: 1em;
-  height: 2px;
-  background: #333;
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.list-qa .col-qa h4 .btn-q.active::after {
-  content: "";
-  width: 2px;
-  height: 1em;
-  background: #333;
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.list-qa .col-qa h4 .btn-q::after {
-  display: none;
-}
-.list-qa .col-qa p {
-  padding: 2em 1.5em;
-  margin: 0;
 }
 
 /* --------------------------------------------------

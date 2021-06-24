@@ -732,6 +732,72 @@ spot-data
 
 /* --------------------------------------------------
 
+Q&A
+
+-------------------------------------------------- */
+
+.list-qa {
+  .col-qa {
+	  border-bottom: 1px solid #FFF;
+	  > h4 {
+		font-weight: bold;
+		padding: 1em 2em 1em 1em;
+		background: none;
+		display: flex;
+		align-items: center;
+		position: relative;
+		cursor: pointer;
+		background: $color-light;
+		span {
+			width: 7em;
+			min-width: 7em;
+			margin-right: 0.5em;
+			text-align: center;
+			@include bp {
+				width: 4em;
+				min-width: 4em;
+			}
+		}
+		&:after {
+			content: "\f107";
+			font-family: 'Font Awesome 5 Pro';
+			font-weight: 900;
+			display: block;
+			position: absolute;
+			top: 50%;
+			right: 2%;
+			transform: translateY(-50%);
+		}
+		&.active:after {
+			content: "\f106";
+		}
+	  }
+	  > div {	
+		padding: 1em;
+		display: flex;
+		align-items: center;
+		span {
+			width: 7em;
+			min-width: 7em;
+			margin-right: 0.5em;
+			text-align: center;
+			@include bp {
+				width: 4em;
+				min-width: 4em;
+			}
+		}
+		> div {
+			width: calc(100% - 7.5em);
+			@include bp {
+				width: calc(100% - 4.5em);
+			}
+		}
+	  }
+  }
+}
+
+/* --------------------------------------------------
+
 スライダー
 
 -------------------------------------------------- */
@@ -822,68 +888,6 @@ spot-data
 
 }
 
-/* --------------------------------------------------
-
-Q&A
-
--------------------------------------------------- */
-
-.list-qa {
-	.col-qa {
-		border: 1px solid $color-base;
-		h4 {
-			color: #FFF;
-			font-size: 2rem;
-			margin: 0;
-			padding: 1em;
-			background: $color-base;
-			position: relative;
-			&:before {
-				display: none;
-			}
-			.btn-q {
-				width: 2em;
-				height: 2em;
-				display: block;
-				background: #FFF;
-				position: absolute;
-				top: 50%;
-				right: 1em;
-				transform: translateY(-50%);
-				cursor: pointer;
-				&::before {
-					content: "";
-					width: 1em;
-					height: 2px;
-					background: $color-base;
-					display: block;
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					transform: translate(-50%,-50%);
-				}
-				&.active::after {
-					content: "";
-					width: 2px;
-					height: 1em;
-					background: $color-base;
-					display: block;
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					transform: translate(-50%,-50%);
-				}
-				&::after {
-					display: none;
-				}
-			}
-		}
-		p {
-			padding: 2em 1.5em;
-			margin: 0;
-		}
-	}
-}
 
 /* --------------------------------------------------
 

@@ -20,6 +20,16 @@ $(window).on('load resize', function () {
     
 });
 
+// よくある質問
+$(function() {
+	//アコーディオンjs
+	$('.list-qa > .col-qa > div').hide();
+	$('.list-qa > .col-qa > h4').click(function (e) {
+		$(this).next("div").slideToggle();
+		$(this).toggleClass("active");
+	});
+});
+
 //page-top
 $(function() {
     var topBtn = $('.page-top');
