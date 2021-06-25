@@ -27,6 +27,7 @@ textarea {
 	font-size: 1.6rem;
 	padding: 0.5em 0.8em;
 	border: 1px solid #D1D1D1;
+	outline: none;
 	border-radius: 0.5em;
 	box-sizing: border-box;
 	&::placeholder {
@@ -313,8 +314,8 @@ fieldset legend {
 		width: 100%;
 		}
 		.step-bar ul li {
-			font-size: 1.5rem;
-			padding: 0 0.5em;
+			font-size: 1.4rem;
+			padding: 0 0.2em;
 		}
 		.step-bar ul li span {
 			font-size: 1.8rem;
@@ -423,7 +424,7 @@ fieldset legend {
 		background: $color-red;
 		display: inline-block;
 		@include bp {
-			font-size: 1.5rem;
+			font-size: 1.4rem;
 		}
 	}
 	.agree-part {
@@ -432,6 +433,7 @@ fieldset legend {
 		@include bp {
 			text-align: left;
 			.txt-error {
+				font-size: 1.5rem;
 				margin-top: 0.7em;
 			}
 		}

@@ -189,10 +189,6 @@ br.sp-br {
   display: none;
 }
 
-.pct p {
-  position: absolute;
-}
-
 svg {
   width: 100%;
   height: auto;
@@ -206,25 +202,14 @@ em, strong {
   body {
     min-width: 0;
   }
-}
-@media only screen and (max-width: 1200px) {
+
   .inner {
-    width: 92%;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  .inner-m {
     width: 92%;
   }
 }
 @media only screen and (max-width: 768px) {
   body {
     font-size: 1.6rem;
-  }
-
-  .inner-m .inner-s {
-    width: auto;
-    margin: 0;
   }
 
   br.pc-br {
@@ -287,7 +272,7 @@ post-content　ウィジウィグ
 
 /* post-date */
 .post-date {
-  margin: 0 0 2em auto;
+  margin: 1em 0 2em auto;
   display: block;
   text-align: right;
 }
@@ -373,7 +358,7 @@ post-content　ウィジウィグ
   vertical-align: top;
 }
 
-@media screen and (max-width: 420px) {
+@media only screen and (max-width: 420px) {
   .post-pht div {
     max-height: 300px;
   }
@@ -670,7 +655,6 @@ post-content　ウィジウィグ
 
 /* ブロック引用文 <blockquote> */
 .wysiwyg blockquote {
-  position: relative;
   padding: 1em 2em;
   box-sizing: border-box;
   font-style: italic;
@@ -786,7 +770,7 @@ post-content　ウィジウィグ
   text-align: left;
 }
 
-@media screen and (max-width: 414px) {
+@media only screen and (max-width: 420px) {
   .wysiwyg .table-scroll table {
     min-width: 100%;
   }
@@ -827,7 +811,6 @@ post-content　ウィジウィグ
 
 /* アドレス */
 .wysiwyg address {
-  position: relative;
   padding: 1em 2em;
   box-sizing: border-box;
   font-style: italic;
@@ -1071,6 +1054,7 @@ textarea {
   font-size: 1.6rem;
   padding: 0.5em 0.8em;
   border: 1px solid #D1D1D1;
+  outline: none;
   border-radius: 0.5em;
   box-sizing: border-box;
 }
@@ -1365,8 +1349,8 @@ fieldset legend {
     width: 100%;
   }
   .flow-area .step-bar ul li {
-    font-size: 1.5rem;
-    padding: 0 0.5em;
+    font-size: 1.4rem;
+    padding: 0 0.2em;
   }
   .flow-area .step-bar ul li span {
     font-size: 1.8rem;
@@ -1479,7 +1463,7 @@ fieldset legend {
 }
 @media only screen and (max-width: 768px) {
   .form-area strong.txt-required {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 .form-area .agree-part {
@@ -1491,6 +1475,7 @@ fieldset legend {
     text-align: left;
   }
   .form-area .agree-part .txt-error {
+    font-size: 1.5rem;
     margin-top: 0.7em;
   }
 }
@@ -1540,25 +1525,9 @@ fieldset legend {
 
 /* --------------------------------------------------
 
-navi
-
--------------------------------------------------- */
-/* --------------------------------------------------
-
 header
 
 -------------------------------------------------- */
-/* #header:after {W
-	content: "";
-	width: 280px;
-	height: 70px;
-	display: block;
-	background: #0A7ABE;
-	position: absolute;
-	top: 0;
-	right: 0;
-	border-bottom-left-radius: 15px;
-} */
 #header a:hover {
   opacity: 0.8;
   transition: all 0.3s;
@@ -2003,7 +1972,7 @@ header
   }
 }
 .btn-menu a {
-  padding: 10px;
+  padding: 0.7em 0.8em 0.8em 0.8em;
   display: block;
   background: #000;
 }
@@ -2432,7 +2401,7 @@ p.sentence {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .breadCrumbs {
     width: auto;
     padding: 0.3em 1em 0.7em 0;
@@ -3297,6 +3266,56 @@ ul.list-sitemap > li > a + .u-layer li a:before {
   .notfound-wrap .notfound-txt {
     font-size: 1.6rem;
   }
+}
+
+/* --------------------------------------------------
+
+バックナンバー
+
+-------------------------------------------------- */
+.back-number {
+  padding: 1em;
+  background: #F0F0F0;
+  text-align: center;
+  position: relative;
+}
+.back-number h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1em;
+  letter-spacing: 0.1em;
+}
+@media only screen and (max-width: 768px) {
+  .back-number h3 {
+    font-size: 1.8rem;
+  }
+}
+.back-number .list-year {
+  position: relative;
+}
+.back-number .list-year li {
+  margin-bottom: 5px;
+}
+.back-number .list-year li a {
+  padding: 0.8em 0;
+  display: block;
+  background: #FFF;
+}
+
+/* --------------------------------------------------
+
+左右レイアウト
+
+-------------------------------------------------- */
+.wrapper-layout {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper-layout .side-menu {
+  width: 30%;
+}
+.wrapper-layout .main-contents {
+  width: 66%;
 }
 
 /* --------------------------------------------------

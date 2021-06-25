@@ -7,7 +7,6 @@ post-content　ウィジウィグ
 /* post-ttl */
 
 .post-ttl{
-	// margin-bottom:0.5em;
 	font-size:3.7rem;
 	padding:0.5em 0;
 	color:$color-base;
@@ -45,7 +44,7 @@ post-content　ウィジウィグ
 /* post-date */
 
 .post-date{
-	margin: 0 0 2em auto;
+	margin: 1em 0 2em auto;
 	display: block;
 	text-align: right;
 }
@@ -132,7 +131,7 @@ post-content　ウィジウィグ
 	vertical-align:top;
 }
 
-@media screen and (max-width: 420px) {
+@include bp-s {
 	
 	.post-pht div {
 		max-height: 300px;
@@ -441,7 +440,6 @@ post-content　ウィジウィグ
 
 /* ブロック引用文 <blockquote> */
 .wysiwyg blockquote {
-	position: relative;
 	padding: 1em 2em;
 	box-sizing: border-box;
 	font-style: italic;
@@ -559,7 +557,7 @@ post-content　ウィジウィグ
 }
 
 
-@media screen and (max-width: 414px) {
+@include bp-s {
 	.wysiwyg .table-scroll table {
 		min-width: 100%;
 	}
@@ -602,7 +600,7 @@ post-content　ウィジウィグ
 
 /* アドレス */
 .wysiwyg address {
-	position: relative;
+	
 	padding: 1em 2em;
 	box-sizing: border-box;
 	font-style: italic;

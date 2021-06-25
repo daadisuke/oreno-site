@@ -36,7 +36,7 @@
 	display: none;
 }
 
-@media screen and (max-width: 768px) {
+@include bp {
 
 	.breadCrumbs{
 		width: auto;
@@ -912,6 +912,59 @@ ul.list-sitemap {
 		}
 	}
 }
+
+/* --------------------------------------------------
+
+バックナンバー
+
+-------------------------------------------------- */
+
+.back-number {
+	padding: 1em;
+	background: $color-light;
+	text-align: center;
+	position: relative;
+
+	h3 {
+		font-size: 2.2rem;
+		font-weight: 700;
+		margin-bottom: 1em;
+		letter-spacing: 0.1em;
+		@include bp {
+			font-size: 1.8rem;
+		}
+
+	}
+
+	.list-year {
+		position: relative;
+		li {
+			margin-bottom: 5px;
+			a {
+				padding: 0.8em 0;
+				display: block;
+				background: #FFF;
+			}
+		}
+	}
+}
+
+/* --------------------------------------------------
+
+左右レイアウト
+
+-------------------------------------------------- */
+.wrapper-layout {
+	display: flex;
+	justify-content: space-between;
+	.side-menu {
+		width: 30%;
+	}
+	.main-contents {
+		width: 66%;
+	}
+}
+
 
 /* --------------------------------------------------
 
