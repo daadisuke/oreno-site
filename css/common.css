@@ -245,7 +245,6 @@ post-content　ウィジウィグ
 
 .post-ttl span {
   margin-left: 1em;
-  margin-top: -0.5em;
   vertical-align: middle;
 }
 
@@ -3288,10 +3287,27 @@ ul.list-sitemap > li > a + .u-layer li a:before {
 @media only screen and (max-width: 768px) {
   .back-number h3 {
     font-size: 1.8rem;
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+  .back-number h3:after {
+    content: "+";
+    font-style: normal;
+    margin-left: 0.5em;
+    display: inline-block;
+  }
+  .back-number h3.open:after {
+    content: "-";
   }
 }
 .back-number .list-year {
   position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .back-number .list-year {
+    margin-top: 1em;
+    display: none;
+  }
 }
 .back-number .list-year li {
   margin-bottom: 5px;
@@ -3314,8 +3330,23 @@ ul.list-sitemap > li > a + .u-layer li a:before {
 .wrapper-layout .side-menu {
   width: 30%;
 }
+@media only screen and (max-width: 768px) {
+  .wrapper-layout .side-menu {
+    width: 100%;
+  }
+}
 .wrapper-layout .main-contents {
   width: 66%;
+}
+@media only screen and (max-width: 768px) {
+  .wrapper-layout .main-contents {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .wrapper-layout {
+    display: block;
+  }
 }
 
 /* --------------------------------------------------

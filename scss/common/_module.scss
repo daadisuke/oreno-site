@@ -932,12 +932,27 @@ ul.list-sitemap {
 		letter-spacing: 0.1em;
 		@include bp {
 			font-size: 1.8rem;
+			cursor: pointer;
+			margin-bottom: 0;
+			&:after {
+				content: "+";
+				font-style: normal;
+				margin-left: 0.5em;
+				display: inline-block;
+			}
+			&.open:after {
+				content: "-";
+			}
 		}
 
 	}
 
 	.list-year {
 		position: relative;
+		@include bp {
+			margin-top: 1em;
+			display: none;
+		}
 		li {
 			margin-bottom: 5px;
 			a {
@@ -959,9 +974,18 @@ ul.list-sitemap {
 	justify-content: space-between;
 	.side-menu {
 		width: 30%;
+		@include bp {
+			width: 100%;
+		}
 	}
 	.main-contents {
 		width: 66%;
+		@include bp {
+			width: 100%;
+		}
+	}
+	@include bp {
+		display: block;
 	}
 }
 

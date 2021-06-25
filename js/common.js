@@ -30,6 +30,28 @@ $(function() {
 	});
 });
 
+//backnumber
+$(window).on('load', function () {
+
+	if ($(window).innerWidth() <= 768) {
+
+		$(".back-number h3").click(function(){
+			$(this).next(".list-year").slideToggle();
+			$(this).toggleClass("open");
+		});
+
+	}
+	
+});
+
+// $(window).on('load', function () {
+
+//     if($(window).innerWidth() > 768) {
+//         $(".list-year").removeAttr("style");
+//     }
+	
+// });
+
 //page-top
 $(function() {
     var topBtn = $('.page-top');
