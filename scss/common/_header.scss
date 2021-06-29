@@ -86,7 +86,7 @@ header
 		}
 	}
 	#navi {
-		width: 50%;
+		width: 55%;
 		margin: 1em 0 0 auto;
 		position: relative;
 		ul {
@@ -106,6 +106,7 @@ header
 					justify-content: center;
 					position: relative;
 					letter-spacing: 0.1em;
+					white-space: nowrap;
 					transition: all 0.3s;
 					@include bp {
 						font-size: 1.5rem;
@@ -322,9 +323,10 @@ header
 						a {
 							color: #FFF;
 							font-size: 1.7rem;
-							padding: 0.8em 0;
+							padding: 0.8em 0.5em;
 							border: none;
 							border-bottom: 1px solid rgba(255,255,255,0.3);
+							display: block;
 							&:after {
 								content: "";
 								width: 0.7em;

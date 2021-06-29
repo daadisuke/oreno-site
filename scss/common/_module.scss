@@ -355,7 +355,7 @@ snsボタン
 		}
 	}
 	&.to-back {
-		@include bp {
+		@include bp-s {
 			p {
 				order: 1;
 				&.back {
@@ -634,7 +634,13 @@ list-article
 				margin: 0;
 				&.date-post {
 					color: $color-second;
+					width: 10em;
+					min-width: 10em;
 					margin: 0 1em 0 0.5em;
+					@include bp {
+						width: auto;
+						min-width: auto;
+					}
 				}
 			}
 			&:after {
@@ -995,6 +1001,18 @@ ul.list-sitemap {
 スライダー
 
 -------------------------------------------------- */
+.main-area {
+
+	.slider-block {
+		.swiper-button-next, .swiper-button-prev {
+			top: 45%;
+			@include bp {
+				top: 42%;
+			}
+		}
+	}
+
+}
 .slider-block {
 	width: 100%;
 	overflow: hidden;
@@ -1010,12 +1028,15 @@ ul.list-sitemap {
 			}
 		}
 	}
-	.swiper-button-next, .swiper-button-prev {
-		top: 45%;
-		@include bp {
-			top: 42%;
-		}
+	&.slider-thumb .swiper-container {
+		padding: 0;
 	}
+	// .swiper-button-next, .swiper-button-prev {
+	// 	top: 45%;
+	// 	@include bp {
+	// 		top: 42%;
+	// 	}
+	// }
 	.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
 		left: 7em;
 	}

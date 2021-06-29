@@ -50,6 +50,7 @@ input[type="checkbox"], input[type="radio"] {
 input[type="checkbox"] + label, input[type="radio"] + label {
 	display: inline-block;
 	margin-right: 0.6em;
+	vertical-align: middle;
 }
 input[type="text"],input[type="number"], input[type="tel"], input[type="email"], input[type="password"] {
 	font-size: 1.6rem;
