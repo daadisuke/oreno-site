@@ -271,9 +271,6 @@ snsボタン
 				display: block;
 				font-family:'Font Awesome 5 Brands';
 				border-radius: 50%;
-				@include bp{
-					color: #FFF;
-				}
 			}
 		}
 		&.icon-facebook a:before {

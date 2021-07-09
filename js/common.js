@@ -1,13 +1,43 @@
+// // // メニュー用js // // //
+
+// _header_normalver
+// $(function ($) {
+//     //メニューの開閉
+
+//     $(".btn-menu a").click(function () {
+//         $(this).toggleClass("open");
+//         $("body").toggleClass("fixed-body");
+//         $(".wrap-sp-navi").toggle();
+//         $(".wrap-sp-navi").toggleClass("active-sp");
+//     });
+
+// });
+
+// $(window).on('load resize', function () {
+
+//     if ($(window).width() >= 768) { 
+//         $(".wrap-sp-navi").removeAttr("style");
+//     } else if ($(window).width() < 768) { 
+//     } 
+    
+// });
+
+// 追従ver
 $(function ($) {
     //メニューの開閉
 
     $(".btn-menu a").click(function () {
         $(this).toggleClass("open");
         $("body").toggleClass("fixed-body");
-        $(".wrap-sp-navi").toggle();
-        $(".wrap-sp-navi").toggleClass("active-sp");
-        // $("#header").toggleClass("active-h");
+        $("#navi").slideToggle();
+        // $(".wrap-sp-navi").toggleClass("active-sp");
     });
+
+});
+
+$(function ($) {
+
+    $(".r-function-block").clone().appendTo("#navi .inner");
 
 });
 
@@ -19,6 +49,9 @@ $(window).on('load resize', function () {
     } 
     
 });
+
+// // // メニュー用js // // //
+
 
 // よくある質問
 $(function() {
