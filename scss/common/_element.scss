@@ -143,6 +143,47 @@
 	}
 }
 
+button{
+	&.btn-base{
+		color: #FFF;
+		background-color: $color-second;
+		border: none;
+		display: inline-block;
+		width: 15em;
+		font-size: 1.8rem;
+		text-align: center;
+		letter-spacing: 0.1em;
+		border-radius: 35px;
+		box-sizing: border-box;
+		padding: 1em 2em;
+		margin: 0 1em;
+		position: relative;
+		transition: all 0.3s;
+		@include bp {
+			font-size: 1.6rem;
+			margin: 0.5em 1em;
+		}
+		&:hover {
+			opacity: 0.7;
+		}
+		&.arrow{
+			&:after {
+				content: "";
+				width: 0.5em;
+				height: 0.5em;
+				border-top: 2px solid #FFF;
+				border-right: 2px solid #FFF;
+				display: inline-block;
+				vertical-align:middle;
+				position: absolute;
+				top: 50%;
+				right: 1.5em;
+				transform: translateY(-50%) rotateZ(45deg);
+			}
+		}
+	}
+}
+
 .ttl-top {
     font-size: 5rem;
 	margin: 1em 0;
