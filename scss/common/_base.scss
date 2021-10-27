@@ -47,7 +47,7 @@ a:hover, a:active {
 	margin: 0 auto;
 }
 .inner-m {
-	width: $bp-in;
+	width: $bp-in-m;
 	margin: 0 auto;
 }
 
@@ -73,6 +73,12 @@ em,strong {
 		min-width: 0;
 	}
 	.inner {
+		width: 92%;
+	}
+}
+
+@include bp-in-m {
+	.inner-m {
 		width: 92%;
 	}
 }

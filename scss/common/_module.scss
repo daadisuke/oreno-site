@@ -537,6 +537,7 @@ snsボタン
 		&.sp-col01 > li {
 			width: 100% !important;
 			margin-right: 0;
+			margin-bottom: 3em;
 		}
 		&.sp-col02 > li {
 			width: 47% !important;
@@ -554,7 +555,7 @@ snsボタン
 		}
 	}
 	li a {
-		background: #FFF;
+		background: #F3F3F3;
 		width: 100%;
 		border-radius: 1em;
 		position: relative;
@@ -574,24 +575,34 @@ snsボタン
 		&:hover .ph-list img {
 			transform: translate(-50%, -50%) scale(1.1);
 		}
-		.ph-list,
-		.txt-part {
+		.ph-list {
 			width: 100%;
 			text-align: left;
+			border-radius: 1em 1em 0 0;
 			position: relative;
 			overflow: hidden;
 			box-sizing: border-box;
 		}
+		// .txt-part {
+		// 	width: 100%;
+		// 	text-align: left;
+		// 	overflow: hidden;
+		// 	box-sizing: border-box;
+		// }
 		.txt-part {
-			padding: 0.5em 0;
+			padding: 1em;
 			& .ttl{
 				font-size: 2rem;
 				font-weight: bold;
 				margin-bottom: 0.3em;
+				text-align: center;
 			}
 		}
 		.list-icon {
 			margin-bottom: 0.5em;
+			position: absolute;
+			top: -1em;
+			left: 0;
 			p {
 				font-size: 1.4rem;
 			}
@@ -612,18 +623,40 @@ list-article
 
 .list-article {
 	li {
+		position: relative;
+		border-bottom: 1px solid $color-light;
+		transition: all 0.5s;
+		&:hover {
+			border-bottom: 1px solid $color-blue;
+		}
+		// &::after {
+		// 	content: "";
+		// 	width: 0;
+		// 	height: 1px;
+		// 	display: block;
+		// 	background: $color-blue;
+		// 	position: absolute;
+		// 	left: 0;
+		// 	bottom: 0;
+		// 	transition: all 0.5s;
+		// }
+		// &:hover {
+		// 	&::after {
+		// 		width: 100%;
+		// 	}
+		// }
 		a {
 			color: $color-base;
 			font-weight: 600;
 			width: 100%;
-			padding: 1.5em 3em 1.5em 1em;
+			padding: 1.7em 4em 1.7em 1em;
 			display: flex;
 			align-items: center;
-			border-bottom: 1px solid $color-base-l01;
 			position: relative;
+			background: #FFF;
 			box-sizing: border-box;
 			@include bp {
-				padding: 1em 0.5em;
+				padding: 1em 3em 1em 1em;
 				display: block;
 			}
 			@include hover;
@@ -637,7 +670,26 @@ list-article
 					@include bp {
 						width: auto;
 						min-width: auto;
+						margin: 0 0 0.5em;
 					}
+				}
+			}
+			&:before {
+				content: "";
+				width: 50px;
+				height: 50px;
+				display: block;
+				border-radius: 50%;
+				background: $color-blue;
+				border: 20px solid $color-light;
+				position: absolute;
+				top: 50%;
+				right: 1em;
+				transform: translateY(-50%);
+				box-sizing: border-box;
+				transition: all 0.5s;
+				@include bp {
+					transform: translateY(-50%) scale(0.6);
 				}
 			}
 			&:after {
@@ -645,23 +697,25 @@ list-article
 				width: 0.4em;
 				height: 0.4em;
 				margin: 0 0.5em 0.2em auto;
-				border-top: 2px solid $color-base;
-				border-right: 2px solid $color-base;
+				border-top: 2px solid #FFF;
+				border-right: 2px solid #FFF;
 				display: inline-block;
 				vertical-align:middle;
 				position: absolute;
 				top: 50%;
-				right: 1.5em;
-				transform: translateY(-50%) rotateZ(45deg);
-				@include bp {
-					right: 0;
+				right: 1.7em;
+				transform: translateY(-50%) rotateZ(45deg) scale(0);
+				transition: all 0.5s;
+			}
+			&:hover {
+				&:before {
+					border: 0 solid $color-light;
+				}
+				&:after {
+					transform: translateY(-50%) rotateZ(45deg) scale(1);
 				}
 			}
-		}
-		&:first-child {
-			a {
-				border-top: 1px solid $color-base-l01;
-			}
+			
 		}
 	}
 }
@@ -1015,13 +1069,16 @@ ul.list-sitemap {
 	overflow: hidden;
 	position: relative;
 	.swiper-container {
-		padding-bottom: 45px;
 		.stopbtn {
 			left: 1em;
 		}
 		.swiper-slide {
 			img {
 				width: 100%;
+				@include bp {
+					width: 120%;
+					max-width: none;
+				}
 			}
 		}
 	}

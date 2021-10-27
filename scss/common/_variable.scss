@@ -8,7 +8,7 @@
 // font
 $font-primary: 'Noto Sans JP',"游ゴシック体", "Yu Gothic", "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W3", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
 $font-secondary: 'Noto Serif JP',"游明朝","YuMincho","Hiragino Mincho ProN","Hiragino Mincho Pro", serif;
-$font-eng: 'Playfair Display', serif;
+$font-eng: 'Montserrat', sans-serif;
 
 // color
 $color-base: #333;
@@ -18,6 +18,7 @@ $color-base-l01: #CCC;
 $color-second:#707070;
 
 $color-red:#d50000;
+$color-blue: #0075BB;
 $color-gray: #AAA;
 $color-light: #F0F0F0;
 
@@ -25,6 +26,8 @@ $color-placeholder:#AAA;
 
 // break point
 $bp-in: 1200px;
+
+$bp-in-m: 900px;
 
 $bp: 768px;
 $bp-s: 420px;
@@ -37,7 +40,7 @@ hover
 
 @mixin hover {
 	&:hover {
-		opacity: 0.7;
+		// opacity: 0.7;
 	}
 }
 
@@ -61,6 +64,12 @@ breakpoint
 
 @mixin bp-in {
 	@media only screen and (max-width: $bp-in ) {
+	  @content;
+	}
+}
+
+@mixin bp-in-m {
+	@media only screen and (max-width: $bp-in-m ) {
 	  @content;
 	}
 }

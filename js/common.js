@@ -51,23 +51,23 @@ $(window).on('load resize', function () {
 });
 
 // ヘッダー追従
-$(function($) {
+// $(function($) {
     
-    $(window).scroll(function () {
-      if($(window).scrollTop() > 200) {
-        $("#header").addClass('fixed-h');
-        if ($(window).width() > 768) { 
-            $("body").css("padding-top","171px");
-        } else if ($(window).width() <= 768) {
-            $("body").css("padding-top","57px");
-        } 
-      } else {
-        $("#header").removeClass('fixed-h');
-		$("body").css("padding-top","0px");
-      }
-    });
+//     $(window).scroll(function () {
+//       if($(window).scrollTop() > 200) {
+//         $("#header").addClass('fixed-h');
+//         if ($(window).width() > 768) { 
+//             $("body").css("padding-top","171px");
+//         } else if ($(window).width() <= 768) {
+//             $("body").css("padding-top","57px");
+//         } 
+//       } else {
+//         $("#header").removeClass('fixed-h');
+// 		$("body").css("padding-top","0px");
+//       }
+//     });
 
-});
+// });
 
 // アンカーリンク位置調整
 $('#contents a[href*="#"],#navi a[href*="#"]').click(function () {

@@ -177,7 +177,7 @@ a:hover, a:active {
 }
 
 .inner-m {
-  width: 1200px;
+  width: 900px;
   margin: 0 auto;
 }
 
@@ -204,6 +204,11 @@ em, strong {
   }
 
   .inner {
+    width: 92%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .inner-m {
     width: 92%;
   }
 }
@@ -918,10 +923,6 @@ post-content　ウィジウィグ
   left: 2em;
   transform: translateY(-50%);
 }
-.related-file a:hover {
-  opacity: 0.7;
-}
-
 /* related-link */
 .related-link {
   margin: 1em 0;
@@ -945,10 +946,6 @@ post-content　ウィジウィグ
   left: 2em;
   transform: translateY(-50%);
 }
-.related-link a:hover {
-  opacity: 0.7;
-}
-
 /* related-youtube-link */
 .related-youtube-link a {
   font-size: 1.8rem;
@@ -1001,10 +998,6 @@ post-content　ウィジウィグ
   left: 1.5em;
   transform: translateY(-50%) rotateZ(45deg);
 }
-.btn-postback a:hover {
-  opacity: 0.7;
-}
-
 @media only screen and (max-width: 768px) {
   #contents .post-content h2.post-sttl-small {
     margin: 0 0 1em;
@@ -1697,9 +1690,6 @@ header
   background: #333;
   letter-spacing: 0.1em;
 }
-#header .header-top .r-function-block .btn-search fieldset button:hover {
-  opacity: 0.7;
-}
 #header .header-top .r-function-block .btn-search fieldset button:before {
   color: #FFF;
   content: "";
@@ -1839,9 +1829,6 @@ header
   border: none;
   background: #333;
   letter-spacing: 0.1em;
-}
-#header #navi .r-function-block .btn-search fieldset button:hover {
-  opacity: 0.7;
 }
 @media only screen and (max-width: 768px) {
   #header #navi .r-function-block .btn-search fieldset button {
@@ -1995,10 +1982,10 @@ footer
 
 -------------------------------------------------- */
 #footer {
-  color: #333;
+  color: #FFF;
   margin-top: 2em;
   padding: 2em 0 0;
-  background: #FFF;
+  background: #808080;
 }
 #footer .link-footer {
   margin: 0 0 2em;
@@ -2008,21 +1995,24 @@ footer
 }
 @media only screen and (max-width: 768px) {
   #footer .link-footer {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+    flex-wrap: nowrap;
   }
 }
 #footer .link-footer li {
   margin: 0 2em;
 }
 #footer .link-footer li a {
+  color: #FFF;
   font-weight: 600;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   display: block;
   text-decoration: underline;
 }
 @media only screen and (max-width: 768px) {
   #footer .link-footer li {
-    margin-bottom: 0.5em;
+    margin: 0 1em 0.5em;
   }
 }
 #footer .info-footer {
@@ -2031,13 +2021,18 @@ footer
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-top: 1px solid #AAA;
+}
+@media only screen and (max-width: 768px) {
+  #footer .info-footer {
+    padding: 1em 0;
+  }
 }
 #footer .info-footer .name-f {
   margin-right: 3em;
 }
 @media only screen and (max-width: 768px) {
   #footer .info-footer .name-f {
+    width: 200px;
     margin: 1em;
   }
 }
@@ -2050,11 +2045,17 @@ footer
   text-align: center;
   letter-spacing: 0.1em;
 }
+@media only screen and (max-width: 768px) {
+  #footer .copy {
+    font-size: 1.1rem;
+    padding: 1em 0 2em;
+  }
+}
 #footer .page-top a {
   font-size: 1.8rem;
   font-style: italic;
   font-weight: 700;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", sans-serif;
   padding: 1em 1.2em;
   line-height: 1.4;
   letter-spacing: 0.1em;
@@ -2066,9 +2067,6 @@ footer
   bottom: 5%;
   z-index: 100;
   transition: all 0.4s;
-}
-#footer .page-top a:hover {
-  opacity: 0.7;
 }
 #footer .page-top a:before {
   content: "";
@@ -2268,17 +2266,40 @@ button.btn-base.arrow:after {
 }
 
 .ttl-top {
-  font-size: 5rem;
-  margin: 1em 0;
+  color: #000;
+  margin: 5em 0 3em;
   text-align: center;
+  letter-spacing: 0.1em;
 }
-.ttl-top span {
-  font-size: 1.8rem;
+.ttl-top span.txt {
+  font-size: 3.7rem;
+  font-weight: 700;
+  margin-bottom: 0.8em;
   display: block;
 }
 @media only screen and (max-width: 768px) {
+  .ttl-top span.txt {
+    font-size: 2.5rem;
+  }
+}
+.ttl-top span.eng {
+  color: #FFF;
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding: 0.2em 1em;
+  display: inline-block;
+  background: #000;
+}
+@media only screen and (max-width: 768px) {
+  .ttl-top span.eng {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 768px) {
   .ttl-top {
-    font-size: 3rem;
+    font-size: 2rem;
+    margin: 2em 0;
   }
   .ttl-top span {
     font-size: 1.6rem;
@@ -2317,12 +2338,21 @@ button.btn-base.arrow:after {
 
 -------------------------------------------------- */
 .category {
-  border: 1px solid #999;
   display: inline-block;
   text-align: center;
   letter-spacing: 1px;
-  padding: 0 0.7em;
-  margin: 0 0.2rem 0.5rem 0;
+  padding: 0.5em 0.5em 0.5em;
+  background: #F0F0F0;
+  border-radius: 50%;
+}
+.category.chinese {
+  background: #FFE5E5;
+}
+.category.meat {
+  background: #FFFFBF;
+}
+.category.ramen {
+  background: #FFF0D5;
 }
 
 /* --------------------------------------------------
@@ -2885,6 +2915,7 @@ snsボタン
   .list-thumb.sp-col01 > li {
     width: 100% !important;
     margin-right: 0;
+    margin-bottom: 3em;
   }
   .list-thumb.sp-col02 > li {
     width: 47% !important;
@@ -2902,7 +2933,7 @@ snsボタン
   }
 }
 .list-thumb li a {
-  background: #FFF;
+  background: #F3F3F3;
   width: 100%;
   border-radius: 1em;
   position: relative;
@@ -2923,24 +2954,28 @@ snsボタン
 .list-thumb li a:hover .ph-list img {
   transform: translate(-50%, -50%) scale(1.1);
 }
-.list-thumb li a .ph-list,
-.list-thumb li a .txt-part {
+.list-thumb li a .ph-list {
   width: 100%;
   text-align: left;
+  border-radius: 1em 1em 0 0;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
 }
 .list-thumb li a .txt-part {
-  padding: 0.5em 0;
+  padding: 1em;
 }
 .list-thumb li a .txt-part .ttl {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 0.3em;
+  text-align: center;
 }
 .list-thumb li a .list-icon {
   margin-bottom: 0.5em;
+  position: absolute;
+  top: -1em;
+  left: 0;
 }
 .list-thumb li a .list-icon p {
   font-size: 1.4rem;
@@ -2955,25 +2990,30 @@ list-article
   margin-bottom: 3em;
 }
 
+.list-article li {
+  position: relative;
+  border-bottom: 1px solid #F0F0F0;
+  transition: all 0.5s;
+}
+.list-article li:hover {
+  border-bottom: 1px solid #0075BB;
+}
 .list-article li a {
   color: #333;
   font-weight: 600;
   width: 100%;
-  padding: 1.5em 3em 1.5em 1em;
+  padding: 1.7em 4em 1.7em 1em;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #CCC;
   position: relative;
+  background: #FFF;
   box-sizing: border-box;
 }
 @media only screen and (max-width: 768px) {
   .list-article li a {
-    padding: 1em 0.5em;
+    padding: 1em 3em 1em 1em;
     display: block;
   }
-}
-.list-article li a:hover {
-  opacity: 0.7;
 }
 .list-article li a p {
   margin: 0;
@@ -2988,6 +3028,27 @@ list-article
   .list-article li a p.date-post {
     width: auto;
     min-width: auto;
+    margin: 0 0 0.5em;
+  }
+}
+.list-article li a:before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  display: block;
+  border-radius: 50%;
+  background: #0075BB;
+  border: 20px solid #F0F0F0;
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+@media only screen and (max-width: 768px) {
+  .list-article li a:before {
+    transform: translateY(-50%) scale(0.6);
   }
 }
 .list-article li a:after {
@@ -2995,22 +3056,21 @@ list-article
   width: 0.4em;
   height: 0.4em;
   margin: 0 0.5em 0.2em auto;
-  border-top: 2px solid #333;
-  border-right: 2px solid #333;
+  border-top: 2px solid #FFF;
+  border-right: 2px solid #FFF;
   display: inline-block;
   vertical-align: middle;
   position: absolute;
   top: 50%;
-  right: 1.5em;
-  transform: translateY(-50%) rotateZ(45deg);
+  right: 1.7em;
+  transform: translateY(-50%) rotateZ(45deg) scale(0);
+  transition: all 0.5s;
 }
-@media only screen and (max-width: 768px) {
-  .list-article li a:after {
-    right: 0;
-  }
+.list-article li a:hover:before {
+  border: 0 solid #F0F0F0;
 }
-.list-article li:first-child a {
-  border-top: 1px solid #CCC;
+.list-article li a:hover:after {
+  transform: translateY(-50%) rotateZ(45deg) scale(1);
 }
 
 /* --------------------------------------------------
@@ -3371,14 +3431,17 @@ ul.list-sitemap > li > a + .u-layer li a:before {
   overflow: hidden;
   position: relative;
 }
-.slider-block .swiper-container {
-  padding-bottom: 45px;
-}
 .slider-block .swiper-container .stopbtn {
   left: 1em;
 }
 .slider-block .swiper-container .swiper-slide img {
   width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .slider-block .swiper-container .swiper-slide img {
+    width: 120%;
+    max-width: none;
+  }
 }
 .slider-block.slider-thumb .swiper-container {
   padding: 0;

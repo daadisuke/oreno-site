@@ -15,15 +15,131 @@ hover
 breakpoint
 
 -------------------------------------------------- */
+.main-area {
+  position: relative;
+}
+.main-area .swiper-slide {
+  position: relative;
+}
+.main-area .swiper-slide figure figcaption {
+  font-size: 2rem;
+  padding: 0.5em 1em;
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  background: url(../img/common/deco_bg_w.svg) no-repeat left bottom;
+  background-size: cover;
+}
+@media only screen and (max-width: 900px) {
+  .main-area .swiper-slide figure figcaption {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main-area .swiper-slide figure figcaption {
+    font-size: 1.2rem;
+    bottom: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.main-area .navi {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+@media only screen and (max-width: 768px) {
+  .main-area .navi {
+    top: 35px;
+  }
+}
+.main-area .navi ul {
+  display: flex;
+}
+.main-area .navi ul li {
+  margin: 0 1.5em;
+}
+@media only screen and (max-width: 768px) {
+  .main-area .navi ul li {
+    margin: 0 1em;
+  }
+}
+.main-area .navi ul li a {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+@media only screen and (max-width: 900px) {
+  .main-area .navi ul li a {
+    font-size: 1.6rem;
+  }
+}
+.main-area .logo-main {
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+@media only screen and (max-width: 768px) {
+  .main-area .logo-main {
+    width: 195px;
+  }
+}
+.main-area:after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  border-bottom: 60px solid #FFF;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+@media only screen and (max-width: 768px) {
+  .main-area:after {
+    border-bottom: 30px solid #FFF;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+  }
+}
+
+.about-area {
+  margin-bottom: 3em;
+}
+.about-area .about-block {
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .about-area .about-block {
+    justify-content: center;
+    text-align: center;
+  }
+  .about-area .about-block img {
+    width: 250px;
+    padding-right: 30px;
+  }
+}
+.about-area .about-block p {
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 1.8;
+}
+@media only screen and (max-width: 768px) {
+  .about-area .about-block p {
+    font-size: 1.8rem;
+  }
+}
+
 .news-area {
-  margin-top: 3%;
-}
-
-.event-area {
-  margin-top: 3%;
-}
-
-.bnr-area {
-  margin: 5% 0 5%;
+  padding: 1em 0 3em;
+  background: #F0F0F0;
 }
 /*# sourceMappingURL=top.css.map */

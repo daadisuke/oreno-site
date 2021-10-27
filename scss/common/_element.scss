@@ -185,15 +185,36 @@ button{
 }
 
 .ttl-top {
-    font-size: 5rem;
-	margin: 1em 0;
+	color: #000;
+	margin: 5em 0 3em;
 	text-align: center;
+	letter-spacing: 0.1em;
     span {
-        font-size: 1.8rem;
-        display: block;
+		&.txt {
+			font-size: 3.7rem;
+			font-weight: 700;
+			margin-bottom: 0.8em;
+			display: block;
+			@include bp {
+				font-size: 2.5rem;
+			}
+		}
+		&.eng {
+			color: #FFF;
+			font-size: 1.8rem;
+			font-family: $font-eng;
+			font-weight: 500;
+			padding: 0.2em 1em;
+			display: inline-block;
+			background: #000;
+			@include bp {
+				font-size: 1.6rem;
+			}
+		}
     }
     @include bp {
-        font-size: 3rem;
+        font-size: 2rem;
+		margin: 2em 0;
         span {
             font-size: 1.6rem;
         }
@@ -234,12 +255,21 @@ button{
 -------------------------------------------------- */
 
 .category {
-	border: 1px solid #999;
 	display: inline-block;
 	text-align: center;
 	letter-spacing: 1px;
-	padding: 0 0.7em;
-	margin: 0 .2rem .5rem 0;
+	padding: 0.5em 0.5em 0.5em;
+	background: $color-light;
+	border-radius: 50%;
+	&.chinese {
+		background: #FFE5E5;
+	}
+	&.meat {
+		background: #FFFFBF;
+	}
+	&.ramen {
+		background: #FFF0D5;
+	}
 }
 
 /* --------------------------------------------------

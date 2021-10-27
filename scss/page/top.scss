@@ -4,14 +4,114 @@
 
 @import '../common/variable.scss';
 
-.news-area {
-    margin-top: 3%;
+.main-area {
+    position: relative;
+    .swiper-slide {
+        position: relative;
+        figure {
+            figcaption {
+                font-size: 2.0rem;
+                padding: 0.5em 1em;
+                position: absolute;
+                bottom: 30px;
+                left: 20px;
+                background: url(../img/common/deco_bg_w.svg) no-repeat left bottom;
+                background-size: cover;
+                @include bp-in-m {
+                    font-size: 1.6rem;
+                }
+                @include bp {
+                    font-size: 1.2rem;
+                    bottom: 65px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+    .navi {
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 5;
+        @include bp {
+            top: 35px; 
+        }
+        ul {
+            display: flex;
+            li {
+                margin: 0 1.5em;
+                @include bp {
+                    margin: 0 1em;
+                }
+                a {
+                    color: #fff;
+                    font-size: 2.4rem;
+                    font-weight: 600;
+                    font-family: $font-eng;
+                    @include bp-in-m {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+    .logo-main {
+        position: absolute;
+        top: 50%;
+        left: 48%;
+        transform: translate(-50%,-50%);
+        z-index: 5;
+        @include bp {
+            width: 195px;
+        }
+    }
+    &:after {
+        content: "";
+        width: 0;
+        height: 0;
+        display: block;
+        border-bottom: 60px solid #FFF;
+        border-left: 80px solid transparent;
+        border-right: 80px solid transparent;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        @include bp {
+            border-bottom: 30px solid #FFF;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+        }
+    }
 }
 
-.event-area {
-    margin-top: 3%;
+.about-area {
+    margin-bottom: 3em;
+    .about-block {
+        align-items: center;
+        @include bp {
+            justify-content: center;
+            text-align: center;
+            img {
+                width: 250px;
+                padding-right: 30px;
+            }
+        }
+        p {
+            font-size: 2.1rem;
+            font-weight: 700;
+            line-height: 1.8;
+            @include bp {
+                font-size: 1.8rem;
+            }
+        }
+    }
 }
 
-.bnr-area {
-    margin: 5% 0 5%;
+.news-area  {
+    padding: 1em 0 3em;
+    background: $color-light;
 }

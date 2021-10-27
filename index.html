@@ -35,9 +35,9 @@
 	<!-- webfont -->
 	<script src="js/fontawesome.js"></script>
 
-	<link
-		href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600;700;900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
-		rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
 	<!-- css -->
 	<link rel="stylesheet" href="css/common.css">
@@ -59,8 +59,6 @@
 
 	<div class="wrapper">
 
-		<script>header('');</script>
-
 		<!-- main-area -->
 		<div class="main-area">
 
@@ -74,43 +72,46 @@
 					<div class="swiper-wrapper">
 
 						<!-- swiper-slide -->
-						<div class="swiper-slide"><img src="https://placehold.jp/1600x900.png" alt=""></div>
+						<div class="swiper-slide"><figure><img src="img/top/ph_main01.jpg" alt=""><figcaption>チャイナスタンド 二兎</figcaption></figure></div>
 						<!-- swiper-slide -->
 
 						<!-- swiper-slide -->
-						<div class="swiper-slide"><img src="https://placehold.jp/1600x900.png" alt=""></div>
+						<div class="swiper-slide"><figure><img src="img/top/ph_main01.jpg" alt=""><figcaption>チャイナスタンド 二兎</figcaption></figure></div>
 						<!-- swiper-slide -->
 
 						<!-- swiper-slide -->
-						<div class="swiper-slide"><img src="https://placehold.jp/1600x900.png" alt=""></div>
+						<div class="swiper-slide"><figure><img src="img/top/ph_main01.jpg" alt=""><figcaption>チャイナスタンド 二兎</figcaption></figure></div>
 						<!-- swiper-slide -->
 
 						<!-- swiper-slide -->
-						<div class="swiper-slide"><img src="https://placehold.jp/1600x900.png" alt=""></div>
-						<!-- swiper-slide -->
-
-						<!-- swiper-slide -->
-						<div class="swiper-slide"><img src="https://placehold.jp/1600x900.png" alt=""></div>
+						<div class="swiper-slide"><figure><img src="img/top/ph_main01.jpg" alt=""><figcaption>チャイナスタンド 二兎</figcaption></figure></div>
 						<!-- swiper-slide -->
 
 					</div>
 					<!-- swiper-wrapper -->
 
-					<!-- Add Arrows -->
-					<div class="swiper-button-next swiper-button-white"></div>
-					<div class="swiper-button-prev swiper-button-white"></div>
-
-					<!-- Add Pagination -->
-					<div class="swiper-pagination"></div>
-
-					<!-- 停止ボタン追加 -->
-					<p class="stopbtn stop">停止</p>
+					<!-- オプションスクロールバー -->
+  					<div class="swiper-scrollbar"></div>
 
 				</div>
 				<!-- swiper-container -->
 
 			</div>
 			<!-- slider-block -->
+
+			<!-- navi -->
+			<nav class="navi">
+				<ul>
+					<li><a href="">ABOUT</a></li>
+					<li><a href="">NEWS</a></li>
+					<li><a href="">GOURMET</a></li>
+				</ul>
+			</nav>
+			<!-- navi -->
+
+			<!-- logo-main -->
+			<h1 class="logo-main"><img src="img/common/logo.svg" alt="ORENO Fukuoka City Tourist Information"></h1>
+			<!-- logo-main -->
 
 		</div>
 		<!-- main-area -->
@@ -119,12 +120,40 @@
 		<div id="contents">
 
 			<!--news-area-->
-			<section id="news" class="news-area">
+			<section class="about-area">
 
 				<!-- inner -->
 				<div class="inner">
 
-					<h2 class="ttl-top">NEWS<span>お知らせ</span></h2>
+					<h2 class="ttl-top"><span class="txt">このサイトについて</span><span class="eng">ABOUT</span></h2>
+
+					<!-- block-lr.col2 -->
+					<div class="about-block block-lr col2 sp-col01">
+
+						<div>
+							<img src="img/common/logo_black.svg" alt="">
+						</div>
+
+						<div>
+							<p>このサイトは・・<br>俺が・・<br>俺のために<br>つくった<br>福岡市の観光サイトです</p>
+						</div>
+
+					</div>
+					<!-- block-lr.col2 -->
+
+				</div>
+				<!-- inner -->
+
+			</section>
+			<!--about-area-->
+
+			<!--news-area-->
+			<section class="news-area">
+
+				<!-- inner -->
+				<div class="inner-m">
+
+					<h2 class="ttl-top"><span class="txt">お知らせ</span><span class="eng">NEWS</span></h2>
 
 					<!-- list-article -->
 					<ul class="list-article">
@@ -153,9 +182,9 @@
 					<div class="btn-block center">
 
 						<!-- btn-base arrrow-->
-						<p class="btn-base arrow border">
+						<!-- <p class="btn-base arrow border">
 							<a href="">お知らせ一覧へ</a>
-						</p>
+						</p> -->
 						<!-- btn-base arrow-->
 
 					</div>
@@ -165,7 +194,9 @@
 				<!-- inner -->
 
 			</section>
-			<!--news-area-->
+			<!--news-area-->	
+
+				
 
 			<!--event-area-->
 			<section id="event" class="event-area">
@@ -173,86 +204,76 @@
 				<!-- inner -->
 				<div class="inner">
 
-					<h2 class="ttl-top">EVENT<span>イベント</span></h2>
+					<h2 class="ttl-top"><span class="txt">グルメ情報</span><span class="eng">GOURMET</span></h2>
 
 					<!-- list-ph -->
-					<ul class="list-thumb col4 sp-col01">
+					<ul class="list-thumb col3 sp-col01">
 
 						<li><a href="">
 								<div class="ph-list"><img src="https://placehold.jp/800x600.png" alt=""></div>
 								<div class="txt-part">
 									<h4 class="ttl">タイトル</h4>
 									<div class="list-icon">
-										<p class="category">カテゴリー</p>
-										<p class="category">カテゴリー</p>
+										<p class="category chinese"><img src="img/common/icon_chinese.png" width="55" alt=""></p>
 									</div>
 									<p class="txt">ここにテキストが入りますここにテキストが入ります</p>
 								</div>
 							</a></li>
 
-						<li><a href="">
+							<li><a href="">
 								<div class="ph-list"><img src="https://placehold.jp/800x600.png" alt=""></div>
 								<div class="txt-part">
 									<h4 class="ttl">タイトル</h4>
 									<div class="list-icon">
-										<p class="category">カテゴリー</p>
-										<p class="category">カテゴリー</p>
+										<p class="category ramen"><img src="img/common/icon_ramen.png" width="55" alt=""></p>
 									</div>
 									<p class="txt">ここにテキストが入りますここにテキストが入ります</p>
 								</div>
 							</a></li>
 
-						<li><a href="">
-								<div class="ph-list movie">
-									<img src="https://placehold.jp/800x600.png" alt="">
-								</div>
+							<li><a href="">
+								<div class="ph-list"><img src="https://placehold.jp/800x600.png" alt=""></div>
 								<div class="txt-part">
 									<h4 class="ttl">タイトル</h4>
 									<div class="list-icon">
-										<p class="category">カテゴリー</p>
-										<p class="category">カテゴリー</p>
-										<p class="category">カテゴリー</p>
-										<p class="category">カテゴリー</p>
-										<p class="category">カテゴリー</p>
+										<p class="category ramen"><img src="img/common/icon_meat.png" width="55" alt=""></p>
 									</div>
 									<p class="txt">ここにテキストが入りますここにテキストが入ります</p>
 								</div>
 							</a></li>
 
-						<li><a href="">
-								<div class="ph-list movie">
-									<img src="https://placehold.jp/800x600.png" alt="">
-								</div>
+							<li><a href="">
+								<div class="ph-list"><img src="https://placehold.jp/800x600.png" alt=""></div>
 								<div class="txt-part">
 									<h4 class="ttl">タイトル</h4>
 									<div class="list-icon">
-										<p class="category">カテゴリー</p>
-										<p class="category">カテゴリー</p>
-										<p class="category">カテゴリー</p>
-										<p class="category">カテゴリー</p>
-										<p class="category">カテゴリー</p>
+										<p class="category chinese"><img src="img/common/icon_chinese.png" width="55" alt=""></p>
 									</div>
 									<p class="txt">ここにテキストが入りますここにテキストが入ります</p>
 								</div>
 							</a></li>
 
-						<li><a href="">
-								<div class="ph-list movie">
-									<img src="https://placehold.jp/800x600.png" alt="">
-								</div>
+							<li><a href="">
+								<div class="ph-list"><img src="https://placehold.jp/800x600.png" alt=""></div>
 								<div class="txt-part">
 									<h4 class="ttl">タイトル</h4>
 									<div class="list-icon">
-										<p class="category">カテゴリー</p>
-										<p class="category">カテゴリー</p>
-										<p class="category">カテゴリー</p>
-										<p class="category">カテゴリー</p>
-										<p class="category">カテゴリー</p>
+										<p class="category ramen"><img src="img/common/icon_ramen.png" width="55" alt=""></p>
 									</div>
 									<p class="txt">ここにテキストが入りますここにテキストが入ります</p>
 								</div>
 							</a></li>
 
+							<li><a href="">
+								<div class="ph-list"><img src="https://placehold.jp/800x600.png" alt=""></div>
+								<div class="txt-part">
+									<h4 class="ttl">タイトル</h4>
+									<div class="list-icon">
+										<p class="category ramen"><img src="img/common/icon_meat.png" width="55" alt=""></p>
+									</div>
+									<p class="txt">ここにテキストが入りますここにテキストが入ります</p>
+								</div>
+							</a></li>
 					</ul>
 					<!-- list-ph -->
 
@@ -260,9 +281,9 @@
 					<div class="btn-block center">
 
 						<!-- btn-base arrrow-->
-						<p class="btn-base arrow border">
+						<!-- <p class="btn-base arrow border">
 							<a href="">イベント一覧へ</a>
-						</p>
+						</p> -->
 						<!-- btn-base arrow-->
 
 					</div>
@@ -273,30 +294,6 @@
 
 			</section>
 			<!--event-area-->
-
-			<!--bnr-area-->
-			<section class="bnr-area">
-
-				<div class="inner">
-
-					<!-- ttl-small -->
-					<div class="ttl-small">
-						<h3>バナーエリア</h3>
-					</div>
-					<!-- ttl-small -->
-
-					<!-- list-bnr -->
-					<ul class="list-bnr">
-						<li><a href=""><img src="img/top/bnr01.png" alt="QTmedia"></a></li>
-						<li><a href=""><img src="img/top/bnr01.png" alt="QTmedia"></a></li>
-						<li><a href=""><img src="img/top/bnr01.png" alt="QTmedia"></a></li>
-					</ul>
-					<!-- list-bnr -->
-
-				</div>
-
-			</section>
-			<!--bnr-area-->
 
 		</div>
 		<!--contents-->
@@ -317,7 +314,7 @@
 	<!-- swiper設定 -->
 	<script>
 		var swiper = new Swiper('.swiper-container', {
-			loop: true,
+			loop: false,
 			slidesPerView: 1,/* 1画面に見えるスライドの数 */
 			spaceBetween: 0,/* スライドの間隔 */
 			speed: 500,/* スライドの早さ */
@@ -333,23 +330,11 @@
 				delay: 4000,
 				disableOnInteraction: false,/* ページネーションをクリックした後に自動再生する */
 			},
-		});
-
-		/* 再生、停止ボタン */
-		$(window).on('load', function () {
-			$(".stopbtn").on("click", function () {
-				var _class = $(this).attr("class");
-				if (_class == "stopbtn stop") {
-					$(this).addClass("start").removeClass("stop");
-					swiper.autoplay.stop();
-					$(this).text('再生');
-				}
-				else {
-					$(this).addClass("stop").removeClass("start");
-					swiper.autoplay.start();
-					$(this).text('停止');
-				}
-			});
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			mousewheel: true,
 		});
 	</script>
 
